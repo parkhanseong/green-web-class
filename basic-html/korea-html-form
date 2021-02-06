@@ -1,0 +1,16 @@
+"korea html form" : {
+    "prefix": "korea-html-form",
+    "body": [
+        "<!DOCTYPE html>",
+        "<html lang=\"ko\">",
+        "<head>",
+        "<meta charset=\"UTF-8\">",
+        "<title>$1</title>",
+        "</head>",
+        "<body>",
+        "$2",
+        "</body>",
+        "</html>"
+    ],
+    "description": "html 자동완성 추가"
+}
