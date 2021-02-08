@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-size: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+img {
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+li {
+  list-style: none;
+}
+address,
+em,
+i {
+  font-style: normal;
+}
+
+body {
+  font-family: 'NanumSquare', sans-serif !important;
+  font-size: 14px;
+  color: #4e4e4e;
+  line-height: 1.4;
+}
+
+.wrap {
+  width: 100%;
+  min-width: 1100px;
+}
+
+/* header */
+header {
+  /* background-color: aqua; */
+  width: 100%;
+  height: 120px;
+  padding: 0 60px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  /* background-color: #fff; */
+  line-height: 120px;
+}
+header .logo {
+  display: block;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: -6px;
+  color: #39312b;
+  float: left;
+}
+header nav {
+  float: right;
+}
+header nav .gnb li {
+  display: inline-block;
+  margin-left: 60px;
+}
+header nav .gnb li a {
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+}
+header nav .gnb li a:after {
+  content: '';
+  background: #888;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: 40px;
+  left: 50%;
+  transition: all 1s;
+  transform: translateX(-50%);
+}
+
+header nav .gnb li a,
+header nav .gnb li a:hover:after {
+  width: 100%;
+}
+
+/* .box {
+  position: relative;
+  top: 500px;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: width 3s 1s linear, height 1s, background-color 1s;
+} */
+
+/* .box:hover {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+} */
