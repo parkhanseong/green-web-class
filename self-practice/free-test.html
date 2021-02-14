@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title></title>
+<style>
+    caption {
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Table 실습 - 1</h1>
+    <table border=1>
+        <caption>table 그리기</caption>
+        <tr>
+            <td>table data</td>
+            <td>table data</td>
+            <td>table data</td>
+        </tr>
+        <tr>
+            <td>table data</td>
+            <td>table data</td>
+            <td>table data</td>
+        </tr>
+    </table>
+
+    <h1>Table 실습 - 2</h1>
+    <table border=2>
+        <thead>
+            <tr>
+                <th scope="col">순위</th>
+                <th scope="col">국가</th>
+                <th scope="col">GDP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>미국</td>
+                <td>20111200</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>중국</td>
+                <td>1420202</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>일본</td>
+                <td>1231232</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">종합</td>
+                <td>...</td>
+                <td>....</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>Table 실습 - 3</h1>
+    <table border width="50%">
+        <colgroup>
+            <col width="100">
+            <col width="100">
+            <col >
+        </colgroup>
+        <tr>
+            <td colspan="3">table 합치기</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td colspan="2">2</td>
+        </tr>
+        <tr>
+            <td rowspan="2">4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+</body>
+</html>
