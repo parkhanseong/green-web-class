@@ -1,3 +1,4 @@
+{
 "korea html form" : {
     "prefix": "korea-html-form",
     "body": [
@@ -15,4 +16,5 @@
         "</html>"
     ],
     "description": "html 자동완성 추가"
+}
 }

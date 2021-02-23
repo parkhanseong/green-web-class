@@ -1,0 +1,20 @@
+{
+    "workbench.editor.enablePreview": false,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "breadcrumbs.enabled": true,
+    "editor.mouseWheelZoom": true,
+    "[html]": {
+        // "editor.defaultFormatter": "vscode.html-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "editor.formatOnSave": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "prettier.jsxSingleQuote": true,
+    // prettier 설정
+    "prettier.printWidth": 140,
+    "prettier.tabWidth": 4
+}
