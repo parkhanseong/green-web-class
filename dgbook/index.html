@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>index</title>
+    </head>
+    <body>
+        <header>
+            <hr>
+            <h1><a href="../index.html">DGBook</a></h1>
+            <ul>
+                <li><a href="src/main.html">메인으로 이동하기 ></a></li>
+                <li><a href="src/term-agreement.html">회원가입 하러 가기 ></a></li>
+            </ul>
+            <hr>
+        </header>
+        <main>
+            <form action="src/sign-up.html">
+                <fieldset>
+                    <legend>로그인 정보</legend>
+                    <p>
+                        <label for="member-name">이메일: </label>
+                        <input type="text" name="member-name" id="member-name" placeholder="이메일을 입력해주세요" required>@
+                        <select name="email" id="email" required>
+                            <option value="">선택</option>
+                            <option value="naver">naver.com</option>
+                            <option value="gmail">gmail.com</option>
+                            <option value="kakao">kakao.com</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="member-pw">비밀번호: </label>
+                        <input type="password" name="member-pw" id="member-pw" placeholder="비밀번호를 입력해주세요" required>
+                    </p>
+                    <input type="submit" value="로그인 하기">
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <hr>
+            <address>
+                <p>
+                    <p>
+                        Address: <strong>그린 컴퓨터</strong>
+                    </p>
+                    Tel: <a href="tel:010-1234-1234">010-1234-1234</a><br />
+                    E-mail: <a href="mailto:hans.park.dev@gmail.com">hans.park.dev@gmail.com</a>
+                </p>
+                &copy;copy all reserve.
+            </address>
+            <hr>
+        </footer>
+    </body>
+</html>

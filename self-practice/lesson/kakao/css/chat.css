@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+main#chat {
+    padding-top: 10px;
+}
+main .chat {
+    margin-bottom: 10px;
+}
+main .chat img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+main .chat .message {
+    padding-left: 10px;
+    display: inline-block;
+    width: 330px;
+    vertical-align: middle;
+}
+main .chat .message h5 {
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+main .chat .message h6 {
+    font-size: 13px;
+    color: #adadad;
+}
+main .chat .time {
+    font-size: 11px;
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+    margin-top: 30px;
+    color: #adadad;
+}

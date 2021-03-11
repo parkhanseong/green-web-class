@@ -1,0 +1,25 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #58666e;
+    background-color: #f0f3f4; */
+}
+a {
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}

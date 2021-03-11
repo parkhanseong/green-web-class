@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>header</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    li {
+        list-style: none;
+    }
+    #wrap {
+        width: 500px;
+        margin: 10px auto;
+    }
+    .gnb {
+        width: 500px;
+    }
+    .gnb li {
+        display: inline-block;
+        width: 33.3333%;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background-color: #666;
+    }
+    .gnb li a {
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .gnb li a:hover, .gnb li a:focus {
+        color: #fff;
+        background-color: #ddd;
+        box-shadow: 5px 5px 10px 1px #000;
+    }
+</style>
+</head>
+<body>
+    <div id="wrap">
+        <ul class="gnb">
+            <li><a href="#">menu1</a></li><li>
+                <a href="#">menu2</a></li><li>
+                <a href="#">menu3</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

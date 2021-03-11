@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+main.container {
+    text-align: center;
+    line-height: 500px;
+    background-color: #fcce01;
+}
+main.container i {
+    color: #3e3137;
+    background-color: #fcce01;
+}

@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* common start*/
+* {
+    margin: 0;
+    padding: 0;
+}
+.bold {
+    font-weight: bold;
+}
+.blueColor {
+    color: #0645ad;
+}
+/* common end */
+#wrap {
+    padding: 20px;
+    background-color: #faecc8;
+}
+
+.title {
+    margin-top: 30px;
+    border: 1px solid black;
+}
+.title span.subTitle {
+    font-size: 23px;
+}
+.title span {
+    font-size: 14px;
+}
+.title hr {
+    margin-bottom: 20px;
+}
+.notice {
+    border: 3px dotted red;
+    padding: 10px 0 10px 0;
+}
+.notice h4 {
+    margin-bottom: 20px;
+}
+.notice h4 span {
+    color: #0645ad;
+}
+.notice ol {
+    padding-left: 40px;
+}
+.notice ol li {
+    line-height: 30px;
+}
+/* .notice ol li:nth-child(1) span {
+    color: #0645ad;
+    font-weight: bold;
+}
+.notice ol li:nth-child(2) span {
+    color: #0645ad;
+    font-weight: bold;
+} */
+.upload {
+    padding: 10px 0 20px 0;
+}
+.upload .example {
+    margin: 15px 0;
+}
+.upload .example p {
+    margin-bottom: 10px;
+}
+.upload .example ul {
+    padding-left: 20px;
+}
+.upload .example .ref {
+    margin-top: 10px;
+    padding-left: 40px;
+}
+.license p.detail-1 {
+    padding: 12px 0;
+}
+.info {
+    padding: 20px 0;
+}
+.info p {
+    padding: 10px 0;
+}
+.info ul {
+    padding-left: 30px;
+}
+.info ul li {
+    margin: 10px 0;
+}

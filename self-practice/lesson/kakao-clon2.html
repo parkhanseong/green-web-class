@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<title>kakao clone2</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+    #wrap {
+        width: 500px;
+    }
+    /* header */
+    header {
+        width: 500px;
+        height: 100px;
+        background-color: #FCCE00;
+        text-align: center;
+        line-height: 100px;
+    }
+    header h1 a {
+        color: #fff;
+    }
+    /* main */
+    main {
+        width: 500px;
+        height: 500px;
+    }
+    main a {
+        display: block;
+    }
+    main a:hover {
+        background-color: #ddd;
+    }
+    main ul {
+        padding: 0 10px;
+    }
+    main ul li {
+        height: 100px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    main ul li:nth-child(1) {
+        width: 100px;
+        padding: 5px;
+    }
+    main ul li:nth-child(2) {
+        width: 320px;
+    }
+    main ul li:nth-child(3) {
+        width: 50px;
+    }
+    main ul li img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+    }
+    main ul li .chat {
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    main ul li .chat h4 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    main ul li .time {
+        margin-top: 30px;
+    }
+    /* footer */
+    footer {
+        background-color: #F9F9FA;
+    }
+    footer ul li {
+        display: inline-block;
+        width: 25%;
+        height: 50px;
+        text-align: center;
+    }
+    footer ul li a {
+        display: block;
+        height: 100%;
+        line-height: 50px;
+    }
+    footer ul li a:hover {
+        background-color: #ddd;
+    }
+    footer ul li a i {
+        margin-top: 8px;
+        line-height: 50px;
+    }
+
+
+</style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1><a href="#">kakao talk</a></h1>
+        </header>
+        <main>
+            <a href="#">
+                <ul>
+                    <li>
+                        <img src="../image/profile.JPG" alt="">
+                    </li><li>
+                        <div class="chat">
+                            <h4>박한성</h4>
+                            <h6>안녕하세요~!</h6>
+                        </div>
+                    </li><li>
+                        <h6 class="time">오후 4:21</h6>
+                    </li>
+                </ul>
+            </a>
+            <a href="#">
+                <ul>
+                    <li>
+                        <img src="../image/profile.JPG" alt="">
+                    </li><li>
+                        <div class="chat">
+                            <h4>박한성</h4>
+                            <h6>안녕하세요~!</h6>
+                        </div>
+                    </li><li>
+                        <h6 class="time">오후 4:21</h6>
+                    </li>
+                </ul>
+            </a>
+            <a href="#">
+                <ul>
+                    <li>
+                        <img src="../image/profile.JPG" alt="">
+                    </li><li>
+                        <div class="chat">
+                            <h4>박한성</h4>
+                            <h6>안녕하세요~!</h6>
+                        </div>
+                    </li><li>
+                        <h6 class="time">오후 4:21</h6>
+                    </li>
+                </ul>
+            </a>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="#"><i class="xi-home xi-2x"></i></a></li><li>
+                    <a href="#"><i class="xi-kakaotalk xi-2x"></i></a></li><li>
+                    <a href="#"><i class="xi-search xi-2x"></i></a></li><li>
+                    <a href="#"><i class="xi-ellipsis-h xi-2x"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+</html>

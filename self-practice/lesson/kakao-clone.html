@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<title>kakao clone</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    ul {
+        list-style: none;
+    }
+    h4, h6 {
+        font-weight: normal;
+    }
+    #wrap {
+        width: 500px;
+        margin: 100px;
+    }
+    /* header */
+    header {
+        background-color: #FCCE00;
+    }
+    header .logo {
+        display: block;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        color: #fff;
+    }
+    /* main */
+    main {
+        height: 500px;
+    }
+    main section {
+        padding: 0 10px;
+    }
+    main section ul {
+        margin-top: 20px;
+        height: 100px;
+        /* padding: 5px; */
+    }
+    main section ul li {
+        vertical-align: top;
+        display: inline-block;
+        height: 100px;
+    }
+    main section ul li.chat {
+        width: 100px;
+        text-align: center;
+    }
+    main section .chat img{
+        margin-top: 5px;
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+    }
+    main section ul li.info {
+        width: 300px;
+        line-height: 1.6;
+    }
+    main section ul li.info .message  {
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    main section ul li.info h4 {
+        color: #2A2A2A;
+        font-size: 18px;
+    }
+    main section ul li.info h6 {
+        color: #AEAEAF;
+        font-size: 14px;
+    }
+    main section ul li.time {
+        width: 80px;
+        text-align: right;
+    }
+    main section ul li.time p{
+        line-height: 100px;
+        color: #AEAEAF;
+        font-size: 14px;
+    }
+    /* footer */
+    footer {
+        background-color: #F9F9FA;
+    }
+    footer ul {
+        text-align: center;
+    }
+    footer ul li {
+        font-size: 40px;
+        display: inline-block;
+        width: 23%;
+        height: 100%;
+    }
+    footer ul li a {
+        display: block;
+    }
+    footer ul li a:hover {
+        background-color: #ddd;
+    }
+    footer ul li i {
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1><a href="#" class="logo">kakao talk</a></h1>
+        </header>
+        <main>
+            <section>
+                <ul>
+                    <li class="chat"><img src="../image/profile.JPG" alt=""></li><li class="info">
+                        <div class="message">
+                            <h4>박한성</h4><h6>안녕하세요~!</h6>
+                        </div>
+                    </li><li class="time">
+                        <p>오후 4:21</p>
+                    </li>
+                    <li class="chat"><img src="../image/nephew.JPG" alt=""></li><li class="info">
+                        <div class="message">
+                            <h4>크르릉</h4><h6>100키로 달릴거야</h6>
+                        </div>
+                    </li><li class="time">
+                        <p>오후 4:21</p>
+                    </li>
+                    <li class="chat"><img src="../image/nephew2.JPG" alt=""></li><li class="info">
+                        <div class="message">
+                            <h4>박시우</h4><h6>삼촌 머해요~!!</h6>
+                        </div>
+                    </li><li class="time">
+                        <p>오후 4:21</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="#"><i class="xi-user-o"></i></a></li>
+                <li><a href="#"><i class="xi-kakaotalk"></i></a></li>
+                <li><a href="#"><i class="xi-search"></i></a></li>
+                <li><a href="#"><i class="xi-ellipsis-h"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+</html>
