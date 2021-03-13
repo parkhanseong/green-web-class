@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>respond</title>
+    <style>
+        body {
+            color: #555;
+            font: 12px/1.5 "Trebuchet MS", sans-serif;
+        }
+        #wrap {
+            width: 970px;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        /* screen?? */
+        /* min-width : 970, 970 보다 큰 화면  */
+        /* max-width : 970, 970 보다 작은 화면 */
+        @media (min-width: 1200px) {
+            #wrap {
+                width: 1200px;
+                color: coral
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 970px) {
+            #wrap {
+                width: auto;
+                color: skyblue;
+            }
+        }
+        @media (max-width: 480px) {
+            #wrap {
+                background-color: slategrey;
+                width: auto;
+                /* padding: 20px; */
+                font-size: 14px;
+                color: red;
+            }
+        }
+
+        @media (orientation: portrait) {
+            h1:after {
+                content: " portrait view";
+                font-size: .8em;
+                color: blue;
+            }
+        }
+        @media (orientation: landscape) {
+            h1:after {
+                content: " landscape view";
+                font-size: .8em;
+                color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>logo</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, illo eligendi! Voluptate unde, ipsam quisquam obcaecati labore non dolore, vitae, reiciendis eum iure voluptatibus doloribus esse provident repellendus tempora ab.
+            Adipisci labore mollitia vero. Architecto ratione sequi fugit! Aut adipisci obcaecati repellendus est iure magni, distinctio iste optio officia earum id, tempore neque vel saepe rem laboriosam velit quaerat officiis?
+            A, soluta esse. Recusandae maiores sed, impedit laboriosam fugiat nisi quam. Sequi odit saepe repudiandae architecto quis alias. Eos magnam impedit enim veniam! Exercitationem eveniet dolorem sed perferendis laborum et.
+            Commodi incidunt sed vitae laudantium voluptates sunt natus tempora similique atque repellat adipisci, nisi nam maxime facilis quas nesciunt quae molestias veniam consequuntur rem. Quam nihil quidem facilis earum. Nostrum.
+        </p>
+    </div>
+
+
+
+</body>
+</html>

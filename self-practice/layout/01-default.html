@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/layout.css">
+<title>01-basic-layout</title>
+
+<style>
+    header, nav {
+        height: 100px;
+        line-height: 100px;
+    }
+    aside {
+        width: 30%;
+        height: 500px;
+        line-height: 500px;
+        float: left;
+    }
+    section {
+        width: 70%;
+        height: 500px;
+        line-height: 500px;
+        float:right;
+    }
+    footer {
+        clear: both;
+        height: 100px;
+        line-height: 100px;
+    }
+</style>
+
+</head>
+<body>
+
+    <div id="wrap">
+        <header class="item">
+            header
+        </header>
+        <nav class="item">
+            nav
+        </nav>
+        <aside class="item">
+            aside
+        </aside>
+        <section class="item">
+            contents
+        </section>
+        <footer class="item">
+            footer
+        </footer>
+    </div>
+
+</body>
+</html>

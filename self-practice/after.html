@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+<title>after selector</title>
+<style>
+    #wrap {
+        width: 1100px;
+        height: 100vh;
+        border: 1px solid #000;
+        margin: 0 auto;
+        text-align: center;
+        /* padding: 100px; */
+    }
+    /* .item { */
+        /* margin: 100px; */
+        /* background-color: skyblue; */
+    /* } */
+    /* .item:after {
+        content: '도형';
+        vertical-align: middle;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        background-color: coral;
+        border: 1px solid #000;
+        display: inline-block;
+        margin-top: 10px;
+    } */
+
+    a {
+        margin: 0 auto;
+        margin-top: 100px;
+        display: block;
+        line-height: 50px;
+        width: 100px;
+        height: 50px;
+        border: 1px solid #ddd;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #fff;
+        background-color: coral;
+        overflow: hidden;
+        position: relative;
+    }
+    a:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        opacity: 0;
+        width: 100px;
+        height: 50px;
+    }
+    a:hover:before {
+        opacity: 0.5;
+    }
+    
+</style>
+</head>
+<body>
+
+    <div id="wrap">
+        <a href="#">button</a>
+    </div>
+
+
+
+</body>
+</html>

@@ -18,9 +18,13 @@ main ul.news-category li:nth-child(2) {
 }
 
 /* news-content */
+main .content-wrap {
+    padding: 0 2%;
+}
+
 main ul.news-content {
     border-bottom: 1px solid #ddd;
-    padding: 5px 0;
+    padding: 2% 2%;
 }
 main ul.news-content li {
     display: inline-block;

@@ -3,6 +3,7 @@
 @import "main.css";
 @import "chat.css";
 @import "news.css";
+@import "more.css";
 
 body {
     margin-top: 50px;
@@ -31,7 +32,7 @@ main {
     background-color: #fff;
     width: 500px;
     height: 600px;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
 /* footer */
 footer {

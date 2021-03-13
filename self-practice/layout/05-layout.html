@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/layout.css">
+<style>
+    body {
+        margin-top: 30px;
+    }
+    #wrap {
+        width: 100%;
+    }
+    header {
+        background-color: #65A2A0;
+    }
+    .banner {
+        background-color: #8CC4C1;
+    }
+    main {
+        background-color: #AAD4DA;
+    }
+    footer {
+        background-color: #B9DEE0;
+    }
+    .innerHeader, .innerBanner, .content, .footer {
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgba(0,0,0,.3);
+        border: 1px solid #ddd;
+    }
+    .innerHeader {
+        opacity: .9;
+    }
+    .innerBanner {
+        height: 300px;
+        line-height: 300px;
+        opacity: .8;
+    } 
+    .content {
+        height: 500px;
+        line-height: 500px;
+        opacity: .7;
+    } 
+    .footer {
+        height: 100px;
+        line-height: 100px;
+        opacity: .6;
+    }
+</style>
+<title>layout-05</title>
+</head>
+<body>
+
+    <div id="wrap">
+        <header>
+            <div class="innerHeader item">
+                header
+            </div>
+        </header>
+
+        <div class="banner">
+            <div class="innerBanner item">
+                banner
+            </div>
+        </div>
+        <main>
+            <section class="content item">
+                main
+            </section>
+        </main>
+        <footer>
+            <div class="footer item">
+                footer
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/* simple css */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+.wrap {
+    padding: 20px;
+}
+.title {
+    margin-bottom: 20px;
+}
+.title hr {
+    margin-bottom: 8px;
+}
+.user-community {
+    border: 1px solid #999;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.user-community h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.user-community p {
+    line-height: 25px;
+}
+.icon {
+    border: 1px solid #999;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.icon .box {
+    padding: 20px;
+    border: 1px solid #999;
+    width: 150px;
+    text-align: center;
+}
+.icon i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.icon h4 {
+    color: #0b0080;
+    font-weight: bold;
+    font-size: 20px;
+}
+.news {
+    padding: 20px;
+    border: 1px solid #999;
+    margin-bottom: 20px;
+}
+.news .top {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.news .top h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.news ul {
+    padding-left: 20px;
+}
+.request {
+    border: 1px solid #999;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.request .top {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.request .top h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.request .top p {
+    color: #6183c6;
+}
+.request hr {
+    margin-bottom: 20px;
+}
+.request ul {
+    padding-left: 20px;
+}
+.request ul li {
+    line-height: 25px;
+}
+.project {
+    padding: 20px;
+    border: 1px solid #999;
+}
+.project .wiki-project {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.project .wiki-project h4 {
+    color: #6183c6;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.project .wiki-project .content {
+    line-height: 30px;
+}
+.project .wiki-project .category {
+    color: #6183c6;
+}
+.project i {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+.project .pay-project {
+    border: 1px solid #999;
+    text-align: center;
+    width: 200px;
+    padding: 30px;
+    color: #6183c6;
+}

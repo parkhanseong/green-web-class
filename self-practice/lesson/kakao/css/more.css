@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* banner */
+.banner {
+    height: 80px;
+    padding: 10px;
+    font-size: 0;
+}
+.banner .innerBanner {
+    background-color: #ddd;
+    border-radius: 10px;
+    height: 100%;
+    padding: 2% 6%;
+}
+.banner .innerBanner .textBox {
+    display: inline-block;
+    width: 90%;
+    font-size: 16px;
+}
+.banner .innerBanner .textBox h3 {
+    color: #000;
+}
+.banner .innerBanner .textBox small {
+    color: #666;
+}
+.banner .innerBanner .icon {
+    width: 10%;
+    height: 100%;
+    vertical-align: top;
+    padding-top: 13px;
+    color: #333;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* main menuBox */
+main .menuBox ul {
+    font-size: 0;
+    font-weight: normal;
+}
+main .menuBox ul li {
+    display: inline-block;
+    width: 33.3333%;
+    height: 70px;
+    font-size: 16px;
+    text-align: center;
+}
+main .menuBox ul li i {
+    margin-top: 9px;
+}

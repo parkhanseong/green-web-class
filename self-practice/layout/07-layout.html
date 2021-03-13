@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>layout-07</title>
+<style>
+    * {
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+    }
+    #wrap {
+        width: 1100px;
+        background-color: skyblue;
+        margin: 0 auto;
+    }
+    header {
+        padding: 10px;
+        height: 100px;
+        line-height: 100px;
+        background-color: #5e6b71;
+    }
+    header .left {
+        background-color: #81AAB3;
+        height: 100px;
+        line-height: 100px;
+        width: 30%;
+        float: left;
+    }
+    header .right {
+        background-color: #81AAB3;
+        height: 100px;
+        line-height: 100px;
+        width: 30%;
+        float: right;
+    }
+    main {
+        height: 500px;
+        line-height: 500px;
+        background-color: #B4CCD3;
+    }
+    section {
+        height: 200px;
+        line-height: 200px;
+        background-color: #5f6c71;
+        padding: 10px;
+    }
+    section article.left {
+        float: left;
+        height: 200px;
+        line-height: 200px;
+        width: 32.3333%;
+        margin-right: 1%;
+        background-color: #D3E1E6;
+    }
+    section article.center {
+        float: left;
+        height: 200px;
+        width: 32.3333%;
+        margin-right: 1%;
+        background-color: #a4bfc9;
+    }
+    section article.right {
+        float: left;
+        height: 200px;
+        line-height: 200px;
+        width: 32.3333%;
+        background-color: #87aab7;
+    }
+    footer {
+        height: 100px;
+        line-height: 100px;
+        background-color: #9ba7ab;
+    }
+
+    
+</style>
+</head>
+<body>
+
+    <div id="wrap">
+        <header>
+            <article class="left">article</article>
+            <article class="right">article</article>
+        </header>
+        <main>
+            container
+        </main>
+        <section>
+            <article class="left">article</article>
+            <article class="center">article</article>
+            <article class="right">article</article>
+        </section>
+        <footer>
+            footer
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -5,7 +5,28 @@
     padding: 0;
     box-sizing: border-box;
 }
-.wrap {
+
+#wrap {
+    width: 1100px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #ddd;
+}
+.container {
+    width: 1100px;
+    height: 100vh;
+    border: 10px solid #000;
+}
+header {
+    /* border: 5px solid #000; */
+    /* border-radius: 10px; */
+    /* background-color: skyblue; */
 }
 .item {
+    /* border: 5px solid skyblue; */
+    /* background-color: rgba(0, 128, 0, 0.7); */
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    /* text-transform: uppercase; */
 }

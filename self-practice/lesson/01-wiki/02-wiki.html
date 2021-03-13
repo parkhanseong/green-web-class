@@ -2,89 +2,8 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="02-wiki.css">
 <title>wiki request</title>
-<style>
-    :root {
-        --main-color: #BBDDFF;
-    }
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    #wrap {
-        padding: 30px;
-    }
-    .title {
-        padding: 20px 20px 20px 0;
-    }
-    .title hr {
-        margin-bottom: 10px;
-    }
-    .request {
-        padding: 20px;
-        border: 1px solid var(--main-color);
-        margin-bottom: 10px;
-    }
-    .request h1 {
-        margin-bottom: 10px;
-    }
-    .request-delete {
-        border: 1px solid var(--main-color);
-        padding: 20px;
-        margin-bottom: 10px;
-    }
-    .request-delete h4 {
-        background-color: var(--main-color);
-        padding: 5px;
-        margin-bottom: 10px;
-    }
-    .admin-request {
-        padding: 20px;
-        border: 1px solid var(--main-color);
-    }
-    .admin-request h4 {
-        background-color: var(--main-color);
-        margin-bottom: 20px;
-        padding: 5px;
-    }
-    .admin-request div {
-        border: 1px solid #999;
-        width: 200px;
-        padding: 30px;
-        text-align: center;
-    }
-    .admin-request div h5 {
-        color: #0644AD;
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    .admin-request ul {
-        margin-top: 10px;
-        padding-left: 20px;
-    }
-    .other-request {
-        border: 1px solid var(--main-color);
-        padding: 20px;
-        margin-bottom: 10px;
-    }
-    .other-request h4 {
-        background-color: var(--main-color);
-        padding: 5px;
-        margin-bottom: 10px;
-    }
-    .other-request ul {
-        padding-left: 20px;
-    }
-    .other-request ul li {
-        margin-bottom: 5px;
-    }
-    .category {
-        border: 1px solid black;
-        padding: 5px;
-        color: #285BB5;
-    }
-
-</style>
 </head>
 <body>
     
@@ -102,14 +21,14 @@
             </p>
         </div>
         <div class="request-delete">
-            <h4>삭제 요청</h4>    
+            <h4 class="title">삭제 요청</h4>    
             <p>
                 문서의 삭제를 신청하시는 경우 해당 문서에 {{삭제 신청}} 또는 {{특정판 삭제 신청}} 틀을 붙여주세요. 삭제 토론은 위키백과:삭제 토론에서 하실 수 있습니다.
             </p>
         </div>
         <div class="admin-request">
-            <h4>관리자에게 요청</h4>
-            <div>
+            <h4 class="title">관리자에게 요청</h4>
+            <div class="doc">
                 <h5>문서 관리 요청</h5>
                 <small>문서 보호/해제</small>
             </div>
@@ -118,7 +37,7 @@
             </ul>
         </div>
         <div class="other-request">
-            <h4>다른 요청 사항</h4>
+            <h4 class="title">다른 요청 사항</h4>
             <ul>
                 <li>비자유 저작물 업로드 - 파일 업로드 요청에 요청을 남겨주세요.</li> 
                 <li>봇 등록 신청 - 위키백과:봇/등록 신청에 요청을 남겨주세요.</li> 

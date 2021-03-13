@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* animation */
+@keyframes rolling {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-20%);
+    }
+    50% {
+        transform: translateY(-40%);
+    }
+    75% {
+        transform: translateY(-60%);
+    }
+    100% {
+        transform: translateY(-80%);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+h1 {
+    font-size: 100%;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #111;
+    color: #999;
+}
+
+.portrait {
+    background-image: url(images/profile.png);
+    background-size: cover;
+    background-position: center;
+    /* height: 400px; 고정 픽셀은 안된다*/
+    /* padding-top: 100%; */
+    padding-top: 56.25%; /* 16:9 비율 만들기 */
+}
+
+.profile {
+    padding: 7%;
+}
+.profile-header,
+.profile-seciton {
+    padding-bottom: 7%;
+}
+
+.profile-header {
+}
+.name {
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.name-job {
+    display: inline-block;
+    vertical-align: top;
+    /* height: 30px; */
+    height: 1.5em;
+    overflow: hidden;
+    padding-right: 0.5em;
+    color: #fff;
+}
+.name-job-list {
+    margin-top: -1.5em;
+    animation-name: rolling;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.name-title {
+    font-size: 2em;
+    line-height: 1;
+    color: deeppink;
+}
+
+.icons {
+    margin: 30px 0;
+}
+.icons a {
+    background-image: url(images/icons.png);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-indent: -9999px;
+}
+.icons a.twitter {
+    background-position: left top;
+}
+.icons a.facebook {
+    background-position: center top;
+}
+.icons a.pinterest {
+    background-position: right top;
+}
+.icons a:hover {
+    background-position-y: bottom;
+}

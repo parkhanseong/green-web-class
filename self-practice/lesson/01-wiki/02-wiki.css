@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* 
+    변수를 선언한 겁니다
+    수업 시간에 설명하겠습니다
+ */
+:root {
+    --main-color: #bbddff;
+}
+/* simple reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* common start*/
+/* 각 파트 제목 부분 공통 처리 */
+h4.title {
+    background-color: var(--main-color);
+    padding: 5px;
+    padding-top: 8px;
+    margin-bottom: 10px;
+}
+/* common end */
+#wrap {
+    padding: 30px;
+}
+.title {
+    padding: 20px 20px 20px 0;
+}
+.title hr {
+    margin-bottom: 10px;
+}
+.request {
+    padding: 20px;
+    border: 1px solid var(--main-color);
+    margin-bottom: 10px;
+}
+.request h1 {
+    margin-bottom: 10px;
+}
+.request-delete {
+    border: 1px solid var(--main-color);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.admin-request {
+    padding: 20px;
+    border: 1px solid var(--main-color);
+    margin-bottom: 10px;
+}
+.admin-request .doc {
+    border: 1px solid #999;
+    width: 200px;
+    padding: 30px;
+    text-align: center;
+}
+.admin-request .doc h5 {
+    color: #0644ad;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.admin-request ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.other-request {
+    border: 1px solid var(--main-color);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.other-request ul {
+    padding-left: 20px;
+}
+.other-request ul li {
+    margin-bottom: 5px;
+}
+.category {
+    border: 1px solid black;
+    padding: 5px;
+    color: #285bb5;
+}

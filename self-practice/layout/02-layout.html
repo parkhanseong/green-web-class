@@ -2,63 +2,59 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>01-basic-layout</title>
+<link rel="stylesheet" href="css/layout.css">
+<title>layout 2</title>
 <style>
-    #wrap {
-        width: 1100px;
-        height: 1000px;
-        background-color: #666;
-        margin: auto;
+    header {
+        height: 100px;
+        line-height: 100px;
     }
-    .container { 
-        margin: 0 auto;
-        /* background-color: coral; */
-        overflow: hidden;
-        padding: 10px 10px;
+    nav {
+        height: 100px;
+        line-height: 100px;
     }
-    .container .box1 { 
-        height: 300px; 
-        background-color: tan; 
-    }
-    .container .box2 {
-        overflow: hidden;
-        background-color: teal;
-    }
-    .container .box2 .inner {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .container .box2 .sub-box2 {
+    .left {
         float: left;
-        width: 49.9999%;
+        width: 30%;
         height: 500px;
-        background-color: thistle;
+        line-height: 500px;
     }
-    .container .box2 .sub-box2:nth-child(2) {
-        background-color: #999;
+    main {
+        float: left;
+        width: 40%;
+        height: 500px;
+        line-height: 500px;
     }
-   
+    .right {
+        float: left;
+        width: 30%;
+        height: 500px;
+        line-height: 500px;
+    }
+    footer {
+        height: 100px;
+        clear:both;
+        line-height: 100px;
+    }
+
 </style>
 </head>
 <body>
-
     <div id="wrap">
-        <div class="container">
-            <div class="box1">
-                box1
-            </div>
-            <div class="box2">
-                <div class="inner">
-                    <div class="sub-box2">
-                        sub-box2
-                    </div>
-                    <div class="sub-box2">
-                        sub-box2
-                    </div>
-                </div>
-            </div>
-        </div>
+        <header class="item">header</header>
+        <nav class="item">nav</nav>
+        <aside class="item left">
+            aside left
+        </aside>
+        <main class="item">
+            contents
+        </main>
+        <aside class="item right">
+            aside right
+        </aside>
+        <footer class="item">footer</footer>
     </div>
+
 
 </body>
 </html>
