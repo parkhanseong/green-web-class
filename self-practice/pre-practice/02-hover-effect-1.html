@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>hover effect</title>
+<style>
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+    }
+    body {
+        margin: 100px;
+    }
+    .gnb a.left, .gnb a.right, .gnb a.move, .gnb a.center {
+        font-size: 100px;
+        position: relative;
+    }
+    /* left */
+    a.left:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 5px;
+        background-color: #333;
+        transition: 0.3s;
+    }
+    /* right */
+    a.right:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 5px;
+        background-color: #333;
+        transition: 0.3s;
+    }
+    /* left, right hover */
+    a.left:hover:after, a.right:hover:after {
+        width: 100%;
+    }
+    /* move */
+    a.move:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        left: 0;
+        bottom: 0;
+        background-color: tomato;
+        transition: 0.3s;
+    }
+    a.move:hover:before {
+        left: 100%;
+    }
+
+    /* center  */
+    a.center:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 5px;
+        height: 5px;
+        background-color: tomato;
+        transition: 0.3s;
+        transform: translateX(-50%);
+    }
+    a.center:hover:after {
+        width: 100%;
+    }
+    
+</style>
+</head>
+<body>
+
+<div class="gnb">
+    <a href="#" class="left">alpaca web class</a>
+    <a href="#" class="right">alpaca web class</a>
+    <a href="#" class="move">alpaca web class</a>
+    <a href="#" class="center">alpaca web class</a>
+</div>
+
+</body>
+</html>

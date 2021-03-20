@@ -1,0 +1,41 @@
+@charset "utf-8";
+.chatContainer {
+    padding: 1%;
+    height: 100%;
+    overflow: auto;
+    /* calculator 계산기 */
+    /* + - * / */
+    width: calc(100% + 20px);
+}
+.chatItem {
+    padding-right: 20px;
+}
+.chatItem div {
+    display: inline-block;
+}
+.chatItem .imgBox {
+    width: 20%;
+    vertical-align: top;
+    padding: 1%;
+}
+.chatItem .imgBox img {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 50%;
+}
+.chatItem .message {
+    padding-left: 20px;
+    margin-top: 35px;
+    width: 65%;
+}
+.chatItem .message h5 {
+    color: #adadad;
+}
+.chatItem .time {
+    margin-top: 35px;
+    vertical-align: top;
+    width: 15%;
+    font-size: 10px;
+    color: #adadad;
+}
+

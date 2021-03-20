@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import "reset.css";
+@import "home.css";
+@import "chat.css";
+@import "news.css";
+@import "more.css";
+
+/* layout */
+#wrap {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+/* header */
+header {
+    width: 500px;
+    height: 100px;
+    background-color: #fcce01;
+}
+/* main */
+main {
+    width: 500px;
+    height: 500px;
+}
+/* footer */
+footer {
+    width: 500px;
+    height: 50px;
+    border-top: 1px solid #ddd;
+}
+
+footer ul li {
+    display: inline-block;
+    width: 25%;
+    height: 50px;
+    text-align: center;
+}
+footer ul li a {
+    display: block;
+    height: 100%;
+    background-color: #eee;
+}
+footer ul li a:hover {
+    background-color: #3e313750;
+}
+footer ul li a i {
+    color: #3e3137;
+    line-height: 50px !important;
+}

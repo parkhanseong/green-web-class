@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.moreContainer {
+    padding: 2%;
+}
+
+/* banner */
+/* .banner {
+    background-color: skyblue;
+    display: block;
+    height: 60px;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+.banner .txtBox {
+    width: 80%;
+    display: inline-block;
+}
+.banner .txtBox h3 {
+    margin-top: 2px;
+}
+.banner .txtBox p {
+    font-size: 12px;
+}
+.banner i {
+    margin-left: 50px;
+    vertical-align: top;
+    margin-top: 10px;
+    font-size: 20px;
+} */
+
+/* icons */
+/* .icons {
+    font-size: 0;
+    margin-top: 10px;
+}
+.icons a {
+    display: inline-block;
+}
+.icons a:hover {
+    color: #999;
+}
+.icons .iconsItem {
+    font-size: 1rem;
+    width: calc(100% / 3);
+    height: 70px;
+    text-align: center;
+}
+.icons .iconsItem i {
+    margin-top: 10px;
+} */

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/reset.css">
+<title>dropdown-nav</title>
+<style>
+    body {
+        margin: 100px;
+    }
+    .dropdown {
+        display: block;
+        width: 200px;
+        background-color: skyblue;
+    }
+    .dropdown .dropdown-btn {
+        width: inherit;
+        height: 100px;
+        background-color:darkkhaki;
+        color: #fff;
+        font-size: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .dropdown .dropdown-submenu {
+        display: none;
+    }
+    .dropdown:hover .dropdown-submenu {
+        display: block;
+    }
+    .dropdown .dropdown-submenu {
+        width: inherit;
+        height: 100px;
+        text-align: center;
+    }
+    .dropdown .dropdown-submenu a {
+        width: inherit;
+        height: inherit;
+        /* background-color: #ddd; */
+        background-color: coral;
+        display: block;
+        line-height: 100px;
+        color: #fff;
+    }
+    .dropdown .dropdown-submenu a:hover {
+        background-color: #666;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+    <button class="dropdown-btn">menu</button>
+    <div class="dropdown-submenu">
+        <a href="#">menu1</a>
+        <a href="#">menu2</a>
+        <a href="#">menu3</a>
+        <a href="#">menu4</a>
+        <a href="#">menu5</a>
+    </div>
+</div>
+
+</body>
+</html>

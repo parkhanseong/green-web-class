@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+.innerMore {
+    padding: 2%;
+}
+/* banner */
+.innerMore .banner {
+    background-color: #ddd;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 0;
+}
+.innerMore .banner div {
+    display: inline-block;
+    font-size: 16px;
+}
+.innerMore .banner .left {
+    width: 70%;
+    height: 100%;
+    padding: 10px 0;
+    padding-left: 30px;
+    /* background-color: skyblue; */
+    vertical-align: top;
+}
+.innerMore .banner .right {
+    width: 30%;
+    height: 100%;
+    /* background-color: coral; */
+    padding-top: 15px;
+}
+
+/* icons */
+.iconsBox {
+    /* background-color: skyblue; */
+    font-size: 0;
+    margin-top: 10px;
+}
+.iconsBox ul {
+    height: 70px;
+}
+.iconsBox ul li {
+    text-align: center;
+    display: inline-block;
+    width: 33.3333%;
+    font-size: 1rem;
+    /* border: 1px solid #000; */
+    height: 100%;
+    padding: 8px 0;
+}

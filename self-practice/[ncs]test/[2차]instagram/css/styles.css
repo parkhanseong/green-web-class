@@ -1,0 +1,154 @@
+@charset "utf-8";
+@import "reset.css";
+
+body {
+    margin-top: 100px;
+}
+#app {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+header {
+    width: 500px;
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+}
+main {
+}
+.gnb {
+    font-size: 0;
+    height: 100%;
+}
+.gnb li {
+    padding-top: 10px;
+    font-size: 16px;
+    display: inline-block;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+.gnb li:nth-child(1) {
+    width: 10%;
+}
+.gnb li:nth-child(2) {
+    font-size: 12px;
+    font-style: italic;
+    width: 80%;
+}
+.gnb li:nth-child(3) {
+    width: 10%;
+}
+.gnb .logo {
+    display: inline-block;
+    width: 100px;
+    height: 29px;
+}
+.gnb .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* section.story */
+.story {
+    height: 160px;
+}
+.storyContainer {
+    height: 150px;
+    padding: 2% 1%;
+}
+.storyContainer a {
+    margin-top: 5px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin-right: 10px;
+}
+.storyContainer a:first-child img {
+    width: 100%;
+    border: 1px solid #fff;
+}
+.storyContainer a small {
+    color: #6e6e6e;
+}
+.storyContainer a img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid rgba(225, 129, 10, 0.696);
+}
+
+/* main */
+.homeContainer {
+}
+
+/* profile */
+.profile .top {
+    height: 70px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.profile .top .profileImg {
+    text-align: center;
+    display: inline-block;
+    width: 15%;
+    vertical-align: top;
+}
+.profile .top img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 170, 0, 0.518);
+    margin-top: 10px;
+}
+.profile .top .info {
+    display: inline-block;
+    width: 20%;
+    margin-top: 17px;
+}
+.profile .top .info h5 {
+    margin-bottom: 5px;
+}
+.profile .top .info p {
+    font-size: 0.7em;
+}
+.profile .top .subMenu {
+    display: inline-block;
+    width: 65%;
+    text-align: right;
+    padding-right: 10px;
+}
+.profile .feedImg img {
+    vertical-align: top;
+    width: 100%;
+}
+
+/* like box */
+.likeBox {
+    padding: 8px 15px;
+}
+.icons {
+    margin-bottom: 10px;
+}
+.icons i {
+    margin-right: 10px;
+}
+
+/* footer */
+footer {
+    border-top: 1px solid #ddd;
+}
+nav {
+    font-size: 0;
+}
+nav div {
+    height: 50px;
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block;
+    width: calc(100% / 4);
+}
+nav div i {
+    padding-top: 8px;
+}

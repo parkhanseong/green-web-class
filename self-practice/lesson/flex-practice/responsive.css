@@ -1,0 +1,210 @@
+/* 
+    1. px로 된거는 100%로 바꾼다 
+    2. flex는 flex-direction을 column으로 바꾼다
+*/
+
+@media (hover: hover) {
+    .btn-explore:hover img {
+        /* transform: translateX(30px); */
+        margin-left: 30px;
+    }
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+    .mobile {
+        display: block;
+    }
+
+    /* header */
+    .banner {
+        display: none;
+    }
+    header {
+        /* background-color: red; */
+    }
+    .lnb {
+        width: 100%;
+        text-align: center;
+    }
+    nav {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .gnb {
+        /* background-color: #fff; */
+        box-sizing: initial;
+        background-color: purple;
+        flex-direction: column;
+        position: fixed;
+        right: -250px;
+        top: 0;
+        width: 250px;
+        flex-basis: 100vh;
+        height: 100vh;
+        text-align: right;
+        padding-right: 20px;
+        padding-top: 80px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+        transition: 0.5s;
+    }
+    .gnb.active {
+        right: 0;
+    }
+    .gnb li a {
+        /* border: 1px solid #000; */
+        display: block;
+        color: #000;
+        margin: 0;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /* trigger */
+    .trigger {
+        /* border: 1px solid red; */
+        display: block;
+        width: 30px;
+        height: 16px;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+    }
+    .trigger span {
+        position: absolute;
+        height: 1px;
+        background-color: #000;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .trigger span:nth-child(1) {
+        top: 0;
+    }
+    .trigger span:nth-child(2) {
+        top: 50%;
+    }
+    .trigger span:nth-child(3) {
+        top: 100%;
+    }
+    /* .trigger:active span {
+        background-color: #000;
+    } */
+    .trigger.active span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    .trigger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .trigger.active span:nth-child(3) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+
+    /* common css */
+    .inner {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    /* about section */
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .about-content div {
+        padding: 10px;
+    }
+
+    /* ranking section */
+    .items {
+        flex-direction: column;
+    }
+    .item {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .ranking-content {
+        padding: 50px 0;
+    }
+    /* Testimonial section */
+    .testimonial {
+        padding: 50px 0;
+    }
+
+    /* callaction seciton */
+    .callaction-heading h2 {
+        font-size: 26px;
+    }
+
+    /* festival section */
+    .festival {
+        padding: 15px;
+    }
+    .festival-heading {
+        width: 100%;
+    }
+    .festival-heading h3 {
+        font-size: 26px;
+    }
+    .btns a {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    /* blog content */
+    .blog {
+        padding: 50px 0;
+    }
+    .blog-header h2 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .blog-header p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .recent-post-items h6,
+    .shared-post-items h6 {
+        text-align: center;
+    }
+    .post-content {
+        flex-direction: column;
+    }
+    .post-item {
+        flex-direction: column;
+    }
+    .shared-post-items {
+        width: 100%;
+    }
+    .post-image {
+        border-radius: 7px;
+        width: 100%;
+    }
+    .post-desc h3 {
+        text-align: center;
+    }
+    .blog-header {
+        text-align: center;
+    }
+    /* .post-desc {
+        text-align: center;
+    } */
+
+    .post-content hr.divider {
+        margin: 5px 0;
+    }
+
+    /* footer */
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content ul {
+        margin-bottom: 20px;
+    }
+}

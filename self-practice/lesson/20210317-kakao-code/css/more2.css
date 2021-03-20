@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+.moreContainer {
+    padding: 2%;
+}
+
+/* banner */
+.banner {
+    display: block;
+    background-color: skyblue;
+    height: 60px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+}
+.banner .txtBox {
+    margin-top: 10px;
+    padding-left: 30px;
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+}
+.banner i {
+    /* vertical-align: top; */
+    /* padding-top: 10px; */
+    background-color: tomato;
+    /* padding-bottom: 30px; */
+    /* padding: 30px; */
+    /* margin: 30px; */
+    /* margin-top: 200px;
+    margin-bottom: 100px; */
+}
+
+/* icons */
+.icons {
+    font-size: 0;
+    background-color: cornflowerblue;
+}
+.icons .iconItem {
+    font-size: 1rem;
+    background-color: coral;
+    display: inline-block;
+    width: 30%;
+    /* width: 100px; */
+    /* width: calc(100% / 3); */
+    text-align: center;
+    border: 1px solid #000;
+}

@@ -1,0 +1,60 @@
+@charset "utf-8";
+@import "home.css";
+@import "chat.css";
+@import "news.css";
+/* @import "more.css"; */
+@import "more2.css";
+@import "reset.css";
+
+/* layout */
+#app {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+main {
+    height: 500px;
+}
+header {
+    height: 100px;
+    background-color: #fcce01;
+}
+header .logo {
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+footer {
+    height: 50px;
+    /* background-color: crimson; */
+}
+/* layout end */
+footer ul {
+    /* background-color: skyblue; */
+    font-size: 0;
+    height: 50px;
+}
+footer ul li {
+    display: inline-block;
+    background-color: #eee;
+    width: 25%;
+    font-size: 16px;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+footer ul li i {
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+footer ul li a {
+    display: block;
+}
+footer ul li a:hover {
+    color: #fff;
+    background-color: #3e313750;
+}
