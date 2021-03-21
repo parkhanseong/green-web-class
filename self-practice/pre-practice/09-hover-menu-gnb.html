@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>09 - hover gnb</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+    }
+    #wrap {
+        width: 500px;
+        height: 100vh;
+        margin: 0 auto;
+        background: lightcoral;
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+    ul li {
+        height: 50px;
+        font-size: 40px;
+        color: rgba(255, 255, 255, 0.305);
+        line-height: 50px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    ul li:hover {
+        color: #fff;
+        transition: 0.5s;
+    }
+    ul li:hover:before {
+        opacity: 1;
+        transition: 0.5s;
+    }
+    ul li:before {
+        content: '>';
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        left: -30px;
+    }
+
+
+</style>
+</head>
+<body>
+
+    <div id="wrap">
+        <ul>
+            <li>new arrival</li>
+            <li>summer colelction</li>
+            <li>winter collection</li>
+            <li>special offers</li>
+        </ul>
+    </div>
+
+
+
+</body>
+</html>

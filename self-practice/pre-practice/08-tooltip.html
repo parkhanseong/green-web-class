@@ -3,10 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <title>tooltip</title>
+<style>
+    .wrap {
+        margin: 0 auto;
+        width: 100vw;
+        /* height: 100vh; */
+        background: skyblue;
+        padding: 200px;
+        /* width: 500px; */
+        /* border: 1px solid #000; */
+        /* margin-top: 300px; */
+    }
+    a.profile {
+        display: inline-block;
+        position: relative;
+    }
+    a.profile:hover .tooltip {
+        opacity: 1;
+        transition: 1s;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .tooltip {
+        opacity: 0;
+        width: 150px;
+        padding: 20px;
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        background-color: #000;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        transition: 1s;
+        transform: translate(-50%);
+        border-radius: 20px;
+    }
+    .tooltip:after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        width: 10px;
+        height: 10px;
+        background: #000;
+    }
+</style>
 </head>
 <body>
 
+    <div class="wrap">
+        <a href="#" class="profile">
+            <img src="images/story-01.jpg" alt="">
+            <div class="tooltip">
+                Lorem ipsum dolor sit amet.
+            </div>
+        </a>
+        <a href="#" class="profile">
+            <img src="images/story-03.jpg" alt="">
+            <div class="tooltip">
+                Lorem ipsum dolor sit amet consectetur.
+            </div>
+        </a>
+    </div>
 
-    
+
 </body>
 </html>

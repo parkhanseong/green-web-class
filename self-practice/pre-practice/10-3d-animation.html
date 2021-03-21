@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>3d animation</title>
+    <style>
+        .container {
+            position: absolute;
+            /* background: skyblue; */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .app-ui {
+            width: 340px;
+            height: 640px;
+            transform: rotate(-30deg) skewX(20deg);
+            position: relative;
+        }
+        .app-ui img {
+            position: absolute;
+            transition: 0.5s;
+        }
+        .app-ui:hover img:nth-child(1) {
+            opacity: 0.3;
+            transform: translate(40px, -40px);
+        }
+        .app-ui:hover img:nth-child(2) {
+            opacity: 0.6;
+            transform: translate(60px, -60px);
+        }
+        .app-ui:hover img:nth-child(3) {
+            opacity: 0.9;
+            transform: translate(80px, -80px);
+        }
+        .app-ui:hover img:nth-child(4) {
+            opacity: 1;
+            transform: translate(100px, -100px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="app-ui">
+            <img src="images/app-ui-01.jpg" alt="">
+            <img src="images/app-ui-02.jpg" alt="">
+            <img src="images/app-ui-03.jpg" alt="">
+            <img src="images/app-ui-04.jpg" alt="">
+        </div>
+    </div>    
+
+</body>
+</html>
