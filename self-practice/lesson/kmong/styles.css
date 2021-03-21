@@ -1,11 +1,11 @@
 @charset "utf-8";
 
+/* simple reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 a {
     color: inherit;
     text-decoration: none;
@@ -22,13 +22,14 @@ h6 {
     font-weight: normal;
 }
 
+/* layout */
 body {
-    margin-top: 100px;
+    padding-top: 100px;
 }
 #app {
     width: 500px;
     margin: 0 auto;
-    border: 1px solid #999;
+    border: 1px solid #ddd;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.7);
     overflow: hidden;
@@ -36,7 +37,7 @@ body {
 header {
     width: 500px;
     height: 50px;
-    border-bottom: 2px solid #999;
+    border-bottom: 2px solid #ddd;
 }
 
 /* gnb */
@@ -74,8 +75,8 @@ header {
 }
 
 /* banner */
-.banner {
-    padding: 2%;
+.banner .inner {
+    padding: 10px 20px;
 }
 .banner .bannerBox {
     background: rgba(32, 178, 171, 0.387);
@@ -90,13 +91,13 @@ header {
 }
 
 /* icons */
-.icons {
-    padding: 15px;
+.icons .inner {
+    padding: 10px 20px;
 }
 .iconsBox {
     font-size: 0;
 }
-.iconsBox ul li {
+.iconsBox li {
     text-align: center;
     display: inline-block;
     width: 33.3333%;
@@ -104,16 +105,16 @@ header {
     height: 100%;
     padding: 8px 0;
 }
-.iconsBox ul li {
+.iconsBox li {
     color: #111;
 }
-.iconsBox ul li h5 {
+.iconsBox li h5 {
     color: #888;
 }
 
 /* services */
-.serviceBox {
-    padding: 15px;
+.services .inner {
+    padding: 10px 20px;
 }
 .serviceBox h3 {
     margin-bottom: 15px;
@@ -147,8 +148,8 @@ header {
 }
 
 /*  category */
-.cateBox {
-    padding: 20px;
+.category .inner {
+    padding: 10px 20px;
 }
 .cateBox h3 {
     margin-bottom: 10px;
