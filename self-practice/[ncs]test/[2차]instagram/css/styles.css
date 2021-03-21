@@ -7,14 +7,14 @@ body {
 #app {
     width: 500px;
     margin: 0 auto;
-    border: 1px solid #ddd;
+    border: 1px solid #999;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.7);
 }
 header {
     width: 500px;
     height: 50px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #999;
 }
 main {
 }
@@ -53,10 +53,9 @@ main {
 
 /* section.story */
 .story {
-    height: 160px;
+    height: 150px;
 }
 .storyContainer {
-    height: 150px;
     padding: 2% 1%;
 }
 .storyContainer a {
@@ -86,8 +85,8 @@ main {
 /* profile */
 .profile .top {
     height: 70px;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
 }
 .profile .top .profileImg {
     text-align: center;
@@ -137,7 +136,7 @@ main {
 
 /* footer */
 footer {
-    border-top: 1px solid #ddd;
+    border-top: 2px solid #999;
 }
 nav {
     font-size: 0;
