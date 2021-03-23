@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>translate simple test</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        background: #ddd;
+        border: 1px solid #000;
+        overflow: hidden;
+    }
+    .translate, .rotate, .skew, .scale {
+        overflow: hidden;
+        padding: 20px;
+    }
+    .item {
+        border: 1px solid #000;
+        width: calc(100% / 3);
+        height: 100px;
+        float: left;
+        background: #666;
+    }
+    .apple {
+        height: 100%;
+        background: gold;
+        border: 1px solid crimson;
+        text-align: center;
+        line-height: 100px;
+        transition: all 1s;
+    }
+    
+    /* translate */
+    .translate > div:nth-child(1):hover .apple {
+        transform: translateX(50%);
+    }
+    .translate > div:nth-child(2):hover .apple {
+        transform: translateY(50%);
+    }
+    .translate > div:nth-child(3):hover .apple {
+        transform: translate(50px, 50px);
+    }
+    
+    /* rotate */
+    .rotate > div:nth-child(1):hover .apple {
+        transform: rotateX(50deg);
+    }
+    .rotate > div:nth-child(2):hover .apple {
+        transform: rotateY(50deg);
+    }
+    .rotate > div:nth-child(3):hover .apple {
+        transform: rotate(50deg);
+    }
+    
+    /* scale */
+    .scale > div:nth-child(1):hover .apple {
+        transform: scaleX(1.5);
+    }
+    .scale > div:nth-child(2):hover .apple {
+        transform: scaleY(1.5);
+    }
+    .scale > div:nth-child(3):hover .apple {
+        transform: scale(1.5);
+    }
+
+    /* skew */
+    .skew > div:nth-child(1):hover .apple {
+        transform: skewX(50deg);
+    }
+    .skew > div:nth-child(2):hover .apple {
+        transform: skewY(50deg);
+    }
+    .skew > div:nth-child(3):hover .apple {
+        transform: skew(50deg, 50deg);
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+        <!-- translate -->
+        <div class="translate">
+            <div class="item">
+                <div class="apple">
+                    translateX
+                </div>
+            </div>
+            <div class="item">
+                <div class="apple">
+                    translateY
+                </div>
+            </div>
+            <div class="item">
+                <div class="apple">
+                    translate
+                </div>
+            </div>
+        </div>
+
+        <!-- rotate -->
+        <div class="rotate">
+            <div class="item">
+                <div class="apple">
+                    rotateX
+                </div>
+            </div>
+            <div class="item">
+                <div class="apple">
+                    rotateY
+                </div>
+            </div>
+            <div class="item">
+                <div class="apple">
+                    rotate
+                </div>
+            </div>
+        </div>
+
+        <!-- scale -->
+        <div class="scale">
+            <div class="item">
+                <div class="apple">
+                    scaleX
+                </div>
+            </div>
+            <div class="item">
+                <div class="apple">
+                    scaleY
+                </div>
+            </div>
+            <div class="item">
+                <div class="apple">
+                    scale
+                </div>
+            </div>
+        </div>
+
+
+        <!-- skew -->
+        <div class="skew">
+            <div class="item">
+                <div class="apple">
+                    skewX
+                </div>
+            </div>
+            <div class="item">
+                <div class="apple">
+                    skewY
+                </div>
+            </div>
+            <div class="item">
+                <div class="apple">
+                    skew
+                </div>
+            </div>
+        </div>
+</div>
+
+</body>
+</html>

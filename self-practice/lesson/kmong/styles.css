@@ -21,14 +21,20 @@ h5,
 h6 {
     font-weight: normal;
 }
+ul {
+    font-size: 0;
+}
+ul li {
+    font-size: 1rem;
+}
 
 /* layout */
-body {
-    padding-top: 100px;
+.inner {
+    padding: 10px 20px;
 }
 #app {
     width: 500px;
-    margin: 0 auto;
+    margin: 5% auto;
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.7);
@@ -41,43 +47,30 @@ header {
 }
 
 /* gnb */
-.gnb {
-    font-size: 0;
-    height: 100%;
-}
-.gnb li {
-    font-size: 16px;
-    display: inline-block;
+.gnb * {
+    text-align: center;
     height: 100%;
     line-height: 50px;
-    text-align: center;
+    display: inline-block;
+    vertical-align: top;
 }
 .gnb li:nth-child(1) {
     width: 10%;
-    padding-top: 8px;
 }
 .gnb li:nth-child(2) {
-    font-size: 12px;
     width: 80%;
-    vertical-align: top;
-}
-.gnb li:nth-child(2) h1 {
-    font-size: 20px;
 }
 .gnb li:nth-child(3) {
     width: 10%;
-    vertical-align: top;
-    padding-top: 8px;
 }
-.gnb .logo img {
-    width: 100%;
-    height: 100%;
+.gnb h1 {
+    font-size: 20px;
+}
+.gnb i {
+    padding-top: 7px;
 }
 
 /* banner */
-.banner .inner {
-    padding: 10px 20px;
-}
 .banner .bannerBox {
     background: rgba(32, 178, 171, 0.387);
     padding: 20px;
@@ -91,17 +84,10 @@ header {
 }
 
 /* icons */
-.icons .inner {
-    padding: 10px 20px;
-}
-.iconsBox {
-    font-size: 0;
-}
 .iconsBox li {
     text-align: center;
     display: inline-block;
     width: 33.3333%;
-    font-size: 1rem;
     height: 100%;
     padding: 8px 0;
 }
@@ -113,9 +99,6 @@ header {
 }
 
 /* services */
-.services .inner {
-    padding: 10px 20px;
-}
 .serviceBox h3 {
     margin-bottom: 15px;
 }
@@ -148,9 +131,6 @@ header {
 }
 
 /*  category */
-.category .inner {
-    padding: 10px 20px;
-}
 .cateBox h3 {
     margin-bottom: 10px;
 }
@@ -171,24 +151,21 @@ header {
 
 /* footer */
 footer {
-    border-top: 1px solid #ddd;
-    width: 500px;
     height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #ddd;
 }
 footer li {
     display: inline-block;
     width: 25%;
-    height: 50px;
-    background-color: #eee;
     text-align: center;
+    background: #ddd;
 }
-footer li a {
+footer a {
     display: block;
-    height: 100%;
 }
-footer li a i {
-    height: 100%;
-    line-height: 50px !important;
+footer i {
+    padding-top: 10px;
 }
 /* common */
 a:hover {

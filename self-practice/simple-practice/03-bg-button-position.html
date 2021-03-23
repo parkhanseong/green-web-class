@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>button bg</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        padding-top: 100px;
+    }
+    span {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        /* background: skyblue; */
+        text-indent: -9999px;
+        cursor: pointer;
+    }
+    span:nth-child(1) {
+        background: url(image/icons.png) left top;
+        
+    }
+    span:hover:nth-child(1) {
+        background: url(image/icons.png) left bottom;
+    }
+    span:nth-child(2) {
+        color: coral;
+        background: url(image/icons.png) center top;
+    }
+    span:hover:nth-child(2) {
+        /* background: url(image/icons.png) center bottom; */
+        background: url(image/icons.png) -30px -30px;
+
+    }
+    span:nth-child(3) {
+        color: gold;
+        background: url(image/icons.png) right top;
+    }
+    span:hover:nth-child(3) {
+        /* background: url(image/icons.png) right bottom; */
+        background: url(image/icons.png) -60px -30px;
+    }
+    .profile {
+        text-align: center;
+        width: 300px;
+        height: 400px;
+        /* border: 1px solid #000; */
+        margin: 0 auto;
+        background: #6e6e6e;
+        border-radius: 30px;
+        color: #fff;
+    }
+    img {
+        margin-top: 30px;
+        border-radius: 20px;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .icons {
+        margin-top: 10px;
+    }
+</style>
+<body>
+
+    <div class="profile">
+        <img src="image/profile.JPG" alt="">
+        <h1>james</h1>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <div class="icons">
+            <span>twitter</span>
+            <span>facebook</span>
+            <span>pinterest</span>
+        </div>
+    </div>
+
+</body>
+</html>
