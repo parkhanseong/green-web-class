@@ -1,0 +1,353 @@
+@charset "utf-8";
+/* simple reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+li {
+    list-style: none;
+}
+h2:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+/* layout */
+.inner {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+/* header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    color: #fff;
+    background: rgba(0, 0, 0, .2);
+}
+.innerHeader {
+    width: 1600px;
+    height: 100px;
+    margin: 0 auto;
+}
+header .logo {
+    float: left;
+}
+header .logo a {
+    line-height: 100px;
+}
+header .gnb {
+    float: left;
+    margin-left: 50px;
+}
+header .gnb li {
+    float: left;
+}
+header .gnb li a {
+    line-height: 100px;
+    padding: 0 20px;
+}
+header .tnb {
+    float: right;
+}
+header .tnb li {
+    float: left;
+}
+header .tnb li a {
+    line-height: 100px;
+    padding: 0 30px;
+}
+
+header .tnb li:first-child a:before {
+    content: '\f251';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+header .tnb li:nth-child(2) a:before {
+    content: '';
+}
+header .tnb li:nth-child(3) {
+    line-height: 100px;
+}
+header .tnb li:nth-child(3) a {
+    line-height: 1;
+    padding: 0 10px;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+header .tnb li:nth-child(3) a:after {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+/* intro */
+section.intro {
+    height: 100vh;
+    background: url(../images/vis_4.jpg) no-repeat center/cover;
+    position: relative;
+    color: #fff;
+}
+section.intro .desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+section.intro .desc h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #111;
+}
+section.intro .desc p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+section.intro .desc .more {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+/* section.about  */
+.title {
+    text-align: center;
+}
+.title h2 {
+    font-size: 45px;
+}
+.title p {
+    font-size: 25px;
+}
+.title h2 span {
+    color: coral;
+}
+section.about ul {
+    overflow: hidden;
+    margin: 30px 0;
+    border-bottom: 1px solid #ddd;
+}
+section.about ul li {
+    width: 33.3333%;
+    float: left;
+}
+section.about ul li .text {
+    padding: 20px;
+}
+section.about ul li h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+section.about ul li p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+section.about ul li a {
+    font-size: 16px;
+}
+
+/* innovation */
+section.innovation {
+    padding: 80px 0;
+    margin-bottom: 150px;
+}
+section.innovation .imgBox {
+    background: url(../images/product_1.jpg) no-repeat center/cover;
+    height: 540px;
+    position: relative;
+    margin-top: 50px;
+}
+section.innovation .imgBox .content {
+    width: 1200px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: #fff;
+}
+section.innovation .imgBox .content h2 {
+    padding: 1rem;
+}
+section.innovation .imgBox .content .detail {
+    padding: 2rem 2rem;
+    background: #3a3d4e;
+    overflow: hidden;
+    height: 90px;
+    color: #fff;
+}
+section.innovation .imgBox .content .detail p {
+    float: left;
+}
+section.innovation .imgBox .content .detail a {
+    padding: 10px 20px;
+    float: right;
+    border-radius: 20px;
+    background: coral;
+    color: #fff;
+}
+
+/* me */
+section.me {
+    background: url(../images/me.jpg) no-repeat center/cover;
+}
+section.me .careerBox {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 30px 0;
+}
+section.me .careerBox > li {
+    padding: 30px 60px;
+}
+section.me .careerBox h2 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+}
+section.me .careerBox h2:before {
+    content: '\f0b1';
+    position: absolute;
+    top: 0;
+    left: -30px;
+    color: coral;
+}
+section.me .careerBox > li > p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+section.me .person {
+    margin-bottom: 30px;
+}
+section.me .person li {
+    margin-bottom: 10px;
+}
+section.me .person span {
+    display: inline-block;
+    width: 20%;
+}
+section.me .person p {
+    display: inline-block;
+    width: 80%;
+    position: relative;
+}
+section.me .person p:before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin-bottom: 3.5px;
+    margin-right: 50px;
+    background: coral;
+}
+section.me .careerSite {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    width: 200px;
+    height: 30px;
+    /* border: 1px solid #000; */
+    font-size: 14px;
+    background: coral;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* sns */
+section.sns ul {
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    margin: 50px 0;
+}
+section.sns ul li {
+    float: left;
+    width: 33.3333%;
+    padding-right: 10px;
+    /* margin-right: 10px; */
+}
+section.sns ul li a .desc {
+    padding: 1rem;
+}
+section.sns ul li a h4 {
+    color: coral;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+section.sns ul li a p {
+    margin-bottom: 20px;
+}
+section.sns ul li a .time {
+    color: #666;
+    font-size: 14px;
+}
+
+/* footer */
+footer {
+    height: 100px;
+}
+footer .inner {
+    padding: 0;
+}
+footer h2 {
+    height: 100%;
+    float: left;
+    padding-top: 30px;
+}
+
+footer address {
+    padding-top: 25px;
+    margin-left: 50px;
+    height: 100%;
+    /* border: 1px solid #000; */
+    float: left;
+}
+footer ul {
+    height: 100%;
+    float: right;
+    /* border: 1px solid #000; */
+    padding-top: 30px;
+}
+footer ul li {
+    float: left;
+    margin-right: 10px;
+}
+footer ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: coral;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>pos</title>
+<style>
+    .wrap div {
+        float: left;
+        border: 1px solid #000;
+        width: 300px;
+        height: 300px;
+        opacity: 0.9;
+        margin-right: -100px;
+    }
+    .box {
+        margin-top: 50px;
+        margin-left: 50px;
+        background: gold;
+    }
+    .box2 {
+        background: crimson;
+        /* 원래 위치에서 시작한다 */
+        position: relative;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+    .box3 {
+        /* window에서 시작한다 */
+        /* 부모요소에 relative가 지정되면 부모가 기준이 된다 */
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: green;
+    }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</div>
+
+</body>
+</html>

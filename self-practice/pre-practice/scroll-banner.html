@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>scroll banner</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a {
+        display: inline-block;
+    }
+    img {
+        width: 500px;
+    }
+    .bannerContainer {
+        margin: 100px 0;
+        border: 1px solid #000;
+    }
+    .banner {
+        width: 500px;
+        opacity: 1;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .scroll {
+        font-size: 0;
+        width: 1500px;
+        opacity: 0.9;
+        animation: scroll 5s infinite;
+        animation-direction: alternate-reverse;
+    }
+    .item {
+        font-size: 1rem;
+        display: inline-block;
+        width: 33.3333%;
+        height: 100%;
+        background: purple;
+        border: 1px solid #000;
+        opacity: 0.8;
+    }
+    @keyframes scroll {
+        0% {
+            margin-left: 0;
+        }
+        50% {
+            margin-left: -500px;
+        }
+        100% {
+            margin-left: -1000px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="bannerContainer">
+        <div class="banner">
+            <div class="scroll">
+                <a href="https://www.coupang.com">
+                    <img src="image/banner/banner-1.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="image/banner/banner-2.jpg" alt="">
+                </a>
+                <a href="#">
+                    <img src="image/banner/banner-3.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

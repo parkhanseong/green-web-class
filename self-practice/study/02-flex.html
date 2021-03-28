@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>flex</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        border: 10px solid #111;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .item {
+        border: 5px solid #333;
+        background: lightgreen;
+        flex: 1 auto;
+        /* flex: grow shrink basis */
+        /*       0     1      0% */
+    }
+    @media (min-width: 600px) {
+        .container {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .item {
+            width: 50%;
+            /* flex: 0 auto; */
+            flex: 1 auto;
+        }
+    }
+    @media (min-width: 900px) {
+        .item {
+            width: 33.3333%;
+            flex: 1 auto;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="item">aaaaaaaaaa</div>
+    <div class="item">bbbbbb</div>
+    <div class="item">ccc</div>
+    <div class="item">ccc</div>
+    <div class="item">ccc</div>
+    <div class="item">ccc</div>
+    <div class="item">aaaaaaaaaa</div>
+    <div class="item">bbbbbb</div>
+    <div class="item">ccc</div>
+    <div class="item">aaaaaaaaaa</div>
+    <div class="item">bbbbbb</div>
+    <div class="item">ccc</div>
+    <div class="item">aaaaaaaaaa</div>
+</div>
+</body>
+</html>

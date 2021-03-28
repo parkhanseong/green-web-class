@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>transtion</title>
+<style>
+    .card {
+        width: 400px;
+        height: 500px;
+        position: relative;
+        top: 100px;
+        margin: 0 auto;
+        transition: 0.5s
+    }
+    .card:hover {
+        transform: translateY(-30px)
+    }
+    .card:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(crimson, gold);
+    }
+    .card:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(crimson, gold);
+        filter: blur(30px);
+    }
+    .card span {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        bottom: 10px;
+        background: rgba(0, 0, 0, 0.298);
+        z-index: 2;
+    }
+    .card span:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: rgba(188, 188, 188, 0.161);
+    }
+    .card .content {
+        position: relative;
+        top: 20%;
+        left: 20px;
+        font-size: 30px;
+        color: #fff;
+    }
+    .card .content h1 {
+        font-size: 30px;
+    }
+    .card .content p {
+        font-size: 14px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .card .content a {
+        color: purple;
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+<span>
+    <div class="content">
+        <h1>박한성</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, quis tenetur in temporibus voluptas itaque laboriosam mollitia libero perspiciatis harum animi sed, officia nisi fuga facilis eligendi ipsam ad eum.
+        </p>
+        <a href="#">read more</a>
+    </div>
+    
+</span>
+</div>
+
+</body>
+</html>

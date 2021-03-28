@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>2단 hover menu</title>
+<style>
+    * {
+        font-size: 1.3rem;
+        line-height: 100px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .menu1, .menu2 {
+        float: left;
+        background: pink;
+        overflow: hidden;
+        border: 10px solid pink;
+    }
+    .menu-btn {
+        width: 300px;
+        height: 100px;
+        border: 1px solid #fff;
+        background: #333;
+        color: #fff;
+        cursor: pointer;
+    }
+    .menuItem {
+        width: 300px;
+        height: 100px;
+        border: 1px solid #000;
+        background: red;
+        color: #fff;
+    }
+    .menuItem:hover {
+        background: white;
+        color: black;
+    }
+    .subMenu1, .subMenu2 {
+        display: none;
+    }
+    .menu1:hover .subMenu1,
+    .menu2:hover .subMenu2 {
+        display: block;
+        border: 10px solid green;
+        /* background: green; */
+    }
+    /* .menu2:hover .subMenu2 {
+        display: block;
+    } */
+</style>
+</head>
+<body>
+
+    <div class="menu menu1">
+        <div class="menu-btn">menu-button1</div>
+        <div class="subMenu1">
+            <div class="menuItem">subMenu1</div>
+            <div class="menuItem">subMenu2</div>
+            <div class="menuItem">subMenu3</div>
+            <div class="menuItem">subMenu4</div>
+        </div>
+    </div>
+    <div class="menu menu2">
+        <div class="menu-btn1">menu-button1</div>
+        <div class="subMenu2">
+            <div class="menuItem">subMenu1</div>
+            <div class="menuItem">subMenu2</div>
+            <div class="menuItem">subMenu3</div>
+            <div class="menuItem">subMenu4</div>
+        </div>
+    </div>
+
+</body>
+</html>
