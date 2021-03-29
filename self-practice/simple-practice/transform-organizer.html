@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>t o</title>
+<style>
+    .wrap {
+        width: 600px;
+        border: 1px solid red;
+        margin: 0 auto;
+    }
+    li {
+        list-style: none;
+    }
+    ul li {
+        width: 30%;
+        height: 200px;
+        display: inline-block;
+        line-height: 200px;
+        text-align: center;
+        background: gold;
+        color: #fff;
+    }
+    ul li .item {
+        background: skyblue;
+        border: 1px solid #000;
+        transition: all 1s;
+    }
+    /* translate */
+    .translate li:nth-child(1):hover .item {
+        transform: translateX(100px);
+    }
+    .translate li:nth-child(2):hover .item {
+        transform: translateY(100px);
+    }
+    .translate li:nth-child(3):hover .item {
+        transform: translate(100px, 100px);
+    }
+    /* rotate */
+    .rotate li:nth-child(1):hover .item {
+        transform: rotateX(100deg);
+    }
+    .rotate li:nth-child(2):hover .item {
+        transform: rotateY(100deg);
+    }
+    .rotate li:nth-child(3):hover .item {
+        transform: rotateZ(100deg);
+    }
+    /* scale */
+    .scale li:nth-child(1):hover .item {
+        transform: scaleX(1.5);
+    }
+    .scale li:nth-child(2):hover .item {
+        transform: scaleY(1.5);
+    }
+    .scale li:nth-child(3):hover .item {
+        transform: scale(2);
+    }
+    /* skew */
+    .skew li:nth-child(1):hover .item {
+        transform: skewX(50deg);
+    }
+    .skew li:nth-child(2):hover .item {
+        transform: skewY(50deg);
+    }
+    .skew li:nth-child(3):hover .item {
+        transform: skew(50deg);
+    }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+    <ul class="translate">
+        <li>
+            <div class="item">
+                translateX
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                translateY
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                translate
+            </div>
+        </li>
+    </ul>
+    <ul class="rotate">
+        <li>
+            <div class="item">
+                rotateX
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                rotateY
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                rotateZ            </div>
+        </li>
+    </ul>
+    <ul class="scale">
+        <li>
+            <div class="item">
+                scaleX
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                scaleY
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                scaleZ           
+            </div>
+        </li>
+    </ul>
+    <ul class="skew">
+        <li>
+            <div class="item">
+                skewX
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                skewY
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                skewZ           
+            </div>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

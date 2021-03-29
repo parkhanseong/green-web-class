@@ -11,9 +11,11 @@
     .dropdown {
         display: block;
         width: 200px;
+        border: 10px solid #000;
         background-color: skyblue;
+        /* padding: 2rem; */
     }
-    .dropdown .dropdown-btn {
+    .dropdown .menuBtn {
         width: inherit;
         height: 100px;
         background-color:darkkhaki;
@@ -23,18 +25,17 @@
         outline: none;
         cursor: pointer;
     }
-    .dropdown .dropdown-submenu {
+    .dropdown .subMenuBtn {
         display: none;
     }
-    .dropdown:hover .dropdown-submenu {
+    .dropdown:hover .subMenuBtn {
         display: block;
     }
-    .dropdown .dropdown-submenu {
+    .dropdown .subMenuBtn {
         width: inherit;
-        height: 100px;
         text-align: center;
     }
-    .dropdown .dropdown-submenu a {
+    .dropdown .subMenuBtn a {
         width: inherit;
         height: inherit;
         background-color: rgb(73, 66, 63);
@@ -42,7 +43,7 @@
         line-height: 100px;
         color: #fff;
     }
-    .dropdown .dropdown-submenu a:hover {
+    .dropdown .subMenuBtn a:hover {
         background-color: #666;
     }
 
@@ -50,8 +51,8 @@
 </head>
 <body>
 <div class="dropdown">
-    <button class="dropdown-btn">menu</button>
-    <div class="dropdown-submenu">
+    <button class="menuBtn">menu</button>
+    <div class="subMenuBtn">
         <a href="#">menu1</a>
         <a href="#">menu2</a>
         <a href="#">menu3</a>

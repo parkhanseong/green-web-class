@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>negative margin</title>
+<style>
+    .wrap {
+        padding: 5rem;
+    }
+    .container {
+        font-size: 0;
+        display: inline-block;
+        border: 1px solid #000;
+        width: 300px;
+        height: 350px;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+        background: gold;
+        /* margin-top: -50px; */
+        /* margin-left: -50px; */
+        /* margin-right: -30px; */
+        /* margin-bottom: -30px; */
+    }
+    .right {
+        display: inline-block;
+        background: blue;
+        vertical-align: top;
+    }
+    .bottom {
+        display: inline-block;
+        background: red;
+    }
+</style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="container">
+            <img src="image/profile-remove-bg.png" alt="">
+            <div class="box right"></div>
+            <div class="box bottom"></div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>profile member</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: #111;
+        color: #999;
+    }
+    img {
+        max-width: 100%;
+    }
+    .container {
+        margin-top: 100px;
+    }
+    ul {
+        text-align: center;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        transition: all .4s;
+        border-radius: 10px;
+    }
+    .contents {
+        text-align: left;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 1rem;
+        text-shadow: 0 0 3px #000;
+    }
+    ul li img {
+        transition: all .4s;
+    }
+    ul li:hover img {
+        transform: scale(1.2);
+    }
+    ul li:hover {
+        transform: translateY(-20px);
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <ul>
+        <li>
+            <img src="../image/profile/profile-01.jpg" alt="">
+            <div class="contents">
+                <h2>hans.park</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, suscipit aut a quam commodi fuga aliquid veritatis quisquam, soluta labore quia facere qui. Et repellendus consectetur alias, iste libero natus.
+                </p>
+            </div>
+        </li>
+        <li>
+            <img src="../image/profile/profile-02.jpg" alt="">
+            <div class="contents">
+                <h2>hans.park</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente harum voluptas numquam dolorum laboriosam error dolorem, quos sint, debitis eum corporis odit porro fugiat hic perspiciatis a delectus, alias pariatur?
+                </p>
+            </div>
+        </li>
+        <li>
+            <img src="../image/profile/profile-03.jpg" alt="">
+            <div class="contents">
+                <h2>hans.park</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique deleniti architecto animi eaque, fugit consectetur eligendi excepturi qui minima quod numquam eos magni veniam, est autem adipisci odit! Impedit!
+                </p>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+</body>
+</html>
