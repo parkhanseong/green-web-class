@@ -24,13 +24,14 @@
         font-size: 40px;
         color: rgba(255, 255, 255, 0.305);
         line-height: 50px;
-        position: relative;
+        /* position: relative; */
         cursor: pointer;
         transition: 0.5s;
     }
     ul li:hover {
         color: #fff;
         transition: 0.5s;
+        opacity: 1;
     }
     ul li:hover:before {
         opacity: 1;
@@ -38,8 +39,9 @@
     }
     ul li:before {
         content: '>';
-        position: absolute;
-        top: 0;
+        /* position: absolute; */
+        /* top: 0; */
+        /* opacity: 0; */
         opacity: 0;
         left: -30px;
     }

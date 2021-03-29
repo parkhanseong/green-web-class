@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>
+    usa travel
+</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: #111;
+        color: #999;
+    }
+    img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+    header {
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+    }
+    .inner {
+        width: 600px;
+        margin: 0 auto;
+    }
+    ul {
+        border: 1px solid #999;
+        text-align: center;
+        padding: 1rem;
+    }
+    ul li {
+        width: 40%;
+        margin: 1rem;
+        transition: .5s;
+    }
+    ul li:hover {
+        width: calc(40% + 5%);
+    }
+
+</style>
+</head>
+<body>
+
+    <header>
+        <div class="inner">
+            <h1>hover / zoom / transition</h1>
+        </div>
+    </header>
+    <main>
+        <div class="inner">
+            <ul>
+                <li>
+                    <img src="image/hollywood.jpg" alt="">
+                </li>
+                <li>
+                    <img src="image/manhattan.jpg" alt="">
+                </li>
+                <li>
+                    <img src="image/losangeles.jpg" alt="">
+                </li>
+                <li>
+                    <img src="image/los-angeles2.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </main>
+
+</body>
+</html>
