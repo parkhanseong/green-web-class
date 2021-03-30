@@ -78,6 +78,59 @@
     .profile li:hover {
         width: calc(100%/4 + 5%);
     }
+    /* sectoin.skills */
+    .skills {
+        /* padding: 1%; */
+    }
+    .skills .skillProgress {
+        border: 1px solid #999;
+        padding: 2%;
+    }
+    .skills .skillProgress h1 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .skills .skillProgress .progress {
+        border: 1px solid #999;
+        padding: 0.5%;
+    }
+    .skills .skillProgress .item {
+        margin-bottom: 10px;
+    }
+    .skills .skillProgress .item p {
+        margin-bottom: 7px;
+    }
+    .skills .skillProgress .item p span:first-child {
+        display: inline-block;
+        width: 80px;
+    }
+    .skills .skillProgress .item .progressLevel {
+        border: 1px solid #000;
+        height: 10px;
+        background: linear-gradient(to right, gold, red);
+    }
+    .skills .skillProgress .item:nth-of-type(1) .progressLevel {
+        width: 70%;
+    }
+    .skills .skillProgress .item:nth-of-type(2) .progressLevel {
+        width: 80%;
+    }
+    .skills .skillProgress .item:nth-of-type(3) .progressLevel {
+        width:70%;
+    }
+    .skills .skillProgress .item:nth-of-type(4) .progressLevel {
+        width:90%;
+    }
+    .skills .skillProgress .item:nth-of-type(5) .progressLevel {
+        width:80%;
+    }
+    .skills .skillProgress .item:nth-of-type(6) .progressLevel {
+        width:70%;
+    }
+
+
+    
+
 </style>
 </head>
 <body>
@@ -121,6 +174,67 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sunt esse nulla sint voluptate illum, iste minus eaque, culpa corrupti atque accusantium voluptatem, tenetur ut numquam sed labore veritatis distinctio!</p>
                 </li>
             </ul>
+        </div>
+    </section>
+    <section class="skills">
+        <div class="inner">
+            <div class="skillProgress">
+                <h1>software skills</h1>
+                <div class="item">
+                    <p>
+                        <span>HTML5</span>
+                        <span>70%</span>
+                    </p>
+                    <div class="progress">
+                        <div class="progressLevel"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>
+                        <span>CSS3</span>
+                        <span>80%</span>
+                    </p>
+                    <div class="progress">
+                        <div class="progressLevel"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>
+                        <span>javascript</span>
+                        <span>70%</span>
+                    </p>
+                    <div class="progress">
+                        <div class="progressLevel"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>
+                        <span>jQuery</span>
+                        <span>90%</span>
+                    </p>
+                    <div class="progress">
+                        <div class="progressLevel"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>
+                        <span>photoshop</span>
+                        <span>80%</span>
+                    </p>
+                    <div class="progress">
+                        <div class="progressLevel"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>
+                        <span>illustrator</span>
+                        <span>70%</span>
+                    </p>
+                    <div class="progress">
+                        <div class="progressLevel"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

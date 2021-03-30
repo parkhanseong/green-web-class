@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>test1</title>
+<style>
+    img {
+        max-width: 100%;
+    }
+    body {
+        background: #111;
+        color: #999;
+    }
+    .container, .container2 {
+        border: 1px solid #000;
+        width: 700px;
+        padding: 1rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .box {
+        border: 1px solid red;
+        width: 780px;
+        margin: 0 auto;
+    }
+    .container2 {
+        padding: .5rem 1rem;
+        border: 0 solid #000;
+    }
+    .container img, .container2 img {
+        width: 40%;
+        margin: 5px;
+        vertical-align: top;
+        transition: all 1s;
+    }
+    table {
+        margin: 0 auto;
+        width: 734px;
+        border: 1px solid #000;
+        border-collapse:collapse;
+        text-align: center;
+    }
+    table tr td {
+        padding: 1rem 1rem;
+    }
+    table img {
+        width: 270px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .container img:hover {
+        width: 45%;
+    }
+</style>
+</head>
+<body>
+
+    <h1>hover / zoom / transition</h1>
+    <!-- 방법 1 -->
+    <div class="container">
+        <img src="image/hollywood.jpg" alt="">
+        <img src="image/hollywood.jpg" alt="">
+        <img src="image/hollywood.jpg" alt="">
+        <img src="image/hollywood.jpg" alt="">
+    </div>
+
+    <!-- 방법 2 -->
+    <div class="box">
+        <div class="container2">
+            <img src="image/hollywood.jpg" alt="">
+            <img src="image/hollywood.jpg" alt="">
+        </div>
+        <div class="container2">
+            <img src="image/hollywood.jpg" alt="">
+            <img src="image/hollywood.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- 방법3 -->
+    <table>
+        <tr>
+            <td>
+                <img src="image/hollywood.jpg" alt="">
+            </td>
+            <td>
+                <img src="image/hollywood.jpg" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="image/hollywood.jpg" alt="">
+            </td>
+            <td>
+                <img src="image/hollywood.jpg" alt="">
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
