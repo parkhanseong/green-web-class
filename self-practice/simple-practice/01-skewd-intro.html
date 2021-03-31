@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>skewed bg </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #262626;
+        }
+        .skewedBox {
+            /* background: #edff57; */
+            background: gold;
+            padding: 100px 0;
+            transform: skew(0deg, -10deg) translateY(-120px);
+        }
+        .container {
+            padding: 150px 200px;
+            transform: skew(0deg, 10deg);
+        }
+        .container h1,
+        .normalBox h1 {
+            padding: 20px 0;
+            font-size: 3em;
+        }
+        .container p {
+            font-size: 1em;
+            line-height: 1.5em;
+            width: 80%;
+        }
+        .normalBox {
+            padding: 0 200px 150px;
+            color: #fff;
+            text-align: right;
+        }
+        .normalBox p {
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <section class="skewedBox">
+        <div class="container">
+            <h1>hans.park blog</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut est molestias nihil esse modi laudantium, deleniti quaerat autem nulla, ducimus ut cumque illo ipsum quam veritatis tempore non aliquid. Fugiat?
+            </p>
+        </div>
+    </section>
+    <section class="normalBox">
+            <h1>inside</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut est molestias nihil esse modi laudantium, deleniti quaerat autem nulla, ducimus ut cumque illo ipsum quam veritatis tempore non aliquid. Fugiat?
+            </p>
+    </section>
+</body>
+</html>
