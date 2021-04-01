@@ -13,6 +13,7 @@
     }
     .bar {
         height: 100px;
+        width: 100%;
         background: linear-gradient(to right, gold, red);
         transition: all 1s;
     }
@@ -20,23 +21,25 @@
         padding: 1rem;
         border: 1px solid red;
     }
-    ul li:nth-child(1) .bar {
-        width: 0%;
+    ul li .barItem {
+        animation: barItem 3s infinite;
     }
-    ul:hover li:nth-child(1) .bar {
-        width: 80%;
+    ul li:nth-child(1) .bar {
+        width: 50%;
     }
     ul li:nth-child(2) .bar {
-        width: 0%;
-    }
-    ul:hover li:nth-child(2) .bar {
         width: 70%;
     }
     ul li:nth-child(3) .bar {
-        width: 0%;
+        width: 30%;
     }
-    ul:hover li:nth-child(3) .bar {
-        width: 50%;
+    @keyframes barItem {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
     }
     
 </style>
@@ -46,17 +49,23 @@
     <ul>
         <li>
             <div class="box">
-                <div class="bar"></div>
+                <div class="barItem">
+                    <div class="bar"></div>
+                </div>
             </div>
         </li>
         <li>
             <div class="box">
-                <div class="bar"></div>
+                <div class="barItem">
+                    <div class="bar"></div>
+                </div>
             </div>
         </li>
         <li>
             <div class="box">
-                <div class="bar"></div>
+                <div class="barItem">
+                    <div class="bar"></div>
+                </div>
             </div>
         </li>
     </ul>
