@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<title>sns</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .sns {
+        border: 1px solid red;
+        padding: 1rem;
+        width: 200px;
+        margin: 0 auto;
+    }    
+    .sns a {
+        border: 1px solid #000;
+        display: inline-block;
+        border-radius: 50%;
+        background: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+    .sns .fab {
+        color: #999;
+        font-size: 3rem;
+        width: 3rem;
+        transition: all .5s;
+    }
+    .sns a:hover i {
+        transform: rotateY(360deg);
+        color: #fff;
+    }
+    .sns a:nth-child(1):hover {
+        background: #3b5999;
+    }
+</style>
+</head>
+<body>
+
+<div class="sns">
+    <a href="https://www.facebook.com" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+</div>
+
+</body>
+</html>

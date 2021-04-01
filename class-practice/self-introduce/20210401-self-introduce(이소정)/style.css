@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(rgb(180, 160, 201), rgb(207, 173, 190));
+    color: #fff;
+}
+
+.inner {
+    width: 900px;
+    margin: 0 auto;
+    /* border: 1px solid #000;
+    background: #000;
+    opacity: .5;
+    height: 200px; */
+}
+
+header {
+    background: linear-gradient(rgb(224, 199, 215), rgb(207, 173, 190));
+    text-align: center;
+    margin-bottom: -80px;
+}
+
+header .inner {
+    padding: 100px;
+    margin-bottom: 10px;
+}
+
+
+header .inner h1 {
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgb(224, 199, 215);
+}
+header .inner p {
+    opacity: 80%;
+    text-shadow: 0 0 10px rgb(224, 199, 215);
+}
+
+.intro {
+    /* background: coral; */
+}
+
+.intro .inner {
+    padding-bottom: 3rem;
+}
+
+.intro img {
+    width: 100px;
+    border: 1px solid #fff;
+    vertical-align: top;
+    border-radius: 50%;
+}
+
+.intro h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:  rgb(108, 63, 130);
+    font-size: 20px;
+    text-shadow: 0 0 5px #fff;
+}
+
+.intro p {
+    font-size: 15px;
+    text-shadow: 0 0 2px #fff;
+}
+.intro .photo {
+    text-align: center;
+}
+
+.profile {
+    /* background: skyblue; */
+}
+
+.profile .inner {
+    padding: 1rem 0;
+}
+
+.profile ul {
+    text-align: center;
+}
+
+.profile ul li {
+    width: 30%;
+    border: 1px solid #fff;
+    transition: all .5s;
+    display: inline-block;
+}
+
+.profile ul li:nth-child(1):hover {
+    width: 25%;
+    background: rgb(224, 199, 215);
+}
+.profile ul li:nth-child(2):hover {
+    background: rgb(180, 160, 201);
+    width: 35%;
+}
+.profile ul li:nth-child(3):hover {
+    margin-left: 50px;
+    background: rgb(207, 173, 190);
+
+}
+
+.profile ul li img {
+    max-width: 100%;
+    margin-bottom: -55px;
+}
+.profile ul li h2 {
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 0 0 5px rgb(180, 160, 201);
+}
+
+.profile ul li p {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.skills .inner {
+    background: rgb(224, 199, 215);
+    border: 1px solid #fff;
+    width: 900px;
+    margin: 100px auto;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.skills .inner h1 {
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 3px #fff;
+}
+
+.skills .inner .item {
+    /* border: 1px solid blue; */
+}
+
+.skills .inner .item p {
+    margin-bottom: 10px;
+}
+
+.skills .inner .item p span:first-child {
+     /* border: 1px solid gold; */
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+.skills .inner .item .progress {
+    border: 1px solid #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.skills .inner .item .progress-bar {
+    height: 15px;
+    background: linear-gradient(to right, rgb(224, 199, 215), rgb(180, 160, 201));
+    width: 70%;
+}
+
+.skills .inner .item:nth-of-type(1) .progress-bar {
+   width: 70%;
+}
+.skills .inner .item:nth-of-type(2) .progress-bar {
+   width: 55%;
+}
+.skills .inner .item:nth-of-type(3) .progress-bar {
+    width: 50%;
+}
+.skills .inner .item:nth-of-type(4) .progress-bar {
+    width: 70%;
+}
+.skills .inner .item:nth-of-type(5) .progress-bar {
+    width: 90%;
+}
+.skills .inner .item:nth-of-type(6) .progress-bar {
+    width: 90%;
+}

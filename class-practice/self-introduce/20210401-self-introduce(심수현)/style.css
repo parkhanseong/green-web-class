@@ -1,0 +1,132 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+body {
+    background: rgb(141, 4, 4);
+}
+#wrap {
+    margin: 50px 0;
+}
+.inner {
+    width: 50%;
+    background: rgb(248, 244, 224);
+    margin: 0 auto;
+}
+header {
+    /* background: pink; */
+    text-align: center;
+}
+header h1 {
+    margin: 20px 0;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+header p {
+    padding-bottom: 30px;
+}
+.intro {
+    /* background: coral; */
+}
+.intro .imgBox {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.intro .imgBox img {
+    width: 130px;
+    border: 8px dotted #000;
+    border-radius: 50%;
+    background: rgb(248, 244, 224);
+}
+.intro .paragraph {
+    background: #999;
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-top: 40px;
+    text-align: center;
+    height: 100px;
+    line-height: 50px;
+}
+.intro .paragraph p {
+    /* padding-bottom: 50px; */
+}
+.profile {
+    /* background: skyblue; */
+}
+.profile ul {
+    text-align: center;
+    padding: 50px 0 50px 0;
+    height: 450px;
+}
+.profile ul li {
+    display: inline-block;
+    width: 250px;
+    border: 1px solid #999;
+    box-shadow: 5px 5px 5px #666;
+    transition: all .5s;
+}
+.profile ul li img {
+    max-width: 100%;
+}
+.profile ul li:hover {
+    width: 300px;
+}
+.profile ul li h3 {
+    margin: -50px 0 50px 0;
+    color: #fff;
+}
+.profile ul li p {
+    padding: 0 1px 5px 0;
+}
+.skills {
+    /* background: gold; */
+}
+.skills .container {
+    border: 1px solid #999;
+    padding: 30px;
+}
+.skills .container h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.skills .container .item .progress {
+    border: 1px solid #000;
+    height: 40px;
+    padding: 7px;
+    
+}
+.skills .container .item p {
+    padding: 5px 0;
+}
+.skills .container .item p span:nth-child(1) {
+    display: inline-block;
+    width: 150px;
+}
+.skills .container .item .progress .progressBar {
+    border: 1px solid #000;
+    height: 25px;
+    background:linear-gradient(to right, rgba(24,107,76,1), rgba(197,209,186,1) )
+}
+.skills .container .item:nth-of-type(1) .progressBar {
+    width: 90%;
+}
+.skills .container .item:nth-of-type(2) .progressBar {
+    width: 80%;
+}
+.skills .container .item:nth-of-type(3) .progressBar {
+    width: 60%;
+}
+.skills .container .item:nth-of-type(4) .progressBar {
+    width: 60%;
+}
+.skills .container .item:nth-of-type(5) .progressBar {
+    width: 90%;
+}
+.skills .container .item:nth-of-type(6) .progressBar {
+    width: 80%;
+}

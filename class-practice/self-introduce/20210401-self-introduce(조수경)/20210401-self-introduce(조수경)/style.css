@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h3, p {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* layout */
+body {
+    background: hsla(320, 100%, 95%, 0.63);
+    width: 1000px;
+    margin: 0 auto;
+}
+.wrap {
+    padding: 20px;
+}
+.inner {}
+
+/* header */
+header {
+    text-align: center;
+}
+header .inner {
+    padding: 80px;
+}
+header .inner h1 {
+    padding-bottom: 20px;
+}
+header .inner p {}
+
+/* intro */
+.intro {
+    padding: 20px;
+}
+.intro .inner .photo {
+    margin-top: -80px;
+    text-align: center;
+    max-width: 100%;
+}
+.intro .inner .photo img {
+    border-radius: 50%;
+    width: 100px;
+}
+.intro .inner h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.intro .inner p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* profile */
+.profile {
+    border: 3px dotted #ffb7e7;
+    padding: 50px;
+}
+.profile .inner {
+    text-align: center;
+}
+.profile .inner .box {
+    display: inline-block;
+    margin-right: -15px;
+    width: 30%;
+}
+.profile .inner .box h3 {
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    color: #f7e7a1d7;
+    font-size: 16px;
+    font-weight: 500;
+}
+.profile .inner .box p {
+    text-align: center;
+    font-size: 12px;
+}
+.profile .inner .box .profilePhoto {
+    transition: 1s;
+}
+.profile .inner .box .profilePhoto:hover {
+    cursor: pointer;
+}
+.profile .inner .box .profilePhoto img {
+    max-width: 100%;
+    height: 300px;
+}
+
+/* skills */
+.skills {
+    border: 1px solid #ffb7e7;
+    margin-top: 20px;
+}
+.skills .inner {
+    padding: 20px;
+}
+.skills .inner h1 {
+    text-align: center;
+    color: #ccc;
+}
+.skills .inner .container {
+    text-transform: uppercase;
+}
+.skills .inner .item {
+    font-size: 12px;
+    padding: 5px;
+}
+.skills .inner .item p span:first-child {
+    display: inline-block;
+    width: 10%;
+}
+.skills .inner .item span {
+    margin-bottom: 3px;
+}
+.skills .inner .item .edge {
+    border: 1px solid #444;
+}
+.skills .inner .item .edge .edgeBar {
+    height: 25px;
+    background: linear-gradient(to right, #ff9647, #fff389);
+    transition: all 1s;
+}
+.skills .inner .item .edge:nth-child(1) .edgeBar {
+    width: 0%;
+}
+.skills .inner .item:hover .edge:nth-child(1) .edgeBar {
+    width: 70%;
+}
+.skills .inner .item .edge:nth-child(2) .edgeBar {
+    width: 0%;
+}
+.skills .inner .item:hover .edge:nth-child(2) .edgeBar {
+    width: 80%;
+}
+.skills .inner .item .edge:nth-child(3) .edgeBar {
+    width: 0%;
+}
+.skills .inner .item:hover .edge:nth-child(3) .edgeBar {
+    width: 90%;
+}
+.skills .inner .item .edge:nth-child(4) .edgeBar {
+    width: 0%;
+}
+.skills .inner .item:hover .edge:nth-child(4) .edgeBar {
+    width: 60%;
+}
+.skills .inner .item .edge:nth-child(5) .edgeBar {
+    width: 0%;
+}
+.skills .inner .item:hover .edge:nth-child(5) .edgeBar {
+    width: 10%;
+}
+.skills .inner .item .edge:nth-child(6) .edgeBar {
+    width: 0%;
+}
+.skills .inner .item:hover .edge:nth-child(6) .edgeBar {
+    width: 20%;
+}

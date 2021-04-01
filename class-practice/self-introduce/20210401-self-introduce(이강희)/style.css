@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+/* layout */
+/* header */
+.wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+header {
+    /* background-color: gold; */
+    text-align: center;
+    padding-bottom: 10px;
+}
+.inner {
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+header .inner {
+    padding: 50px 100px 0 100px;
+}
+header .inner h1 {
+    padding-bottom: 10px;
+}
+header .name {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+/* intro */
+.intro {
+    padding-top: 10px;
+    /* background-color: skyblue; */
+    padding-bottom: 10px;
+}
+.intro .intro-photo {
+    text-align: center;
+}
+.intro .intro-photo img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.intro h3 {
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+/* profiles */
+.profiles .inner {
+    height: 400px;
+    /* background-color: springgreen; */
+    font-size: 0;
+    padding: 3rem 0;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+.profiles .inner ul {
+    text-align: center;
+}
+.profiles .inner ul li {
+    display: inline-block;
+    font-size: 16px;
+    width: 30%;
+    border: 2px solid #000;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+.profiles .inner ul li:hover {
+    width: 35%;
+}
+.profiles .inner ul li img {
+    max-width: 100%;
+    margin-bottom: -40px;
+}
+.profiles .inner ul li h2 {
+    margin-bottom: 20px;
+}
+.profiles .inner ul li p {
+    margin: 10px;
+}
+
+/* skills */
+.skills {
+    border-top: 20px;
+    padding-bottom: 30px;
+}
+.skills .inner {
+    border: 1px solid #000;
+    padding: 3%;
+}
+.skills-container h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.skills p span:nth-child(1) {
+    display: inline-block;
+    width: 200px;
+}
+.skills .inner .skills-container .skills-item .skills-progress {
+    height: 30px;
+    border: 1px solid #000;
+}
+.skills .inner .skills-container .skills-item .skills-progressbar {
+    height: 20px;
+    background: linear-gradient(to right, red, blue);
+}
+.skills .inner .skills-container .skills-item:nth-of-type(1) .skills-progressbar {
+    width: 70%;
+}

@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+.wrap{
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+header{
+    padding-top: 50px;
+    height: 200px;
+    background: #c01010;
+}
+header .inner {
+    margin: 0 auto;
+    text-align: center;
+    width: 1000px;
+}
+header .inner a{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    padding: 10px;
+}
+header .inner a span{
+    font-size: 40px;
+}
+header .inner p{
+    padding: 10px;
+}
+header .inner span{
+    color: #999;
+    font-size: 10px;    
+}
+.menu{
+    background: #000;
+    color: #eee;
+}
+.menu .inner{
+    margin: 0 auto;
+    text-align: center;
+    width: 1000px;
+}
+.menu .inner li{
+    margin: 10px;
+    display: inline-block;
+}
+.menu .inner li a:hover{
+    color: rgb(161, 161, 161);
+}
+.menu .inner li a:active{
+    color: rgb(255, 104, 104);
+}
+
+.userprofile{
+    padding-top: 50px;
+}
+.userprofile .inner{
+    margin: 0 auto;
+    text-align: center;
+    width: 1000px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #999;
+}
+.userprofile .inner div{
+    display: inline-block;
+}
+.userprofile .userimage img{
+    width: 200px;
+    border-radius: 15px;
+    vertical-align: center;
+}
+.userprofile .userinfo{
+    text-align: center;
+    padding-top: 50px;
+    vertical-align: top;
+    margin: 10px;
+}
+.userprofile .userinfo a{
+    color: rgba(104, 104, 104, 0.6);
+}
+.userprofile .userinfo2{
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: justify;
+}

@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #444;
+    color: #FFFFFF;
+}
+li {
+    list-style: none;
+}
+/* layout */
+.inner {
+    width: 900px;
+    margin: 0 auto;
+}
+header {
+    text-align: center;
+    margin-bottom: -90px;
+    background: #333;
+}
+header .inner {
+    padding: 80px;
+}
+header .inner h1 {
+    margin-bottom: 10px;
+}
+header .inner p {
+    margin-bottom: 40px;
+}
+.intro img {
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.intro .photo {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    
+}
+.intro .inner h3{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.intro .inner p {
+    margin-bottom: 30px;
+}
+.profile .inner {
+
+}
+.profile ul{
+    text-align: center;
+    font-size: 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.profile ul li {
+    display: inline-block;
+    font-size: 16px;
+    width: 30%;
+    text-align: center;
+    border: 1px solid #000;
+    background: #333;
+    transition: all 0.2s;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.profile ul li img {
+    width: 100%;
+    margin-bottom: -35px;
+    max-width: 100%;
+    
+    
+}
+.profile ul li:hover {
+    width: 33%;
+    color: #FFFFFF;
+    background: #000000;
+}
+.profile ul li p {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.skills .inner {
+    padding-top: 60px;
+    
+}
+.skills .inner .container {
+    border: 1px solid #000;
+    padding: 2rem;
+    background: ;
+}
+
+.skills .inner h1 {
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.skills .inner .item {
+    padding: 30px;
+}
+
+.skills .inner .item p {
+    margin-bottom: 1rem;
+}
+.skills .inner .item p span:first-child {
+    width: 200px;
+    display: inline-block;
+}
+
+.skills .inner .item .progress {
+    border: 1px solid #000;
+    padding: 3px;
+    
+}
+.skills .inner .item .progress-bar {
+    height: 20px;
+    width: 70%;
+    background: linear-gradient(to right, #735D78, #D1B3C4);
+}
+.skills .inner .item .progress-bar {
+    width: 0%;
+    transition: 1s;
+}
+.skills .inner .item:nth-child(2):hover .progress-bar {
+    width: 65%;
+}
+.skills .inner .item:nth-child(3):hover .progress-bar {
+    width: 70%;
+}
+.skills .inner .item:nth-child(4):hover .progress-bar {
+    width: 60%;
+}
+.skills .inner .item:nth-child(5):hover .progress-bar {
+    width: 50%;
+}

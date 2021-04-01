@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Pen Script', cursive;
+    
+}
+body {
+    background: #f7dfff;
+}
+.wrap {
+    color: #111;
+    text-align: center;
+    
+}
+/* header 섹션 */
+header {
+    background-color: #e8affe;
+    width: 100%;
+    height: 300px;
+}
+.inner {
+    width: 900px;
+}
+.head {
+    width: 900px;
+    margin: 0 auto;
+}
+.head h1 {
+    padding-top: 50px;
+    margin-bottom: 15px;
+}
+/* intro섹션 */
+.photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    
+}
+.photo:hover .img1{
+    mask-image: url(./루비.jpg) no-repeat ;
+}
+.photo .img1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -70px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    
+    width: 900px;
+    margin: 0 auto;
+}
+
+.intro-mess {
+    text-align: left;
+}
+/* photo 섹션 */
+.photo-sec {
+    width: 1100px;
+    margin: 0 auto;
+}
+.photo-card {
+    width: 300px;
+    border: 1px solid #999;
+    margin: 0 auto;
+    margin-top: 50px;
+    transition: all 1s;
+    display: inline-block;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.photo-card h5 {
+    font-size: 18px;
+    color: #fff;
+}
+.photo-card:nth-child(2) {
+    margin-left: 20px;
+} 
+.photo-card:nth-child(3) {
+    margin-left: 20px;
+} 
+.photo-card img {
+    max-width: 100%;
+}
+.photo-card h5 {
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+.photo-card:hover {
+    width: 350px;
+    height: 650px;
+    box-shadow: 3px 3px 6px #777;
+}
+/* progress 섹션 */
+.skill-sec {
+    width: 900px;
+    margin: 0 auto;
+    border: 3px solid #590072;
+    margin-top: 90px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 6px #444;
+}
+.skill {
+    text-align: left;
+}
+.skill span {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+}
+.skill-box {
+    border: 1px solid #ddd;
+    height: 30px;
+    margin: 10px;
+    box-shadow: 5px 5px 6px #666;
+    
+}
+.skill-bar {
+    width: 0%;
+    height: 20px;
+    background: linear-gradient(to right, #da81ff, #bb18ff);
+    margin-top: 4px;
+    transition: 1s;
+}
+
+.skill-sec:hover .skill:nth-of-type(1) .skill-bar {
+    width: 50%;
+}
+.skill-sec:hover .skill:nth-of-type(2) .skill-bar {
+    width: 90%;
+}
+.skill-sec:hover .skill:nth-of-type(3) .skill-bar {
+    width: 70%;
+}
+.skill-sec:hover .skill:nth-of-type(4) .skill-bar {
+    width: 60%;
+}
+

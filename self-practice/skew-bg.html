@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>skewd bg</title>
+    <style> 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #F0EDCC;;
+        }
+        .skewedBg {
+            background: #02343F;
+            padding: 100px 0;
+            transform: skew(0, -10deg) translateY(0px);
+        }
+        .container {
+            padding: 150px 200px;
+            transform: skew(0, 10deg);
+            color: #F0EDCC;
+        }
+        h1 {
+            font-size: 3em;
+            padding: 20px 0;
+        }
+        p {
+            line-height: 1.5em;
+        }
+        .bottomBg {
+            padding: 0 200px 150px;
+            text-align: right;
+            color: #02343F;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+    <div class="skewedBg">
+        <div class="container">
+            <h1>hans.park blog</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias soluta maiores iste ducimus, cum, ratione nemo nam, ad vero suscipit totam fugiat doloremque non dolorum veniam vitae veritatis similique.
+            </p>
+        </div>
+    </div>
+    <div class="bottomBg">
+            <h1>inside</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui incidunt nobis ratione nisi alias laudantium vitae facilis inventore? Totam eos enim explicabo sed facilis modi ipsa non autem perferendis impedit?</p>
+    </div>
+</div>
+
+</body>
+</html>

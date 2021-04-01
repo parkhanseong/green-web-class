@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>index</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    body {
+        background: #000;
+    }
+    .inner {
+        /* border: 1px solid #000; */
+        width: 900px;
+        /* text-align: center; */
+        margin: 0 auto;
+        /* opacity: 0.5; */
+        color: #999;
+    }
+    header {
+        /* border: 1px solid #000; */
+        /* background: lawngreen; */
+        height: 250px;
+        margin-bottom: -85px;
+        background: linear-gradient(to bottom,  rgba(221, 77, 221, 0.74), rgba(255, 192, 203, 0.795));
+        /* padding-top: 60px; */
+        text-align: center;
+    }
+    header h1:hover {
+        /* background: #999 */
+        color:#999;
+        opacity: 0.8;
+    }
+    header .inner {
+        /* border: 1px solid #000; */
+        padding: 90px;
+        color: #fff;
+        text-shadow: 5px 3px 2px #222;
+    }
+    header h1 {
+        text-transform: uppercase;
+        opacity: 0.8;
+    }
+    header p {
+        text-transform: uppercase;
+    }
+    .intro {
+        /* background: lightpink; */
+    }
+    .intro h3 {
+        padding: 30px;
+    }
+    .intro p {
+        padding: 30px;
+        margin-top: -20px;
+    }
+    .intro .inner .introImg {
+        text-align: center;
+    }
+    .intro .inner img {
+        width: 150px;
+        /* height: 150px; */
+        border-radius: 50%;
+        border: 1px solid rgba(153, 153, 153, 0.733);
+        transition: 1s;
+    }
+    .intro .inner img:hover {
+        transition-timing-function: ease;
+        cursor: pointer;
+        width: 160px;
+    }
+    .profile {
+        /* background: lightsalmon; */
+    }
+    .profile ul {
+        text-align: center;
+    }
+    .profile ul li {
+        display: inline-block;
+        width: 22%;
+        border: 1px solid #999;
+        margin: 10px;
+        transition: 1s;
+    }
+    .profile ul li:hover {
+        width: 23%;
+        transition-timing-function: ease;
+    }
+    .profile ul li img {
+        width: 100%;
+        /* height: 100px; */
+        box-shadow: 0 0 5px #999;
+    }
+    .profile ul li p {
+        width: 150px;
+        display: inline-block;
+    }
+    .skills .inner h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .skills {
+        padding: 10px;
+    }
+    .skills .inner {
+        padding: 10px;
+    }
+    .skills .inner p span:nth-child(1) {
+        width: 100px;
+        display: inline-block;
+    }
+    .skills .inner .skillBox {
+        width: 70%;
+        border: 1px solid #999;
+        height: 25px;
+    }
+    .skills .inner .skillBar {
+        width: 70%;
+        background: linear-gradient(to right, yellow, red);
+    }
+</style>
+</head>
+<body>
+    <div class="wrap">
+            <header>
+                <div class="inner">
+                    <a href="index.html">
+                        <h1>kim beom jun</h1>
+                        <p>web designer</p>
+                    </a>
+                </div>
+            </header>
+        <section class="intro">
+            <div class="inner">
+                <div class="introImg">
+                    <div class="photo">
+                        <img src="./images/IMG_3151.jpg" alt="">
+                    </div>
+                </div>
+                <h3>자기소개</h3>
+                <p>1995년 출생. 남자. 어려서부터 우리집은 가난했었고 남들다하는 외식한번 한적이 없었고<br> 일터에 나가신 어머니 집에 없으면 매일 같이 끓여먹었던 라면...</p>
+            </div>
+        </section>
+        <section class="profile">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <a href="https://bit.ly/3dqCkQX">
+                            <img src="./images/IMG_202104011029531.jpg" alt="">
+                            <p>
+                                대구 수성구<br>
+                                와글라스
+                                <br>럭셔리함을 자랑하는 칵테일바
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://bit.ly/31zHPrl">
+                            <img src="./images/IMG_202104011029530.jpg" alt="">
+                            <p>
+                                경북 경주 윗천동
+                                <br>벤자마스
+                                <br>고급스러움과 <br>분위기 있는 조명이 <br>돋보이는 카페
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://bit.ly/3wemEcd">
+                            <img src="./images/IMG_2476.jpg" alt="">
+                            <p>
+                                경북 경주 사정동
+                                <br>캘리 소프트 서브
+                                <br>레트로함이 묻어나는 아이스크림 가게
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://bit.ly/3fxBTXU">
+                            <img src="./images/IMG_2446.jpg" alt="">
+                            <p>
+                                경북 경주 사정동
+                                <br>온천집
+                                <br>일본의 느낌이 물씬나는 식당
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="inner">
+                <h2>skills</h2>
+                <p>
+                    <span>HTML5</span>
+                    <span>80%</span>
+                </p>
+                <div class="skillBox">
+                    <div class="skillBar"></div>
+                </div>
+                <p>
+                    <span>css</span>
+                    <span>70%</span>
+                </p>
+                <div class="skillBox">
+                    <div class="skillBar"></div>
+                </div>
+                <p>
+                    <span>JavaScript</span>
+                    <span>90%</span>
+                </p>
+                <div class="skillBox">
+                    <div class="skillBar"></div>
+                </div>
+                <p>
+                    <span>photoshop</span>
+                    <span>90%</span>
+                </p>
+                <div class="skillBox">
+                    <div class="skillBar"></div>
+                </div>
+                <p>
+                    <span>illustration</span>
+                    <span>70%</span>
+                </p>
+                <div class="skillBox">
+                    <div class="skillBar"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

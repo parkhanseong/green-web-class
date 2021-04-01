@@ -1,0 +1,160 @@
+@charset "utf-8";
+@import "./reset.css";
+/* 전체적인 틀 잡기 */
+#wrap {
+    height: 100%;
+    background: rgb(9, 67, 143);
+    color: #fff;
+    /* width: 100%; */
+}
+.inner {
+    width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+    transition: 0.75s;
+}
+/* 공통적인 효과 */
+h1, h2, h3, h4, h5, h6, p, .skills .container span {
+    opacity: 0.6;
+}
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, p:hover, .skills:hover .container span:hover {
+    opacity: 1.0;
+}
+header, .intro, .profile, .skills {
+    text-align: center;
+}
+/* header */
+header {
+    text-align: center;
+    padding-top: 60px;
+}
+header p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+/* intro */
+.intro {
+    text-align: center;
+}
+.intro h2, .intro p {
+    text-align: left;
+}
+.intro p {
+    line-height: 25px;
+}
+.intro .photo {
+    width: 150px;
+    display: inline-block;
+}
+.intro img {
+    width: 100%;
+    text-align: center;
+    border-radius: 80%;
+    border: 1px solid #fff;
+}
+/* profile */
+.profile .inner {
+    padding: 3rem 0;
+}
+.profile ul {
+    font-size: 0;
+}
+.profile li {
+    width: 30%;
+    box-shadow: 0 0 3px #fff;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 10px;
+    transition: 1s;
+    line-height: 25px;
+}
+.profile li:hover {
+    width: 32%;
+}
+.profile img {
+    width: 100%;
+    margin-bottom: -50px;
+}
+.profile ul li h2 {
+    margin-bottom: 35px;
+}
+.profile ul li p {
+    margin-bottom: 15px;
+}
+/* skills */
+.skills {
+    padding-bottom: 60px;
+}
+.skills .container {
+    border: 1px solid #fff
+    /* padding: 2rem; */
+}
+.skills .container h1, .skills .container p {
+    text-transform: uppercase;
+}
+.skills .container h1 {
+    margin-top: 30px
+}
+.skills .container .item {
+    text-align: left;
+    padding: 10px 30px 10px 30px;
+}
+.skills .container p {
+    display: inline-block;
+    width: 100px;
+}
+.skills .item {
+    margin: 15px;
+}
+.skills .item p span:first-child {
+    display: inline-block;
+    width: 100px;
+}
+.skills .progress {
+    border: 1px solid #fff;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.skills .progress-bar {
+    transition: 1.5s;
+    height: 20px;
+    background: #fff;
+}
+.skills .inner .container .item .progress:nth-of-type(1) .progress-bar {
+    width: 0%;
+}
+.skills .inner .container .item:hover .progress:nth-of-type(1) .progress-bar {
+    width: 90%;
+}
+.skills .inner .container .item .progress:nth-of-type(2) .progress-bar {
+    width: 0%;
+}
+.skills .inner .container .item:hover .progress:nth-of-type(2) .progress-bar {
+    width: 80%;
+}
+.skills .inner .container .item .progress:nth-of-type(3) .progress-bar {
+    width: 0%;
+}
+.skills .inner .container .item:hover .progress:nth-of-type(3) .progress-bar {
+    width: 90%;
+}
+.skills .inner .container .item .progress:nth-of-type(4) .progress-bar {
+    width: 0%;
+}
+.skills .inner .container .item:hover .progress:nth-of-type(4) .progress-bar {
+    width: 60%;
+}
+.skills .inner .container .item .progress:nth-of-type(5) .progress-bar {
+    width: 0%;
+}
+.skills .inner .container .item:hover .progress:nth-of-type(5) .progress-bar {
+    width: 80%;
+}
+.skills .inner .container .item .progress:nth-of-type(6) .progress-bar {
+    width: 0%;
+}
+.skills .inner .container .item:hover .progress:nth-of-type(6) .progress-bar {
+    width: 90%;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>animation</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .box {
+        height: 100px;
+        border: 1px solid #000;
+    }
+    .item {
+        display: inline-block;
+        width: 80%;
+        height: 100%;
+        background: gold;
+        border: 1px solid #000;
+        font-size: 2rem;
+        color: red;
+        /* animation-name: ani;
+        animation-duration: 5s;
+        animation-delay: .5s;
+        animation-direction:reverse;
+        animation-iteration-count: 2;
+        animation-timing-function: ease-in; */
+        /* animation: ani 5s .5s alternate-reverse 2; */
+    }
+    .item:hover {
+        animation-play-state: paused;
+    }
+    @keyframes ani {
+        0% {
+            width: 0%;
+            font-size: 0;
+            color: blue;
+        }
+        100% {
+            width: 100%;
+            font-size: 2rem;
+            color: red;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="box">
+    <div class="item">
+        battery
+    </div>
+</div>
+
+
+</body>
+</html>

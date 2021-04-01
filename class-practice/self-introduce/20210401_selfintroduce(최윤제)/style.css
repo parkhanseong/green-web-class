@@ -1,0 +1,116 @@
+@charset "utf-8";
+body {
+    background: rgb(250, 232, 129);
+    font-size: 30pt;
+    font-family: 'Nanum Pen Script', cursive;
+}
+header {
+    /* background-color: palegreen; */
+}
+header .inner {
+    /* background: paleturquoise; */
+    padding: 100px;
+    text-align: center;
+}
+header .inner h1 {
+}
+header .inner p {
+}
+
+.introduce {
+    text-align: center;
+    /* background: chartreuse; */
+}
+
+.introduce img {
+    padding: 10px;
+    width: 100px;
+    /* width: 500px; */
+    margin: 0 auto;
+}
+.intro-text {
+    margin-left: 100px;
+    padding: 10px;
+    /* background: chocolate; */
+}
+.story {
+    /* background: purple; */
+    margin-top: 50px;
+    text-align: center;
+}
+ul li {
+    padding: 10px;
+    border: 1px solid #fff;
+    display: inline-block;
+    transition: all 1s;
+    width: 20%;
+}
+ul li img {
+    width: 100%;
+}
+ul li:hover {
+    width: 30%;
+}
+ul li h2 {
+}
+ul li p {
+}
+
+.skils-container1 {
+    /* border: 1px solid #fff; */
+    /* background: red; */
+    padding: 100px;
+}
+.skils-container1 .item {
+    /* border: 1px solid pink; */
+}
+.progress {
+    /* border: 1px solid #fff; */
+    height: 30px;
+    padding: 3%;
+}
+.skils-container1 .progress-bar1 {
+    transform: all 10s;
+    height: 30px;
+    width: 70%;
+    background: linear-gradient(to right, gold, red);
+}
+.skils-container1 .progress-bar2 {
+    height: 30px;
+    width: 5%;
+    background: linear-gradient(to right, gold, red);
+}
+.skils-container1 .progress-bar3 {
+    height: 30px;
+    width: 10%;
+    background: linear-gradient(to right, gold, red);
+}
+.skils-container1 .progress-bar4 {
+    height: 30px;
+    width: 100%;
+    background: linear-gradient(to right, gold, red);
+}
+
+.skils-container2 .progress-bar1 {
+    height: 30px;
+    width: 10%;
+    background: linear-gradient(to right, gold, blue);
+}
+.skils-container2 .progress-bar2 {
+    height: 30px;
+    width: 30%;
+    background: linear-gradient(to right, gold, blue);
+}
+.skils-container2 .progress-bar3 {
+    height: 30px;
+    width: 30%;
+    background: linear-gradient(to right, gold, blue);
+}
+.skils-container2 .progress-bar4 {
+    height: 30px;
+    width: 30%;
+    background: linear-gradient(to right, gold, blue);
+}
+footer {
+    padding: 100px;
+}

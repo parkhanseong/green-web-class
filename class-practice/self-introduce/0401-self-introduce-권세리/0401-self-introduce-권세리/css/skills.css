@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+.srskill{
+    width: 1000px;
+    margin-top: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+.srskill h1{
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    
+}
+.srskill .inner{
+    width: 1000px;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.skillinfo{
+    text-align: left;
+}
+.srskill .skillinfo span:first-child{
+    width: 150px;
+    font-weight: bold;
+}
+.srskill .skillbar{
+    border: 1px solid rgb(255, 55, 55);
+    padding: 3px;
+}
+.srskill .skillbar .skillgraph{
+    transition: all 1s;
+    height: 15px;
+    border: 1px solid #999;
+    background: linear-gradient(to right, crimson, #000);
+}
+.srskill .inner:nth-child(1) .skillgraph{
+    width: 0%;
+}
+.srskill:hover .inner:nth-child(1) .skillgraph{
+    width: 80%;
+}
+.srskill .inner:nth-child(2) .skillgraph{
+    width: 0%;
+}
+.srskill:hover .inner:nth-child(2) .skillgraph{
+    width: 70%;
+}
+.srskill .inner:nth-child(3) .skillgraph{
+    width: 0%;
+}
+.srskill .inner:nth-child(4) .skillgraph{
+    width: 0%;
+}
+.srskill:hover .inner:nth-child(4) .skillgraph{
+    width: 70%;
+}
+.srskill .inner:nth-child(5) .skillgraph{
+    width: 0%;
+}
+.srskill:hover .inner:nth-child(5) .skillgraph{
+    width: 80%;
+}

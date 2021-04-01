@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<title>my Introduce page</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    ul li {
+        list-style: none;
+    }
+    body {
+        background-color: #ebe6ab3a;
+    }
+    .wrap {
+        margin: 0 auto;
+    }
+    header {
+        background-color: rgba(196, 186, 173, 0.897);
+        color: white;
+        padding: 200px;
+        margin-bottom: -190px;
+    
+    }
+    .inner {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+    header .inner h1 {
+        font-size:4rem;
+        text-shadow: 10px 0px rgb(160, 150, 150);
+    }
+    header .inner h2 {
+        font-size: 3rem;
+        margin-bottom: 100px;
+    }
+    .intro .inner img {
+        width: 350px;
+        margin-bottom: 30px;
+        border: solid 15px rgba(196, 186, 173, 0.897);
+    }
+    .intro h1 {
+        font-size: 3rem;
+        color: rgb(88, 120, 141);
+        padding: 50px;
+    }
+    .intro p {
+        color: rgba(170, 134, 134, 0.932);
+        font-size: 2rem;
+        margin-bottom: 100px;
+    }
+    .inner li i {
+        font-size: 200px;
+        color: rgba(148, 127, 123, 0.808);
+    }
+    .inner li {
+        display: inline-block;
+        width: 20%;
+        border: double 10px rgba(184, 178, 178, 0.5);
+        border-radius: 10%;
+        margin: 20px;
+        padding: 30px;
+    }
+    .inner li h2 {
+        color: rgb(187, 180, 147);
+        font-size: 2rem;
+    }
+    .skills .inner {
+        /* border: 1px solid black; */
+    }
+    .skills .inner h1 {
+        font-size: 3rem;
+        padding: 30px;
+        text-transform: uppercase;
+        padding-bottom: 50px;
+    }
+    .skills .container {
+        border: double 8px rgba(184, 178, 178, 0.5);
+        border-radius: 3%;
+        padding: 30px;
+        margin-top: 100px;
+
+    }
+    .skills .container h1 {
+        color:rgb(88, 120, 141);
+    }
+    .container li {
+        list-style: none;
+        height: 100px;
+        transition: all .5s;
+        margin-bottom: 0.5rem;
+        width: inherit;
+    }
+
+    .container .item p {
+        margin-bottom: 10px;
+        font-size: 2rem;
+        color: lightcoral;
+    }
+    .container .item p span:nth-child(1) {
+        display: inline-block;
+        width: 200px;
+
+    }
+    .container .item .progressbar {
+        width: 100%;
+        height: 30px;
+        background: linear-gradient(to right, rgba(161, 149, 158, 0.747),rgb(235, 166, 166))
+    }
+    .container .item:nth-of-type(1) .progressbar {
+        width: 50%;
+    }
+    .container .item:nth-of-type(2) .progressbar {
+        width: 40%;
+    }
+    .container .item:nth-of-type(3) .progressbar {
+        width: 10%;
+    }
+    .container .item:nth-of-type(4) .progressbar {
+        width: 20%;
+    }
+    .container .item:nth-of-type(5) .progressbar {
+        width: 60%;
+    }
+    .container .item:nth-of-type(6) .progressbar {
+        width: 70%;
+    }
+    
+
+
+
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="inner">
+                <h1>welcome!</h1>
+                <h2>Here's who i am & what i do</h2>
+            </div>
+        </header>
+        <section class="intro">
+            <div class="inner">
+                <img src="/images/KakaoTalk_20210223_230510443_01.jpg" alt="">
+                <h1>Kim yu jin</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptas quisquam totam fugit enim libero quibusdam sequi voluptatibus dolorem quam aspernatur asperiores adipisci, natus, iure porro obcaecati minus aliquid eum!</p>
+            </div>
+        </section>
+        <section class="profile">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <i class="xi-photoshop-circle"></i>
+                        <h2>photoshop</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, assumenda?</p>
+                    </li>
+                    <li>
+                        <i class="xi-illustrator-circle"></i>
+                        <h2>illust</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, assumenda?</p>
+                    </li>
+                    <li>
+                        <i class="xi-git"></i>
+                        <h2>git</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, assumenda?</p>
+                    </li>
+                    <li>
+                        <i class="xi-github"></i>
+                        <h2>github</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, assumenda?</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="inner">
+                <div class="container">
+                    <h1>software skill</h1>
+                    <div class="item">
+                        <p>
+                            <span>HTML5</span>
+                            <span>50%</span>
+                        </p>
+                        <div class="progress">
+                            <div class="progressbar">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>
+                            <span>CSS3</span>
+                            <span>40%</span>
+                        </p>
+                        <div class="progress">
+                            <div class="progressbar">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>
+                            <span>javascript</span>
+                            <span>10%</span>
+                        </p>
+                        <div class="progress">
+                            <div class="progressbar">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>
+                            <span>jQuery</span>
+                            <span>20%</span>
+                        </p>
+                        <div class="progress">
+                            <div class="progressbar">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>
+                            <span>photoshop</span>
+                            <span>60%</span>
+                        </p>
+                        <div class="progress">
+                            <div class="progressbar">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>
+                            <span>illustratio</span>
+                            <span>70%</span>
+                        </p>
+                        <div class="progress">
+                            <div class="progressbar">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            section
+        </section>
+        <section>
+            section
+        </section>
+    </div>
+</body>
+</html>
