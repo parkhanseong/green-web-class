@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>underline</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: sans-serif;
+    }
+    section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid black;
+        width: 100%;
+    }
+    ul {
+        text-align: center;
+    }
+    li {
+        display: inline-block;
+        list-style: none;
+        height: 100px;
+        line-height: 100px;
+        margin-right: 20px;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0.3em 0.2em;
+        position: relative;
+        line-height: 20px;
+        font-size: 1.5rem;
+        font-weight: 200;
+    }
+    li a:after {
+        content: '';
+        line-height: 1;
+        position: absolute;
+        height: 3px;
+        width: 3px;
+        background: #999;
+        transition: all 0.6s;
+    }
+    li:nth-child(1) a:after {
+        bottom: 0;
+        left: 0;
+    }
+    li:nth-child(1) a:hover:after {
+        width: 100%;
+    }
+    li:nth-child(2) a:after {
+        left: 50%;
+        bottom: 0;
+    }
+    li:nth-child(2) a:hover:after {
+        width: 100%;
+        transform: translateX(-50%);
+    }
+    li:nth-child(3) a:after {
+        bottom: 0;
+        right: 0;
+    }
+    li:nth-child(3) a:hover:after {
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+<section>
+    <ul>
+        <li><a href="#">
+            spring
+        </a></li>
+        <li><a href="#">
+            summer
+        </a></li>
+        <li><a href="#">
+            winter
+        </a></li>
+    </ul>
+</section>
+
+</body>
+</html>

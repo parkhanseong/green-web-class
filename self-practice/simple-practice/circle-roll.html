@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>circle</title>
+<style>
+    .box {
+        width: 400px;
+        height: 400px;
+        background: pink;
+    }
+    .ball {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: gold;
+        animation-name: around;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        animation-iteration-count: 2;
+        /* animation-direction: reverse; */
+        /* 
+        backward : 되돌린다
+        forward : 그대로 유지된다
+        both: 
+        */
+        animation-fill-mode: both;
+    }
+    @keyframes around {
+        0% {
+            transform: translate(0);
+            border: 1px solid red;
+            /* background: red; */
+        }
+        25% {
+            transform: translate(100%);
+        }
+        50% {
+            transform: translate(100%, 100%);
+            
+        }
+        75% {
+            transform: translate(0, 100%);
+        }
+        100% {
+            transform: translate(0);
+            background: green;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="box">
+    <div class="ball"></div>
+</div>
+</body>
+</html>

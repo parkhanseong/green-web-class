@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>animation filter</title>
+<style>
+    img {
+        max-width: 100%;
+        display: block;
+    }
+    .item {
+        display: inline-block;
+        width: 200px;
+        box-shadow: 0 0 5px hotpink;
+    }
+    .item:nth-child(1) {
+        filter: sepia(1);
+        animation-name: sephia;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(3);
+    }
+    .item:nth-child(2) {
+        filter: invert(100%);
+        animation-name: invert;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(3);
+    }
+    .item:nth-child(3) {
+        filter: hue-rotate(160deg);
+        animation-name: hue-rotate;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(3);
+    }
+    @keyframes sephia {
+        0% {
+            filter: sepia(0);
+            background: rgb(0, 179, 255);
+        }
+        50% {
+            filter: sepia(.5);
+            background: rgb(17, 171, 17);
+        }
+        100% {
+            filter: sepia(1);
+            background: pink;
+        }
+    }
+    @keyframes invert {
+        0% {
+            filter: invert(0);
+            background: rgb(75, 169, 74);
+        }
+        50% {
+            filter: invert(50%);
+            background: rgba(87, 232, 87, 0.641);
+        }
+        100% {
+            filter: invert(100%);
+            background: pink;
+        }
+    }
+    @keyframes hue-rotate {
+        0% {
+            filter: hue-rotate(0);
+            background: blue;
+        }
+        50% {
+            filter: hue-rotate(160deg);
+            background: green;
+        }
+        100% {
+            filter: hue-rotate(360deg);
+            background: pink;
+        }
+    }
+
+    
+</style>
+</head>
+<body>
+
+<div class="gallery">
+    <div class="item">
+        <img src="image/profile-remove-bg.png" alt="">
+    </div>
+    <div class="item">
+        <img src="image/profile-remove-bg.png" alt="">
+    </div>
+    <div class="item">
+        <img src="image/profile-remove-bg.png" alt="">
+    </div>
+</div>
+
+</body>
+</html>

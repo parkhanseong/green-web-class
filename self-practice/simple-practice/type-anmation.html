@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>type animation</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    h1 {
+        color:transparent;
+        position: relative;
+        display: inline-block;
+        letter-spacing: 5px;
+    }
+    h1:before {
+        content: attr(data-text);
+        color: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-right: 1px solid black;
+        /* border: 1px solid red; */
+        animation: typing 10s steps(22) infinite;
+        /* animation: typing 10s linear infinite; */
+        white-space: nowrap;
+    }
+
+    @keyframes typing {
+        0% {
+            width: 0;
+        }
+        50% {
+            width: 50%;
+        }
+        80% {
+            width: 100%;
+        }
+        100% {
+            width: 0;
+        }
+    }
+</style>
+</head>
+<body>
+
+<h1 data-text="hello world this is my blog">hello world this is my blog</h1>
+
+</body>
+</html>

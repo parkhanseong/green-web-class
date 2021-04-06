@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>rem em</title>
+<script>
+
+    window.addEventListener('load', function(){
+        // var t = document.getElementById('test');
+        // function sayhello() {
+        //     alert('this is addeventlist');
+        // }
+        // t.addEventListener('click', sayhello);
+        var h1Element = document.getElementById('title');
+        var redBtn = document.getElementById('addBtn');
+        console.log(h1Element)
+        function addRed() {
+            h1Element.classList.add('red');
+        }
+        redBtn.addEventListener('click', addRed);
+
+    });
+</script>
+<!-- <script>
+    window.onload = function(){
+        var h1Element = document.getElementById('title');
+        function addRed() {
+            h1Element.classList.add('red');
+        }
+    }
+</script> -->
+
+<style>
+    .red {
+        color: red;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="profile">
+    <img src="image/manhattan.jpg" alt="">
+    <h1 id="title" class="title">title</h1>
+    <!-- <input type="button" id="add" value="빨간색 추가">
+    <input type="button" id="remove" value="빨간색 삭제"> -->
+    <button onclick="addRed()" id='addBtn'>red 추가</button>
+</div>
+<!-- <script>
+    (function() {
+        var t = document.getElementById('test');
+        function sayhello() {
+            alert('this is addeventlist');
+        };
+        t.addEventListener('click', sayhello);
+    })();
+</script> -->
+<!-- <script>
+    var h1Element = document.getElementById('title');
+    function addRed() {
+        h1Element.classList.add('red');
+    }
+</script> -->
+</body>
+</html>

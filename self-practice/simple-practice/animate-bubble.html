@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>animate bubble</title>
+<style>
+    .bubbleContainer {
+        background: #111;
+        height: 200px;
+        position: relative;
+    }
+    .dot {
+        width: 10px;
+        height: 10px;
+        background: #999;
+        border-radius: 50%;
+    }
+    .dot:nth-child(1) {
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        animation: bubbleUp 5s alternate-reverse infinite;
+    }
+    .dot:nth-child(2) {
+        position: absolute;
+        bottom: 0;
+        right: 30%;
+        animation: bubbleUp 2s alternate-reverse infinite;
+    }
+    .dot:nth-child(3) {
+        position: absolute;
+        bottom: 0;
+        right: 85%;
+        animation: bubbleUp 6s alternate-reverse infinite;
+    }
+    .dot:nth-child(4) {
+        position: absolute;
+        bottom: 0;
+        right: 40%;
+        animation: bubbleUp 4s alternate-reverse infinite;
+    }
+    .dot:nth-child(5) {
+        position: absolute;
+        bottom: 0;
+        right: 35%;
+        animation: bubbleUp 2s alternate-reverse infinite;
+    }
+    .dot:nth-child(6) {
+        position: absolute;
+        bottom: 0;
+        right: 35%;
+        animation: bubbleUp 3s alternate-reverse infinite;
+    }
+    .dot:nth-child(7) {
+        position: absolute;
+        bottom: 0;
+        right: 60%;
+        animation: bubbleUp 3.5s alternate-reverse infinite;
+    }
+    .dot:nth-child(8) {
+        position: absolute;
+        bottom: 0;
+        right: 70%;
+        animation: bubbleUp 10s alternate-reverse infinite;
+    }
+    .dot:nth-child(9) {
+        position: absolute;
+        bottom: 0;
+        right: 20%;
+        animation: bubbleUp 20s alternate-reverse infinite;
+    }
+    @keyframes bubbleUp {
+        0% {
+            bottom: 0%;
+        }
+        100% {
+            bottom: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="bubbleContainer">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+
+</body>
+</html>

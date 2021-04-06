@@ -1,0 +1,169 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Noto+Sans+KR&display=swap');
+* { margin: 0; padding: 0;}
+li { list-style: none; }
+a { text-decoration: none; color: inherit;}
+
+/* layout */
+.mo {display: none;}
+.en { font-family: 'Exo 2', sans-serif;}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+}
+.wrap {margin: 0 auto;}
+#skip-nav {
+    position: fixed;
+    left: 0;
+    top: -41px;
+    width: 100%;
+    line-height: 40px;
+    background: blue;
+    color: #fff;
+    text-align: center;
+    border-bottom: #ff0000;
+    transition: all 0.5s;
+}
+#skip-nav:focus {
+    top: 0;
+}
+header { z-index: 200; position: fixed; top: 0; left: 0; width: 100%; height: 100px; line-height: 100px; background: rgb(0,0,0,.2); }
+.innerHeader { width: 1600px; margin: 0 auto; box-sizing: border-box; overflow: hidden; }
+.innerHeader .logo { float: left; padding-top: 15px; }
+.innerHeader .logo img{ width: 100%; height: auto;}
+.innerHeader .gnbMo {display: none;}
+.innerHeader .gnb {float:left; margin-left: 80px;}
+.innerHeader .gnb li {float: left; margin-right: 80px;}
+.innerHeader .gnb li a:hover, .innerHeader .gnb li a:focus {color: coral}
+.innerHeader .gnb li a {display: block; width: 100%; height: 100%; text-align: center; color: #fff;
+font-size: 16px; }
+.innerHeader .tnb {float: right;}
+.innerHeader .tnb li {float: left; margin-right: 25px}
+.innerHeader .tnb li a {display: block; width: 100%; height: 100%; font-size: 16px; color: #fff;}
+.innerHeader .tnb li:nth-child(1) a i, .innerHeader .tnb li:nth-child(2) a i { font-size: 20px; margin-right: 8px;}
+.innerHeader .tnb li:last-child a {display: block; line-height: 2; border: 1px solid #fff; border-radius: 30px; margin-top: 35px; padding: 0 3px; text-align: center;}
+.innerHeader .tnb li:last-child a i { margin-left: 5px;}
+.innerHeader .tnb li:last-child a:hover {background: #fff; color: coral; transition: all 0.3s;}
+
+/* section.main */
+section.main {width: 100%; height: 100vh; background:url(../img/vis_4.jpg) no-repeat center/cover; position: relative; background-attachment: fixed;}
+section.main .mainTitle {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-align: center;
+text-shadow: 0 0 5px rgb(0,0,0,.5);
+animation-name: mainTitle; animation-duration: 1s;
+}
+@keyframes mainTitle { 
+    0% { opacity: 0; top: 60%;}
+    30% { opacity: 0; top: 60%;}
+    100% { opacity: 1; top: 50%;}
+}
+section.main h2 {font-size: 55px; margin-bottom: 20px;}
+section.main .mainTitle p { font-size: 25px; margin-bottom: 30px; }
+section.main .mainTitle .view { display: block; width: 180px; margin: 0 auto; padding: 8px 0; font-size: 15px; text-transform: uppercase; letter-spacing: 1px; border: 1px solid #fff;border-radius: 40px;
+position: relative; overflow: hidden;}
+section.main .mainTitle .view:after {content: '';width: 0; height: 100%; background: rgb(255, 255, 255, 0.4); position: absolute; left: 0; top:0;}
+section.main .mainTitle .view:hover:after {width: 100%; transition: all 0.3s;}
+
+/* section .title */
+section .title {color: #000; text-align: center;}
+section .title h2 {font-size: 45px; margin-bottom: 5px; font-weight: normal;}
+section .title h2 span { color: coral }
+section .title p {font-size: 8px; color: #555;}
+
+/* section.about */
+section.about {background: #fff; padding: 80px 0;}
+/* section.about .title {color: #000; text-align: center;}
+section.about .title h2 {font-size: 45px; margin-bottom: 5px; font-weight: normal;}
+section.about .title h2 span { color: coral }
+section.about .title p {font-size: 8px; color: #555;} */
+section.about ul {margin: 30px auto; width: 1400px; border-bottom: 1px solid #ddd; overflow: hidden;} 
+section.about ul li {float: left; width: 33.3333%;}
+section.about ul li a {display: block; width: 100%; height: 100%;}
+section.about ul li a p.img { width: 100%; height: 369px; overflow: hidden;}
+section.about ul li a p.img img { width: 100%; height: auto; transition: all .8s;}
+section.about ul li a:hover p.img img, section.about ul li a:focus p.img img {
+    transform: scale(1.2);
+    transition: all .8s;
+}
+section.about ul li a .text {padding: 30px;}
+section.about ul li a .text h3 {font-size: 20px; margin-bottom: 10px;}
+section.about ul li a .text p {font-size: 16px; margin-bottom: 10px;}
+section.about ul li a .text p.more {text-transform: uppercase; font-weight: bold; padding-left: 40px;
+position: relative}
+section.about ul li a .text p.more:before { content:'\f061'; font-family: "Font Awesome 5 Free"; font-size: 15px; width: 30px; height: 30px; line-height: 30px; background: coral; 
+position: absolute; left: 0; display: block; border-radius: 50%;}
+
+/* section.innovations */
+section.innovations { margin-bottom: 150px;  }
+/* section.innovations .title {color: #000; text-align: center;}
+section.innovations .title h2 {font-size: 45px; margin-bottom: 5px; font-weight: normal;}
+section.innovations .title h2 span { color: coral }
+section.innovations .title p {font-size: 8px; color: #555;} */
+section.innovations .imgBox {
+    width: 1400px; height: 540px; margin: 50px auto 0; background: url(../img/product_1.jpg) no-repeat center/cover;
+    position: relative;
+}
+section.innovations .imgBox .inner {background: #3a3c4e; width: 80%; position: absolute; left:50%; 
+transform: translateX(-50%); bottom: -50px;}
+section.innovations .imgBox .inner h3 {background: #fff; padding: 25px 45px; box-sizing: border-box; font-size: 18px;}
+section.innovations .imgBox .inner h3 span {color: coral}
+section.innovations .imgBox .inner .bottom {padding: 35px 85px; box-sizing: border-box; color: #fff; overflow: hidden; line-height: 1.6;}
+section.innovations .imgBox .inner .bottom p {float: left;}
+section.innovations .imgBox .inner .bottom a {float: right; padding: 7px 30px; background: coral; border-radius: 50px;}
+section.innovations .imgBox .inner .bottom a:hover, section.innovations .imgBox .inner .bottom a:focus {background: #f86010;}
+
+/* section.me */
+section.me {margin-bottom: 150px; padding: 80px 0; background: url(../img/me.jpg) no-repeat center/cover;}
+section.me ul.list {width: 1400px; margin: 50px auto;}
+section.me ul.list > li {padding: 30px 60px; box-sizing: border-box;}
+section.me ul.list > li:nth-child(1) {border-bottom: 1px solid #ddd;}
+section.me ul.list li h3 { font-size: 18px; margin-bottom: 20px; position: relative;}
+section.me ul.list li h3 span {position: absolute; left: -35px; color: coral;}
+section.me ul.list li > p { line-height: 1.6; margin-bottom: 20px; }
+section.me ul.list li > a {display: inline-block; font-weight: bold; font-size: 16px; line-height: 1.6;}
+section.me ul.list li > a span {color: coral; font-weight: bold; margin-left: 3px; font-size: 14px;}
+section.me ul.in {margin-bottom: 30px;}
+section.me ul.in li {margin-bottom: 10px; overflow: hidden;}
+section.me ul.in li em {float: left; width: 12%;font-weight: bold;}
+section.me ul.in li p {float: left; width: 88%; position: relative;}
+section.me ul.in li p:before {content:''; position: absolute; left: -40px; top: 10px; width: 4px;height: 4px; background-color: coral; border-radius: 50%;}
+section.me button {display: block; width: 280px; background: coral; border: none; padding: 10px 0; font-weight: bold; text-align: center; margin: auto; border-radius: 50px; color: #fff;}
+
+/* section.sns */
+section.sns {margin-bottom: 60px;}
+section.sns ul {width: 1400px; margin: 50px auto; overflow: hidden;}
+section.sns ul li {float: left; width: 32%; margin-right: 1%;}
+section.sns ul li:last-child {margin-right: 0;}
+section.sns ul li a {display: block; width: 100%; height: 100%;}
+section.sns ul li a p.img {height: 251px; overflow:hidden; position:relative}
+section.sns ul li a p.img:before {content: ''; width: 0%; height: 100%; position: absolute; top:0; left:0; background: rgba(255, 127, 80, 0.863);
+transition: all 0.5s;}
+section.sns ul li a p.img img {width: 100%;}
+section.sns ul li a:hover p.img:before, section.sns ul li a:focus p.img:before {width: 100%; transition:all 0.5s}
+section.sns ul li a p.img:after {content: 'BLOG'; position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: 'Exo 2', sans-serif; font-size: 15px;
+color: #fff; border: 1px solid #fff; border-radius: 20px; padding: 5px 30px; opacity: 0; transition: all 0.7s;}
+section.sns ul li a:hover p.img:after, section.sns ul li a:focus p.img:after {opacity: 1; transition: all 0.7s;}
+section.sns ul li a .bottom {width: 100%; padding: 20px 0 20px 30px; box-sizing: border-box;}
+section.sns ul li a .bottom p {font-size: 18px; font-weight: bold; }
+section.sns ul li a .bottom p.color {color: coral; font-size: 15px; font-weight: normal;}
+section.sns ul li a .bottom p.time {color: #999; font-size: 15px; font-weight: normal; padding-left: 20px; position: relative; margin-top: 30px;}
+section.sns ul li a .bottom p.time:before {content: '\f017'; font-family: 'Font Awesome 5 Free'; font-size: 15px; position: absolute; left: 0; top: 2px; line-height: 20px;}
+
+/* footer */
+footer {clear: both; border-top: 1px solid #999; padding: 30px 0 50px}
+footer .inner {width: 1600px; margin: 0 auto; overflow: hidden;}
+footer .inner .footerLogo {float: left;}
+footer .inner .address {float: left; margin-left: 100px; margin-top: 10px;}
+footer .inner .address li:first-child {font-weight: bold; margin-bottom: 10px;}
+footer .inner .address li:last-child {color: #999; font-family: 'Exo 2', sans-serif;}
+footer .inner .list {float: right;}
+footer .inner .list li {float: left; margin-left: 80px; margin-top: 10px;}
+footer .inner .list li a {display: block; width: 100%; height: 100%; position: relative;}
+footer .inner .list li a:after {content: ''; width: 4px; height: 4px; background: #666; position: absolute; top: 10px; right: -50%; border-radius: 50%;}
+footer .inner .list li a:hover, footer .inner .list li a:focus { color: coral; text-decoration: underline;}
+footer .inner .list li:last-child a {font-weight: bold; text-transform: uppercase;}
+
+
+
+
+
+

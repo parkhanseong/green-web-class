@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>bird</title>
+<style>
+    .bird {
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg) no-repeat 0 100%/cover;
+        width: 352px;
+        height: 500px;
+        border: 1px solid #000;
+        animation-name: fly-cycle;
+        animation-duration: 1s;
+        animation-delay: -0.5s;
+        animation-timing-function: steps(10);
+        animation-iteration-count: infinite;
+        width: 88px;
+	    height: 125px;
+    }
+    @keyframes fly-cycle {
+	100% {
+		background-position: -3600px 0;
+	}
+}
+</style>
+</head>
+<body>
+
+    <div class="birdContainer">
+        <div class="bird"></div>
+    </div>
+
+</body>
+</html>

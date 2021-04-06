@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>type</title>
+<style>
+    h1 {
+        display: inline-block;
+        position: relative;
+        color:transparent
+    }
+    h1:before {
+        content: attr(data-text);
+        position: absolute;
+        color: red;
+        width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: type 5s steps(13);
+    }
+    @keyframes type {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+    <!-- data 속성 -->
+<h1 data-text="hello world">hello world</h1>
+</body>
+</html>

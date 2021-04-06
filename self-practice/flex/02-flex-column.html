@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="default.css">
+<title>flex column</title>
+<style>
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        border: 10px solid red;
+    }
+    .flex-item {
+        /* flex:1; */
+        flex: 1 auto;
+    }
+
+    @media (min-width: 600px) {
+        .flex-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .flex-item {
+            width: 50%;
+            /* flex-basis: auto; */
+            /* flex: 0 auto; */
+            /* flex: 0 auto; */
+            /* flex-grow: 0; */
+        }
+    }
+    @media (min-width:900px) {
+        .flex-item {
+            width: 33%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+    <div class="flex-item">aaa</div>
+    <div class="flex-item">bb</div>
+    <div class="flex-item">cccc</div>
+    <div class="flex-item">dddddd</div>
+    <div class="flex-item">dddddd</div>
+    <div class="flex-item">dddddd</div>
+    <div class="flex-item">dddddd</div>
+    <div class="flex-item">cccc</div>
+    <div class="flex-item">dddddd</div>
+    <div class="flex-item">dddddd</div>
+    <div class="flex-item">dddddd</div>
+    <div class="flex-item">cccc</div>
+    <div class="flex-item">dddddd</div>
+    <div class="flex-item">dddddd</div>
+    <div class="flex-item">dddddd</div>
+    <div class="flex-item">cccc</div>
+    <div class="flex-item">dddddd</div>
+</div>
+
+</body>
+</html>

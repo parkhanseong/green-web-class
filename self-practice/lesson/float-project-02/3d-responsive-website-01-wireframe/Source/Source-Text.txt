@@ -1,0 +1,212 @@
+################### Navigation ###################
+
+Home
+About
+Project
+Plan & History
+Awards
+Location
+Contact
+
+We design places, not projects.
+Hiring
+
+################### Section : home ###################
+
+You can do it with CodingWorks
+
+Creative
+Architecture
+Specialists
+
+################### Section : about ###################
+
+
+Together we can make an impact
+Design Works the excitement of an entrepreneurial environment with the stability of an established practice. Principals and senior leadership work side-by-side with junior designers to create innovative, workable designs.
+
+We’re always looking for talent
+If you don’t see an open position that fits your talents, send us your resume. We’re always looking for smart, self-starters and will reach out to you if something becomes available.
+
+Fellowship
+Every summer we offer a Fellowship to a select group of students in architecture, planning and landscape architecture. Read about our 2019 Fellowship winners and learn more about what the Fellowship has to offer.
+
+################### Section : project ###################
+
+Project : Glass Wall Architecture
+
+[Dummy Text with Lorem40]
+
+Area : 1670 m2
+Completed Date : September 2018
+Architect : Andrew Yu
+225
+WORKING DAY
+320
+MEMBERS
+3M
+BUDGET
+
+Project : Hallway of Architecture
+
+[Dummy Text with Lorem40]
+
+Area : 2345 m2
+Completed Date : April 2019
+Architect : Robert Matteus
+321
+WORKING DAY
+420
+MEMBERS
+8M
+BUDGET
+
+Project : Outside Stairs Architecture
+
+[Dummy Text with Lorem40]
+
+Area : 1200 m2
+Completed Date : May 2020
+Architect : Christine Jung
+132
+WORKING DAY
+202
+MEMBERS
+5M
+BUDGET
+
+################### Section : plan ###################
+
+Planning For the Next Project
+
+[Dummy Text with Lorem50]
+
+History
+
+The Project of Architect for the 2013
+The Project of Architect for the 2014
+The Project of Architect for the 2015
+The Project of Architect for the 2016
+The Project of Architect for the 2017
+The Project of Architect for the 2018
+The Project of Architect for the 2019
+The Project of Architect for the 2020
+
+[Dummy Text with Lorem20]
+
+################### Section : awards-winner ###################
+
+2020 Architecture Award Winner
+The mission of the Architecture MasterPrize (AMP) is to advance the appreciation and exposure of quality architectural design worldwide. The AMP architecture award celebrates creativity and innovation in the fields of architectural design, landscape architecture, and interior design. Submissions from architects all around the world are welcome.
+
+view the awards
+
+################### Section : location ###################
+
+CREATIVE DESGIN GROUP
+Headquarters
+
+[Dummy Text with Lorem30]
+
+Address : Address: 309, New Cavendish St, EC1Y 3WK / Tel : 0800 214 5252
+
+THE PERFECT WAY
+Customer Service
+
+[Dummy Text with Lorem30]
+
+Address : 11 Fifth Ave - New York, US / Tel : 0800 809 3400
+
+Built and natural contexts
+
+[Dummy Text with Lorem15]
+
+Landscape design
+
+[Dummy Text with Lorem15]
+
+Every building site unique
+
+################### Section : contact ###################
+
+Contact Us
+Feel free to ask for details, dont’save any questions.
+
+Email *
+Subject *
+Message *
+send messages
+
+Our Office
+
+Address : Address: 309, New Cavendish St, EC1Y 3WK
+Phone : 0800 214 5252
+Email : designworks@designworks.com
+
+Business Hours
+
+Monday - Friday : 9am to 5pm
+Saturday : 9am to 2pm
+Sunday : Closed
+
+Get in Touch
+
+[Dummy Text with Lorem60]
+
+################### Sub Page Modal : hiring ###################
+
+HIRING
+
+Come work with us
+
+Together we can make an impact
+
+Design Works offers the excitement of an entrepreneurial environment with the stability of an established practice. Principals and senior leadership work side-by-side with junior designers to create innovative, workable designs. With our global practice, we are currently creating the next generation of healthy, experience-based urban neighborhoods and resorts.
+
+Every summer we offer a Fellowship to a select group of students in architecture, planning and landscape architecture. Read about our 2019 Fellowship winners and learn more about what the Fellowship has to offer.
+
+We’re always looking for talent
+
+If you don’t see an open position that fits your talents, send us your resume. We’re always looking for smart, self-starters and will reach out to you if something becomes available.
+
+NEW YORK
+Sally Jung
+123.4556.7890
+newyork@designworks.com
+ 
+SAN FRANCISCO
+John Kim
+123.4556.7890
+sanfrancisco@designworks.com
+   
+Please do not hesitate to contact us. Thanks.
+
+################### Sub Page Modal : Project01~03 ###################
+
+PROJECT
+We design complete environments
+
++ Project Descriptions #01
+
+[Dummy Text with Lorem100]
+
+Area : 1670 m2
+Completed Date : September 2018
+Architect : Robert Matteus
+Working day : 225
+Member : 320
+Budget : 3M
+
+Today it is busily, loudly rebounding.
+
+[Dummy Text with Lorem100]
+
+invisible city was a space of cybernetic
+
+[Dummy Text with Lorem100]
+
+This work-network shared in Zoom-mode
+
+[Dummy Text with Lorem100]
+
+We combine planning, architecture, landscape architecture, and interior design as a single professional service to design complete environments that steward natural resources, enhance value for clients, and create communities that endure over time.

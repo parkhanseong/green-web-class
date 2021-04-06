@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>unpredict circle</title>
+<style>
+    body {
+        background: #111;
+    }
+    .box {
+        border: 1px solid #fff;
+        padding: 10rem;
+    }
+    .circle:hover {
+        background: gold;
+    }
+    .circle {
+        border: 1px solid #999;
+        width: 300px;
+        height: 300px;
+        border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+        animation: rotate 5s linear infinite;
+        transition: .5s;
+    }
+    .two {
+        animation: rotate 5s linear infinite reverse;
+    }
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="circle one">
+            <div class="circle two">
+                <div class="circle three">
+                    <div class="circle four">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

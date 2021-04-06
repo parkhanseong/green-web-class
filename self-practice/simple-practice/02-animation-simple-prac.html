@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>animation simple parc</title>
+<style>
+    .container {
+        width: 500px;
+        height: 500px;
+        background: lightcoral;
+    }
+    .box {
+        width: 50%;
+        height: 50%;
+        background: gold;
+        border-radius: 50%;
+        animation: cycle 5s infinite;
+        /* 
+        진행 방향을 결정한다
+        normal: 정방향
+        reverse : 역방향
+        alternate : 번갈아가며 진행
+        alternate-reverse: 뒤로 시작해서 번갈아가면서 진행
+        */
+        animation-direction: alternate-reverse;
+    }
+    @keyframes cycle {
+        0%{
+            transform: translateX(0);
+        }
+        25%{
+            transform: translate(100%);
+        }
+        50%{
+            transform: translate(100%, 100%);
+        }
+        75%{
+            transform: translate(0, 100%);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box"></div>
+</div>
+
+</body>
+</html>

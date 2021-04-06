@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>media</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    html, body {
+        height: 100%;
+        color: #999;
+    }
+    .wrap {
+        text-align: center;
+        width: 1024px;
+        height: 100%;
+        background: #6A7BA2;
+        margin: 0 auto;
+    }
+    .desktop {
+        color: #FFDFDE;
+        font-size: 2rem;
+    }
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* tablet */
+    @media (max-width: 768px) {
+        .wrap {
+            width: 100%;
+        }
+        .desktop {
+            font-size: 1rem;
+            color: #999;
+        }
+        .tablet {
+            font-size: 2rem;
+            color: #FFDFDE;
+        }
+    }
+    /* mobile */
+    @media (max-width: 380px) {
+        .wrap {
+            width: 100%;
+        }
+        .desktop, .tablet {
+            font-size: 1rem;
+            color: #999;
+        }
+        .mobile {
+            font-size: 2rem;
+            color: #FFDFDE;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+    <div class="center">
+        <div class="desktop">
+            <h1>desktop</h1>
+        </div>
+        <div class="tablet">
+            <h1>tablet</h1>
+        </div>
+        <div class="mobile">
+            <h1>mobile</h1>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

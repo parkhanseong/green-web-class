@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>backdrop filter</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html {
+        height: 100%;
+    }
+    body {
+        height: 100%;
+        background: url(../image/bg-1920.jpg) no-repeat center/cover;
+        padding: 300px;
+        backdrop-filter: blur(10px);
+    }
+    .center {
+        width: 480px;
+        height: 280px;
+        margin: 0 auto;
+        padding: 5rem;
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 3px #fff;
+        text-align: center;
+        /* backdrop-filter: blur(10px); */
+        /* filter: blur(1px); */
+        /* background: #000; */
+    }
+    h1 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #fff;
+        border-radius: 10px;
+        padding: .5em;
+        background: linear-gradient(to right, skyblue, blue);
+    }
+</style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="center">
+            <h1>hello world</h1>
+            <a href="#">
+                payment
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

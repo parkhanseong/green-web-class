@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+    .ground {
+        background: green;
+        height: 200px;
+    }
+    .ball {
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        border: 1px solid #000;
+        border-radius: 50%;
+        transform: translateY(75px);
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation-name: rolling;
+        animation-duration: 4s;
+        animation-iteration-count: 4;
+        animation-iteration-count: infinite;
+        /* 
+        direction : 진행방향
+        normal: 정방향
+        reverse: 역방향
+        alternate: 정방향 되돌아가기
+        alternate: 역방향 되돌아아기 */
+        animation-direction:alternate;
+        /* 
+        끝났을때의 위치
+        backward: 되돌아 온다
+        forward: 진행방향 그대로 둔다
+        */
+        animation-fill-mode: backwards;
+    }
+    @keyframes rolling {
+        0% {
+            transform: translateY(75px) translateX(0);
+        }
+        100% {
+            transform: translateY(75px) translateX(500px);
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="ground">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

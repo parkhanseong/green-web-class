@@ -161,25 +161,37 @@ header .desc {
     width: 80px;
 }
 .skills .skillProgress .item .progressLevel {
-    border: 1px solid #000;
     height: 10px;
-    background: linear-gradient(to right, gold, red);
 }
-.skills .skillProgress .item:nth-of-type(1) .progressLevel {
+.skills .item:nth-of-type(1) .progressLevel {
     width: 70%;
 }
-.skills .skillProgress .item:nth-of-type(2) .progressLevel {
+.skills .item:nth-of-type(2) .progressLevel {
     width: 80%;
 }
-.skills .skillProgress .item:nth-of-type(3) .progressLevel {
+.skills .item:nth-of-type(3) .progressLevel {
     width: 70%;
 }
-.skills .skillProgress .item:nth-of-type(4) .progressLevel {
+.skills .item:nth-of-type(4) .progressLevel {
     width: 90%;
 }
-.skills .skillProgress .item:nth-of-type(5) .progressLevel {
+.skills .item:nth-of-type(5) .progressLevel {
     width: 80%;
 }
-.skills .skillProgress .item:nth-of-type(6) .progressLevel {
+.skills .item:nth-of-type(6) .progressLevel {
     width: 70%;
+}
+.skills .innerBar {
+    height: 100%;
+    background: linear-gradient(to right, gold, red);
+    animation: auto-progress 2s;
+}
+
+@keyframes auto-progress {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }

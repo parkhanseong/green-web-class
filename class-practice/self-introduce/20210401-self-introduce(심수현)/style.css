@@ -14,7 +14,8 @@ body {
     margin: 50px 0;
 }
 .inner {
-    width: 50%;
+    /* width: 50%; */
+    width: 900px;
     background: rgb(248, 244, 224);
     margin: 0 auto;
 }
@@ -30,9 +31,10 @@ header h1 {
 header p {
     padding-bottom: 30px;
 }
-.intro {
-    /* background: coral; */
-}
+/* 코드 삭제 */
+/* .intro { */
+/* background: coral; */
+/* } */
 .intro .imgBox {
     text-align: center;
     margin-bottom: 10px;
@@ -52,81 +54,94 @@ header p {
     height: 100px;
     line-height: 50px;
 }
-.intro .paragraph p {
-    /* padding-bottom: 50px; */
-}
-.profile {
-    /* background: skyblue; */
-}
+
+/* 여기도 쓰지 않는 코드 삭제 */
+/* .intro .paragraph p { */
+/* padding-bottom: 50px; */
+/* } */
+/* .profile { */
+/* background: skyblue; */
+/* } */
 .profile ul {
     text-align: center;
     padding: 50px 0 50px 0;
     height: 450px;
 }
-.profile ul li {
+.profile li {
     display: inline-block;
     width: 250px;
     border: 1px solid #999;
     box-shadow: 5px 5px 5px #666;
     transition: all .5s;
 }
-.profile ul li img {
+.profile img {
     max-width: 100%;
 }
-.profile ul li:hover {
+.profile li:hover {
     width: 300px;
 }
-.profile ul li h3 {
+.profile li h3 {
     margin: -50px 0 50px 0;
     color: #fff;
 }
-.profile ul li p {
+.profile li p {
     padding: 0 1px 5px 0;
 }
-.skills {
-    /* background: gold; */
-}
+
+/* 쓰지 않는 코드는 삭제 */
+/* .skills { */
+/* background: gold; */
+/* } */
+/* 
+여기도 아랫쪽으로 마찬가지로 .container 다 날려도 되요
+*/
 .skills .container {
     border: 1px solid #999;
     padding: 30px;
 }
-.skills .container h2 {
+.skills h2 {
     text-align: center;
     text-transform: uppercase;
 }
-.skills .container .item .progress {
+.skills .item .progress {
     border: 1px solid #000;
     height: 40px;
     padding: 7px;
-    
 }
-.skills .container .item p {
+.skills .item p {
     padding: 5px 0;
 }
-.skills .container .item p span:nth-child(1) {
+.skills .item p span:nth-child(1) {
     display: inline-block;
     width: 150px;
 }
-.skills .container .item .progress .progressBar {
+.skills .progressBar {
     border: 1px solid #000;
     height: 25px;
-    background:linear-gradient(to right, rgba(24,107,76,1), rgba(197,209,186,1) )
+    background: linear-gradient(to right, rgba(24, 107, 76, 1), rgba(197, 209, 186, 1));
 }
-.skills .container .item:nth-of-type(1) .progressBar {
+/* 
+.skills .container .item:nth-of-type(1) .progressBar { 
+아래처럼 다이렉트로 접근해도 되요
+좀더 짧아져서 좋은 면이 있죠
+처음엔 연습이라 다단구조로 접근한 것도 있고
+그것도 뭐 나름의 스타일이긴 한데 점점 익숙해지면 짧게 하고싶어져요
+*/
+.skills .item:nth-of-type(1) .progressBar {
     width: 90%;
 }
-.skills .container .item:nth-of-type(2) .progressBar {
+.skills .item:nth-of-type(2) .progressBar {
     width: 80%;
 }
-.skills .container .item:nth-of-type(3) .progressBar {
+.skills .item:nth-of-type(3) .progressBar {
     width: 60%;
 }
-.skills .container .item:nth-of-type(4) .progressBar {
+.skills .item:nth-of-type(4) .progressBar {
     width: 60%;
 }
-.skills .container .item:nth-of-type(5) .progressBar {
+.skills .item:nth-of-type(5) .progressBar {
     width: 90%;
 }
-.skills .container .item:nth-of-type(6) .progressBar {
+.skills .item:nth-of-type(6) .progressBar {
     width: 80%;
 }
