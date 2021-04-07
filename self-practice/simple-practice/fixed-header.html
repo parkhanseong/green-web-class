@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<title>fixed header</title>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    header {
+        position: fixed;
+        background: gold;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        /* z-index: -1; */
+        /* opacity: .5; */
+    }
+    main {
+        /* padding-top: 100px; */
+        /* margin-top: 100px; */
+        z-index: 0;
+    }
+    .btnTop {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        /* border: 1px solid red; */
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        /* background: #999; */
+        color: #fff;
+        background: #000;
+        text-align: center;
+        line-height: 50px;
+        font-size: 1rem;
+        overflow: hidden;
+    }
+    /* .btnTop:after {
+        content: '';
+
+    } */
+    a {
+        /* border-radius: 50%; */
+        width: 100%;
+        display: inline-block;
+        /* background: gold; */
+        text-decoration: none;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+
+    <div class="wrap">
+        <header>
+            <h1>header</h1>
+        </header>
+        <main>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae voluptates blanditiis, libero asperiores placeat ut temporibus sequi commodi ab incidunt modi doloribus tenetur repudiandae ducimus molestias. Voluptas neque autem corporis.
+                Magnam quaerat molestias magni modi illum! Ullam fuga quod facilis, illo debitis aliquid, aperiam temporibus maxime minima saepe optio dolore? Dolore ipsam iste laboriosam numquam, expedita quia harum perspiciatis fugit.
+                Quibusdam veniam labore praesentium tenetur repudiandae doloremque, dolores totam deleniti eius id corporis quisquam qui eveniet fugit placeat odit accusantium, hic repellendus sint! Adipisci unde, ipsa eum error consectetur nobis.
+            </p>
+        </main>
+        <div class="btnTop">
+            <a href="#">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>basketball</title>
+<style>
+    .ground {
+        width: 600px;
+        height: 200px;
+        background: brown;
+    }
+    .ball {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: rgb(181, 114, 114);
+        border: 1px solid #fff;
+        border-radius: 50%;
+        animation: bounce-vertical 5s, bounce-horizontal 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes bounce-vertical {
+        0% {
+            /* margin-top: 0; */
+            transform: translateX(0px);
+        }
+        20% {
+            /* margin-top: 100px; */
+            transform: translateX(100px);
+        }
+        40% {
+            /* margin-top: 0; */
+            transform: translateX(200px);
+        }
+        60% {
+            /* margin-top: 100px; */
+            transform: translateX(300px);
+        }
+        80% {
+            /* margin-top: 0; */
+            transform: translateX(400px);
+        }
+        100% {
+            /* margin-top: 100px; */
+            transform: translateX(500px);
+        }
+    }
+    @keyframes bounce-horizontal {
+        0% {
+            margin-top: 0;
+        }
+        100% {
+            margin-top: 100px;
+        }
+    }
+
+</style>
+</head>
+<body>
+
+<div class="ground">
+    <div class="ball"></div>
+</div>
+
+</body>
+</html>
