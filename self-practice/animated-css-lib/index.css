@@ -2,14 +2,27 @@
 @import "common.css";
 
 /* index page */
+
+/* top */
 .skewBg {
     transform: skewY(-10deg) translateY(-110px);
     background: #f9ebde;
     color: #815854;
 }
-.skewBg .rowTitle h1 {
+.skewBg .container {
+    padding: 12rem 5rem;
+    transform: skewY(10deg) translateY(100px);
+}
+.skewBg .aniTitle h1 {
     display: inline-block;
     margin-right: 1rem;
+}
+.skewBg h1,
+.unskewBg h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.3;
 }
 .skewBg .rotateItem {
     display: inline-block;
@@ -47,14 +60,6 @@
 .skewBg .rotateItem:nth-of-type(6) {
     animation-delay: 1.2s;
 }
-
-.skewBg h1,
-.unskewBg h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    line-height: 1.3;
-}
 .skewBg a {
     margin-top: 20px;
     text-transform: uppercase;
@@ -66,12 +71,13 @@
     color: #f9ebde;
     background: #815854;
 }
+
+/* unskewdBg */
+.unskewBg .container {
+    padding: 0 5rem;
+}
 .unskewBg p {
     font-size: 2rem;
-}
-.skewBg .container {
-    padding: 12rem 5rem;
-    transform: skewY(10deg) translateY(100px);
 }
 .unskewBg {
     text-align: right;

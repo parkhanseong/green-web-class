@@ -1,0 +1,171 @@
+@charset "utf-8";
+@import "common.css";
+
+/* header */
+header {
+    background: #815854;
+    color: #f9ebde;
+    text-align: center;
+}
+header h1 {
+    line-height: 100px;
+}
+
+/* nav */
+nav li {
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+}
+nav a {
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    color: #815854;
+    background: #f9ebde;
+}
+nav a:hover {
+    background: #815854;
+    color: #f9ebde;
+    border-bottom: 5px solid #f9ebde;
+}
+
+/* banner */
+section.banner .inner {
+    padding-bottom: 0;
+}
+section.banner .bannerBox {
+    width: 600px;
+    height: 160px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid #815854;
+}
+section.banner .scroll {
+    width: 1800px;
+    font-size: 0;
+    margin: 0 auto;
+    animation: rolling-banner 5s infinite;
+}
+section.banner img {
+    width: 600px;
+    height: 160px;
+}
+@keyframes rolling-banner {
+    0% {
+        margin-left: 0;
+    }
+    50% {
+        margin-left: -600px;
+    }
+    100% {
+        margin-left: -1200px;
+    }
+}
+
+/* main */
+main {
+    color: #815854;
+    background: #f9ebde;
+}
+
+/* section */
+section .inner {
+    padding: 2rem 5rem;
+}
+/* desc */
+.desc .item {
+    margin-bottom: 2rem;
+    border: 1px solid #000;
+    height: 209px;
+}
+.desc .photo {
+    display: inline-block;
+    width: 30%;
+    overflow: hidden;
+}
+.desc img {
+    max-width: 100%;
+    vertical-align: top;
+    transition: all 1s;
+}
+.desc img:hover {
+    transform: scale(1.2);
+}
+.desc .detail {
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+    padding: 2rem 1rem;
+    vertical-align: top;
+}
+.desc h2 {
+    margin-bottom: 1rem;
+}
+.desc .item:nth-child(2) {
+    text-align: right;
+}
+.desc .detailBtn {
+    text-decoration: none;
+    color: inherit;
+    padding: .7em;
+    display: inline-block;
+    margin-top: 10px;
+    background: #815854;
+    color: #f9ebde;
+    border-radius: 10px;
+}
+.desc .detailBtn:hover {
+    color: #815854;
+    background: #f9ebde;
+    border: 1px solid #815854;
+}
+
+/* footer */
+footer {
+    /* border: 1px solid red; */
+    text-align: center;
+}
+footer ul {
+    display: inline-block;
+    /* padding: 2rem 0; */
+    padding-top: 2rem;
+    width: 200px;
+    /* border: 1px solid blue; */
+    /* height: 100px; */
+}
+footer li {
+    /* width: 100px; */
+    /* border: 1px solid #000; */
+    height: 30px;
+}
+footer a {
+    height: 20px;
+    line-height: 20px;
+    font-size: 1rem;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer .copy {
+    padding: 2rem 0;
+    /* border: 1px solid #000; */
+}
+
+/*  */
+/* footer {
+    text-align: center;
+}
+footer ul {
+    display: inline-block;
+    width: 20%;
+    border: 1px solid coral;
+}
+footer li {
+    height: 30px;
+    border: 1px solid blue;
+}
+footer li a {
+    line-height: 30px;
+} */
