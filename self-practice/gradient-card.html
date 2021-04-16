@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>gra card</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .card {
+        width: 400px;
+        height: 500px;
+        position: relative;
+        margin: 0 auto;
+        top: 200px;
+        color: #fff;
+        transition: 1s;
+    }
+    .card:hover {
+        transform: translateY(-30px);
+    }
+    .card:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, crimson, gold);
+        filter: blur(40px);
+    }
+    .card:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, crimson, gold);
+    }
+    .card span {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        background: rgba(0, 0, 0, 0.28);
+        z-index: 1;
+        padding: 6rem 2rem;
+    }
+    .card span:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background: rgba(182, 175, 175, 0.2);
+    }
+    button {
+        border: none;
+        padding: 1rem;
+        background: #fff;
+        color: purple;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div class="card">
+        <span>
+            <h1>hans.park</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore placeat, inventore sint voluptates veritatis aut totam sequi optio qui mollitia repudiandae enim magnam nisi porro quas quos necessitatibus nesciunt maxime?</p>
+            <button>button</button>
+        </span>
+    </div>
+</body>
+</html>

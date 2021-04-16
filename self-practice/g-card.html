@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>dd</title>
+<style>
+    .card {
+        width: 300px;
+        height: 500px;
+        /* border: 1px solid #000; */
+        position: relative;
+        margin: 0 auto;
+        top: 100px;
+    }
+    .card:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, crimson, gold);
+        filter: blur(30px);
+    }
+    .card:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, crimson, gold);
+    }
+    .card span {
+        position: absolute;
+        /* border: 1px solid #000; */
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
+        background: rgba(0,0,0,.28);
+        z-index: 1;
+    }
+    .card span:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: rgba(0,0,0,.1);
+    }
+</style>
+</head>
+<body>
+
+    
+<div class="card">
+    <span></span>
+</div>
+
+
+</body>
+</html>

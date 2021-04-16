@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>abs vs fix</title>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+<style>
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+    * {
+        margin: 0;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    header {
+        width: 100%;
+        border: 1px solid #000;
+        background: #111;
+        color: #999;
+        text-align: center;
+        height: 200px;
+        line-height: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    section {
+        border: 1px solid #000;
+    }
+    img {
+        max-width: 100%;
+        border-radius: 50%;
+        border: 1px solid #000;
+        width: 100px;
+        position: fixed;
+        left: 30px;
+        top: 30px;     
+        background: #000;  
+    }
+    section {
+        height: 500px;
+        padding: 1rem;
+    }
+    section:nth-of-type(1) {
+        margin-top: 202px;
+        background: lightblue;
+    }
+    section:nth-of-type(2) {
+        background: dodgerblue;
+    }
+    section:nth-of-type(3) {
+        background: royalblue;
+    }
+    .topBtn {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #000;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        overflow: hidden;
+    }
+    .topBtn a {
+        background: #fff;
+        color: inherit;
+        display: block;
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>title</h1>
+    <img src="image/profile-remove-bg.png" alt="">
+</header>
+<section>
+    <h1>title</h1>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa qui modi quidem deleniti asperiores ipsam ex, saepe perferendis iure fugit cumque. Optio porro odit qui, fugit incidunt reiciendis amet fugiat.
+    Ab a expedita error ad officia, vel corporis ut sint. Veritatis, facere! Magnam eligendi perferendis placeat voluptatum blanditiis quis ipsam illo provident at optio aperiam obcaecati, ut accusantium earum dicta!
+    Labore veritatis perferendis pariatur mollitia ipsam eius soluta modi delectus. Ducimus dolorem tempore quae fuga quo quidem vero similique iure sit omnis. Error eveniet dolor eaque repudiandae explicabo deleniti iusto?
+</section>
+<section>
+    content1
+</section>
+<section>
+    content1
+</section>
+<section>
+    content1
+</section>
+<section>
+    content1
+</section>
+<div class="topBtn">
+    <a href="#">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+</body>
+</html>

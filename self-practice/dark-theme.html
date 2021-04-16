@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<style>
+    :root {
+        --pri-bg: black;
+        --sec-bg: white;
+    }
+    .dark-theme {
+        --pri-bg: red;
+        --sec-bg: black;
+    }
+    body {
+        background: var(--pri-bg);
+    }
+    .circle {
+        background: var(--pri-bg);
+    }
+    .blue {
+        color: blue;
+    }
+</style>
+</head>
+<body>
+    <a href="#" id="icon" onclick="darkMode()">dark mode</a>
+    <div class="circle">
+        circle
+    </div>
+
+<script>
+    // var dark = document.getElementById('icon');
+    // console.log(dark);
+        // dark.onclick = function() {
+        //     document.body.classList.toggle("dark-theme");
+        // }
+    function darkMode() {
+        document.body.classList.toggle("dark-theme");
+    }
+
+    // function blue () {
+        
+    // }
+
+
+</script>
+</body>
+</html>

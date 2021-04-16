@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>shop test</title>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+        display: block;
+    }
+    .itemContainer {
+        margin-top: 100px;
+        border: 1px solid red;
+        text-align: center;
+        width: 1000px;
+    }
+    .item {
+        border: 1px solid #000;
+        display: inline-block;
+        width: 30%;
+        position: relative;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        vertical-align: top;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+        border: 1px solid #fff;
+        padding: .5em 1em;
+        display: inline-block;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 3rem;
+        background: rgba(0,0,0,.2);
+        opacity: 0;
+        transition: .5s;
+    }
+    .item:hover .overlay {
+        opacity: 1;
+    }
+    
+</style>
+</head>
+<body>
+
+    <div class="itemContainer">
+        <div class="item">
+            <img src="image/shopping-img.jpg" alt="">
+            <div class="overlay">
+                <h2>title</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus laudantium a, nemo impedit </p>
+                <a href="#">buy</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="image/shopping-img.jpg" alt="">
+            <div class="overlay">
+                <h2>title</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus laudantium a, nemo impedit </p>
+                <a href="#">buy</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="image/shopping-img.jpg" alt="">
+            <div class="overlay">
+                <h2>title</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus laudantium a, nemo impedit </p>
+                <a href="#">buy</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

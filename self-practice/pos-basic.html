@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>pos basic</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    div {
+        border: 1px solid #000;
+    }
+    .parent {
+        padding: 2rem;
+        height: 700px;
+        position: relative;
+    }
+    .box {
+        height: 100px;
+        background: skyblue;
+    }
+    .static {
+        position: static;
+        top: 0;
+        left: 0;
+        background: gold;
+    }
+    .relative {
+        position: relative;
+        /* top: 10px; */
+        /* left: 10px; */
+        background: coral;
+        /* right: 100px;
+        bottom: 100px; */
+    }
+    .absolute {
+        /* width: 200px;
+        height: 200px;
+        border-radius: 50%; */
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        background: green;
+    }
+    .fixed {
+        background: purple;
+        /* position: fixed; */
+        /* top: 100px;
+        left: 100px; */
+    }
+</style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box top">top</div>
+        <div class="box static">static</div>
+        <div class="box relative">relative</div>
+        <div class="box absolute">absolute</div>
+        <div class="box fixed">fixed</div>
+        <div class="box bottom">bottom</div>
+    </div>
+</body>
+</html>

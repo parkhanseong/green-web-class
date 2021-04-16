@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>pos basic</title>
+<style>
+    .container {
+        padding: 1rem;
+        border: 1px solid #000;
+        width: 500px;
+        height: 600px;
+        position: relative;
+    }
+    .container > div {
+        border: 1px solid #000;
+        height: 100px;
+        width: 100px;
+    }
+    .top, .bottom {
+        background: skyblue;
+    }
+    .static {
+        background: gold;
+        /* margin-top: 50px; */
+        /* transform: translateY(10px); */
+        /* top: 50px; */
+        /* left: 50px; */
+    }
+    .relative {
+        background: coral;
+        position: relative;
+        /* top: -10%;
+        left: -10%; */
+        /* 여백 */
+        /* margin-top: 50px; */
+        /* 변형 */
+        /* transform: translate(50px, 50px); */
+        /* 이동/위치 */
+        /* left: -50px; */
+        /* top: -50px; */
+        /* bottom: 100px; */
+    }
+    .absolute {
+        position: absolute;
+        /* margin-top: 50px; */
+        /* transform: translate(50px, 50px); */
+        /* top: 50px; */
+        /* left: 50px; */
+        /* top: 100px;
+        left: 100px; */
+        /* top: 50%; */
+        /* left: 50%; */
+        background: green;
+    }
+    .fixed {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        background: purple;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="top">top</div>
+    <div class="static">static</div>
+    <div class="relative">relative</div>
+    <div class="absolute">absolute</div>
+    <div class="fixed">fixed</div>
+    <div class="bottom">bottom</div>
+</div>
+
+</body>
+</html>

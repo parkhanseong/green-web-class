@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>position img practice </title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        color: #999;
+    }
+    a {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+        width: 100%;
+    }
+    .tnb {
+        float: right;
+    }
+    .inner {
+        width: 1100px;
+        margin: 0 auto;
+    }
+    li {
+        list-style: none;
+    }
+    .tnb li {
+        margin-top: 20px;
+        width: 80px;
+        text-align: center;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    .tnb li a {
+        line-height: 50px;
+        position: relative;
+    }
+    .tnb li a:after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        background: #999;
+        right: 50%;
+        bottom: 10px;
+        transition: all .5s;
+    }
+    .tnb li a:hover:after {
+        width: 100%;
+        transform: translateX(50%);
+    }
+    header {
+        height: 100px;
+        background: rgba(34, 34, 34, 0.881);
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        color: #fff;
+    }
+    header h1 {
+        line-height: 100px;
+        display: inline-block;
+    }
+
+    section.intro .inner {
+        height: 100vh;
+        background: url(../../image/city-1920.jpg) no-repeat center/cover;
+        position: relative;
+    }
+    section.intro .inner:after  {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.8);
+    }
+    section.intro .desc {
+        color: #ddd;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        line-height: 1.25;
+    }
+    section.intro .desc h1 {
+        margin-bottom: 20px;
+        font-size: 3rem;
+    }
+    section.intro .desc a {
+        border: 1px solid #fff;
+        width: 100px;
+        text-align: center;
+        padding: .5rem 1rem;
+        border-radius: 20px;
+        margin-top: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    section.intro .desc a:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0%;
+        height: 100%;
+        background: #fff;
+        transition: .5s;
+        color: #fff;
+        opacity: .5;
+    }
+    section.intro .desc a:hover:before {
+        width: 100%;
+    }
+
+    section.about {
+        /* background: #999; */
+        max-height: 100vh;
+        padding-top: 60px;
+        padding-bottom: 2rem;
+    }
+    section.about p {
+        margin-top: 1rem;
+        width: 500px;
+    }
+    section.about h1 {
+        display: inline-block;
+        font-size: 3rem;
+        color: #000;
+    }
+    section.about .imgWrap {
+        position: relative;
+    }
+    section.about img:nth-child(1) {
+        width: 80%;
+    }
+    section.about img:nth-child(2) {
+        width: 300px;
+        position: absolute;
+        right: 0;
+        bottom: -100px;
+    }
+    footer {
+        background: #222;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    footer ul {
+        display: inline-block;
+        width: 200px;
+    }
+    footer ul li {
+        width: 100px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+    <header>
+        <div class="inner">
+            <h1>web class</h1>
+            <ul class="tnb">
+                <li><a href="#">Back-end</a></li>
+                <li><a href="#">Font-end</a></li>
+                <li><a href="#">Publisher</a></li>
+                <li><a href="#">Designer</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="intro">
+        <div class="inner">
+            <div class="desc">
+                <h1>Creative</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, molestiae alias? Id voluptatum, molestiae deserunt quod pariatur optio iusto at vel fugiat magni eius dolorem quisquam ipsam, animi eos eveniet.
+                </p>
+                <a href="#">join</a>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="inner">
+            <h1>be interactive <br>
+                developer
+            </h1>
+            <div class="imgWrap">
+                <img src="../../image/office-img.jpg" alt="">
+                <img src="../../image/office-work.jpg" alt="">
+            </div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere officia ab modi repellat voluptatibus quod assumenda tempore? Consequuntur necessitatibus dicta officiis ullam, soluta similique. Illo hic delectus adipisci facilis. Maxime.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <div class="inner">
+            <ul>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">info</a></li>
+                <li><a href="#">address</a></li>
+                <li><a href="#">copy right </a></li>
+            </ul>
+            <ul>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">info</a></li>
+                <li><a href="#">address</a></li>
+                <li><a href="#">copy right </a></li>
+            </ul>
+            <ul>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">info</a></li>
+                <li><a href="#">address</a></li>
+                <li><a href="#">copy right </a></li>
+            </ul>
+            <ul>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">info</a></li>
+                <li><a href="#">address</a></li>
+                <li><a href="#">copy right </a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

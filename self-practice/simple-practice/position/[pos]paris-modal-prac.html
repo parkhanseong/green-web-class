@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>modal prac</title>
+<script src="../../js/jquery-3.6.0.min.js"></script>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .modalWrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.2);
+        /* opacity: .3; */
+        width: 100vw;
+        height: 100vh;
+    }
+    img {
+        max-width: 100%;
+    }
+    .modal {
+        border: 1px solid #000;
+        background: #222;
+        color: #999;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 400px;
+        height: 450px;
+        margin: auto;
+        text-align: center;
+    }
+    .modal h1 {
+        padding: 1rem 0;
+
+    }
+    
+    button {
+        margin-top: 20px;
+        width: 100px;
+        height: 50px;
+        background: #999;
+        color: #fff;
+        font-size: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<!-- <script>
+    window.onload = function(){
+        console.log('>>> window onload');
+        function closeModal() {
+            // var modal = document.querySelector('.modal');
+            // modal.remove;
+            // alert("go");
+            console.log('>>> close')
+            $('.modalWrap').remove();
+        }
+        // function openModal() {
+        //     // var modal = document.querySelector('.modal');
+        //     // alert("wow");
+        //     console.log('>>> open')
+        //     $('.modalWrap').show();
+        // }
+    }
+</script> -->
+</head>
+<body>
+    <button onclick="openModal()">modal show</button>
+<p>
+    psum accusamus aperiam? Voluptate iure inventore tempora ea commodi unde, est fuga a, reprehenderit ratione sapiente, accusantium cupiditate dolorem sequi!
+    Minus doloremque eos impedit, quis eum tenetur, officia at nemo deserunt accusamus ducimus consequuntur. Nostrum repellendus non vel? Veritatis explicabo nam corporis minima sit soluta cum molestias non, eius autem?
+    Illum quam pariatur nihil! Vel, velit, voluptatem aliquam, incidunt sunt ratione iure itaque at id nihil quia! Esse alias incidunt, itaque natus perferendis expedita, odit doloremque, fugiat aut voluptates sunt.
+    Quos neque tempore quia cum. Modi dolore sunt cupiditate quas magni architecto consectetur ullam officiis laboriosam. Perspiciatis cumque repudiandae ducimus amet maiores, nam suscipit quos excepturi, ratione, aut dicta molestias.
+    Ab cumque repellat maiores recusandae voluptatum? Fugit eveniet optio animi debitis amet modi asperiores architecto dolor alias explicabo atque voluptatibus at molestias quo nisi, praesentium ducimus. Veritatis doloremque suscipit ab.
+    Eligendi ex, nisi beatae fuga earum officia laborum tempore dolore ipsum accusamus aperiam? Voluptate iure inventore tempora ea commodi unde, est fuga a, reprehenderit ratione sapiente, accusantium cupiditate dolorem sequi!
+</p>
+    <div class="wrap">
+        <div class="modalWrap">
+            <div class="modal">
+                <h1>파리로 떠나실래요?</h1>
+                <img src="../../image/paris-bg.jpg" alt="">
+                <button onclick="closeModal();">안가요</button>
+                <button onclick="closeModal();">갈게요</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // window.onload = function(){
+            function closeModal() {
+                // var modal = document.querySelector('.modal');
+                // modal.remove;
+                // alert("go");
+                console.log('>>> close')
+                $('.modalWrap').remove();
+            }
+            function openModal() {
+                // var modal = document.querySelector('.modal');
+                // alert("wow");
+                console.log('>>> open')
+                $('.modalWrap').show();
+            }
+        // }
+    </script>
+</body>
+</html>

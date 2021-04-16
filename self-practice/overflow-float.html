@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>overflow</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+    .box {
+        border: 1px solid blue;
+        /* auto는 자식의 높이다 */
+        /* height: auto; */
+        /* height: 50px; */
+        overflow: hidden;
+        /* height: 80px; */
+        /* overflow: scroll; */
+    }
+    i {
+        border: 1px solid #000;
+        font-size: 15rem;
+        /* vertical-align: top; */
+    }
+    [class*="left"] {
+        float: left;
+    }
+    [class*="right"] {
+        float: right;
+    }
+    .box p {
+        border: 10px solid red;
+        /* margin-left: 200px; */
+        overflow: hidden;
+    }
+    .box p span {
+        background: blue;
+        clear: both;
+        display: block;
+    }
+</style>
+<body>
+    <div class="box">
+        <i class="fas fa-arrow-left"></i>
+        <p>
+            <span>wow</span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolorum saepe et nam, dignissimos sint quia quis, voluptatum amet vero voluptatibus? Animi nisi vitae fugit rem hic, praesentium non error.
+            Repudiandae, laudantium? Necessitatibus aspernatur nemo facere cupiditate cumque, architecto perspiciatis labore vero quos delectus eaque dignissimos ducimus. Voluptatem dicta facere illo blanditiis ab? Eos at explicabo repellat vitae officia libero?
+            Nihil tempora placeat vitae commodi et, quis neque magni praesentium. Odio est cupiditate nisi laudantium, nesciunt voluptatibus commodi sapiente molestiae minus placeat fugit voluptatem pariatur necessitatibus. Itaque asperiores consequatur velit.
+            Voluptate recusandae blanditiis doloremque ratione dolor? Eos commodi nihil ea fuga explicabo numquam, ad quia quis consequatur minus provident voluptatem assumenda deserunt maiores nisi modi neque iste nostrum voluptatum laboriosam.
+            Autem facilis minima optio eveniet placeat eius at incidunt neque. Nobis dignissimos dolores, maxime, quo odit dicta repellendus distinctio nesciunt repellat ad nam laboriosam facilis in, repudiandae optio aut perspiciatis.
+            Eius qui ducimus, molestiae culpa unde obcaecati animi nulla. Facere alias, veritatis error cum assumenda ea non dicta unde cupiditate excepturi, consectetur repellendus dolor, esse dolores nemo iusto! Harum, molestiae.
+            Sequi temporibus blanditiis dicta aut tempora exercitationem ratione, consequatur ut consequuntur, et quis. Inventore voluptatem aut ea voluptas veniam repudiandae recusandae dolores debitis perspiciatis facilis voluptate amet, impedit hic. Accusamus.
+            Voluptate ipsum officiis et provident temporibus officia minima suscipit ratione ut quidem, explicabo excepturi error, incidunt ipsam quo quibusdam itaque veritatis minus eligendi fugiat debitis cupiditate quam? Voluptate, sed ducimus.
+            Harum voluptatum repudiandae facilis fugit nostrum consectetur, quas labore provident reiciendis aliquid maiores placeat voluptate possimus repellendus eligendi nam repellat sequi. Ipsum veritatis ut enim alias non beatae labore excepturi.
+            Voluptates nemo a ullam pariatur odio sed qui necessitatibus obcaecati fugiat alias itaque enim optio consequuntur, laborum, eveniet est ipsa ea harum esse ducimus animi. Nihil magni eos optio perferendis!
+        </p>
+        <!-- <i class="fas fa-arrow-right"></i> -->
+        <!-- welcome -->
+    </div>
+    wow
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>dropdown</title>
+<style>
+    li {
+        list-style: none;
+    }
+    a {
+        display: inline-block;
+        color: inherit;
+        text-decoration: none;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .dropdown {
+        display: inline-block;
+        border: 10px solid red;
+    }
+    .dropdown > a {
+        border: 1px solid blue;
+        width: 100px;
+        line-height: 50px;
+        text-align: center;
+        background: pink;
+    }
+    .dropdown > a:hover {
+        
+    }
+    .dropdown ul { 
+        opacity: 1;
+    }
+    .dropdown ul {
+        border: 1px solid coral;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .dropdown ul li {
+    }
+    .dropdown ul li a {
+        width: 100px;
+        line-height: 50px;
+        text-align: center;
+        background: #999;
+        cursor: pointer;
+    }
+    .dropdown ul li a:hover {
+        background: pink;
+        color: #fff;
+    }
+
+    
+</style>
+</head>
+<body>
+
+    <div class="dropdown">
+        <a href="#">menu</a>
+        <ul>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
