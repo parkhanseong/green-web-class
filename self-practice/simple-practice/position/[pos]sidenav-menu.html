@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>pos side nav menu</title>
+
+<style>
+    /* reset css */
+    body {
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+    
+    
+    /* 보이는 버튼 영역 */
+    input[id="sideNav"] {
+        display: none;
+    }
+    input[id="sideNav"]:checked + .sideNavContainer {
+        right: 200px;
+    }
+
+    input[id="sideNav"] + .sideNavContainer > label {
+        display: inline-block;
+        background: pink;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+        border-radius: 30px 0 0 30px;
+    }
+
+    /* 전체 컨테이너 */
+    .sideNavContainer {
+        display: inline-block;
+        position: fixed;
+        top: 50px;
+        right: 0;
+        transition: all .5s;
+    }
+
+    /* 사이드 상세 메뉴 영역 */
+    .sideNavContainer ul {
+        position: absolute;
+        top: -50px;
+        left: 100%;
+        background: pink;
+        height: 100vh;
+        width: 200px;
+    }
+    .sideNavContainer ul li {
+        background: pink;
+        /* width: 100px; */
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .sideNavContainer ul li a {
+        display: block;
+    }
+    .sideNavContainer ul li a:hover {
+        background: #999;
+        color: #fff;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="wrap">
+    
+    
+    <aside>
+        <input type="checkbox" name="sideNav" id="sideNav">
+        <div class="sideNavContainer">
+            <label for="sideNav">menu</label>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+                <li><a href="#">menu6</a></li>
+            </ul>
+        </div>
+    </aside>
+</div>
+
+</body>
+</html>

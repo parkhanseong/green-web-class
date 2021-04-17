@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+    header {
+        background: rgba(34, 34, 34);
+        height: auto;
+    }
+    header h1 {
+        display: block;
+        text-align: center;
+    }
+    .tnb {
+        float: none;
+        text-align: center;
+    }
+    section.about h1 {
+        width: 100%;
+    }
+    section.about img:nth-child(1) {
+        max-width: 100%;
+    }
+    section.about img:nth-child(2) {
+        position: static;
+        max-width: 100%;
+    }
+
+    section.about p {
+        display: block;
+    }
+}

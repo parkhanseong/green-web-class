@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #999;
+}
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+}
+img {
+    max-width: 100%;
+}
+.tnb {
+    float: right;
+}
+.inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+li {
+    list-style: none;
+}
+.tnb li {
+    margin-top: 20px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 1rem;
+}
+.tnb li a {
+    line-height: 50px;
+    position: relative;
+}
+.tnb li a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: #999;
+    right: 50%;
+    bottom: 10px;
+    transition: all .5s;
+}
+.tnb li a:hover:after {
+    width: 100%;
+    transform: translateX(50%);
+}
+header {
+    height: 100px;
+    background: rgba(34, 34, 34);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    color: #fff;
+}
+header h1 {
+    line-height: 100px;
+    display: inline-block;
+}
+
+section.intro .inner {
+    height: 100vh;
+    background: url(../../image/city-1920.jpg) no-repeat center/cover;
+    position: relative;
+}
+section.intro .inner:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+}
+section.intro .desc {
+    color: #ddd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    line-height: 1.25;
+}
+section.intro .desc h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+section.intro .desc a {
+    border: 1px solid #fff;
+    width: 100px;
+    text-align: center;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+section.intro .desc a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: #fff;
+    transition: .5s;
+    color: #fff;
+    opacity: .5;
+}
+section.intro .desc a:hover:before {
+    width: 100%;
+}
+
+section.about {
+    /* min-height: 100vh; */
+    padding-top: 60px;
+    padding-bottom: 2rem;
+}
+section.about p {
+    margin-top: 1rem;
+    max-width: 500px;
+}
+section.about h1 {
+    display: inline-block;
+    font-size: 3rem;
+    color: #000;
+}
+section.about .imgWrap {
+    position: relative;
+}
+section.about img:nth-child(1) {
+    max-width: 80%;
+}
+section.about img:nth-child(2) {
+    max-width: 300px;
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+}
+footer {
+    background: #222;
+    padding: 1rem 0;
+    text-align: center;
+}
+footer ul {
+    display: inline-block;
+    width: 200px;
+}
+footer ul li {
+    max-width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>slider</title>
+<style>
+    .sliderContainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 350px;
+    }
+    .slider {
+        display: inline-block;
+        font-size: 0;
+        position: relative;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+    }
+    .roll {
+        width: 900px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .5s;
+    }
+    input[name="tabMenu"] {
+        display: none;
+    }
+    input[id="tab1"]:checked ~ .slider .roll {
+        left: 0;
+    }
+    input[id="tab2"]:checked ~ .slider .roll {
+        left: -300px;
+    }
+    input[id="tab3"]:checked ~ .slider .roll {
+        left: -600px;
+    }
+    .btn {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .btn label {
+        display: inline-block;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background: #999;
+        cursor: pointer;
+    }
+    input[id="tab1"]:checked ~ .btn label[for="tab1"],
+    input[id="tab2"]:checked ~ .btn label[for="tab2"],
+    input[id="tab3"]:checked ~ .btn label[for="tab3"]
+     {
+        background: coral;
+    }
+</style>
+</head>
+<body>
+
+<div class="sliderContainer">
+    <input type="radio" name="tabMenu" id="tab1" checked>
+    <input type="radio" name="tabMenu" id="tab2">
+    <input type="radio" name="tabMenu" id="tab3">
+
+    <div class="slider">
+        <div class="roll">
+            <img src="image/float-item.png" alt="">
+            <img src="image/float-item2.png" alt="">
+            <img src="image/float-item3.png" alt="">
+        </div>
+    </div>
+    <div class="btn">
+        <label for="tab1"></label>
+        <label for="tab2"></label>
+        <label for="tab3"></label>
+    </div>
+</div>
+
+</body>
+</html>

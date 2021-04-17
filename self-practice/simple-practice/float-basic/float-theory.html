@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>float theory</title>
+<style>
+    p, h1 {
+        margin: 0;
+    }
+    .profile {
+        max-width: 600px;
+        width: 100%;
+        margin: 100px auto;
+        border-radius: 20px;
+        padding: 1rem;
+        box-shadow: 0 5px 16px rgba(0,0,0,.7);
+    }
+    .profile img.left {
+        background: pink;
+        width: 150px;
+        max-width: 100%;
+        float: left;
+        margin-right: 10px;
+        border-radius: 50%;
+        /* shape-outside: circle(20px); */
+    }
+    
+    .profile p {
+    } 
+    .profile img.right {
+        width: 200px;
+        float: right;
+    }
+    .profile:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    /* .clear {
+        clear: both;
+    } */
+
+</style>
+</head>
+<body>
+    <div class="profile">
+        <img src="image/profile-remove-bg.png" alt="" class="left">
+        <h1>hans.park dev</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta unde molestias veniam tempora tenetur? Tenetur explicabo beatae quasi, assumenda dignissimos vero corporis suscipit provident repellendus vitae? Iusto odit ducimus ab.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta unde molestias veniam tempora tenetur? Tenetur explicabo beatae quasi, assumenda dignissimos vero corporis suscipit provident repellendus vitae? Iusto odit ducimus ab.
+        </p>
+        <img src="image/float-item2.png" alt="" class="right">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas possimus placeat aperiam expedita ab dolorem eum, sapiente harum accusantium soluta quos, nostrum adipisci unde? Labore numquam dolorum nihil dolore harum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas possimus placeat aperiam expedita ab dolorem eum, sapiente harum accusantium soluta quos, nostrum adipisci unde? Labore numquam dolorum nihil dolore harum?
+        </p>
+        <!-- <div class="clear"></div> -->
+    </div>
+
+</body>
+</html>
