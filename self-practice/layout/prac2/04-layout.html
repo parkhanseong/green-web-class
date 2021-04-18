@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="layout.css">
+<title>04-layout</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            border: 1px solid blue;
+        }
+        #wrap {
+            overflow: hidden;
+            height: 100%;
+        }
+        aside {
+            width: 200px;
+            height: 100%;
+            float: left;
+            background: #C7E0DD;
+        }
+        header {
+            width: calc(100% - 200px);
+            height: 100px;
+            background: #76B0AC;
+        }
+        main {
+            float: right;
+            width: calc(100% - 200px);
+            height: 900px;
+            background: #6C8BA7;
+        }
+        footer {
+            float: right;
+            width: calc(100% - 200px);
+            height: calc(100% - 1000px);
+            background: #CBB6B4;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+    <aside class="container">
+        side
+    </aside>
+    <header class="container">
+        header
+    </header>
+    <main class="container">
+        main
+    </main>
+    <footer class="container">
+        footer
+    </footer>
+</div>
+
+</body>
+</html>

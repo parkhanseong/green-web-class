@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="layout.css">
+<title>layout-01</title>
+
+<style>
+    body {
+        margin: 0;
+    }
+    .inner {
+        width: 100%;
+        max-width: 1600px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    #wrap {
+    }
+    header {
+        height: 100px;
+        background: #DFD0E0;
+    }
+    nav {
+        background: #BAB1C2;
+    }
+    aside.left {
+        float: left;
+        /* width: 20%; */
+        width: 200px;
+        height: 700px;
+        background:  #BAB1C2;
+    }
+    main {
+        float: left;
+        /* width: 80%; */
+        width: calc(100% - 400px);
+        height: 700px;
+        background: #7E787D;
+    }
+    aside.right {
+        float: right;
+        width: 200px;
+        height: 700px;
+        background: #CAAFAA;
+    }
+    footer {
+        /* clear: both; */
+        height: 100px;
+        background: #ECD7C8;
+    }
+</style>
+
+</head>
+<body>
+
+<div id="wrap">
+    <header class="container">
+            header
+    </header>
+    <div class="inner">
+        <nav class="container">
+            nav
+        </nav>
+        <aside class="container left">
+                side left
+        </aside>
+        <main class="container">
+            main
+        </main>
+        <aside class="container right">
+            side right
+        </aside>
+    </div>
+    <footer class="container">
+        footer
+    </footer>
+</div>
+
+</body>
+</html>

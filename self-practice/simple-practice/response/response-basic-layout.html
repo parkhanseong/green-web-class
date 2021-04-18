@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>response basic layout</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    h1 {
+        margin: 8px 0;
+    }
+    html, body {
+        height: 100%;
+    }
+    .container {
+        width: 1500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* border: 10px solid red; */
+    }
+    .item {
+        width: 30%;
+        height: 250px;
+        border-radius: 20px;
+        float: left;
+        margin-right: 73px;
+        box-shadow: 0 3px 16px rgba(0,0,0,.6);
+    }
+    .item img {
+        width: 200px;
+        height: 100%;
+        float: left;
+        padding: 20px;
+    }
+    .item:nth-child(3) {
+        margin-right: 0;
+    }
+    
+    .item .desc {
+        padding: 1rem;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            width: 100%;
+        }
+        .item {
+            width: 80%;
+            float:none;
+            margin: 10px auto;
+        }
+        .item:nth-child(3) {
+            margin: 0 auto;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container {
+            width: 100%;
+            position:static;
+            transform:none;
+        }
+        .item {
+            text-align: center;
+            width: 100%;
+            height: auto;
+        }
+        .item .desc {
+            padding: 0.5rem;
+            text-align: center;
+        }
+        .item img {
+            float:none;
+        }
+    }
+
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="item">
+        <img src="../../image/pikachu_300x300.png" alt="">
+        <div class="desc">
+            <h1>피카츄</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iusto labore voluptatibus, dicta temporibus distinctio vel. Temporibus at recusandae id, odio nihil pariatur tempora atque? Rerum doloribus fugit id sequi.</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="../../image/ggobugi2_300x300.png" alt="">
+        <div class="desc">
+            <h1>꼬부기</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iusto labore voluptatibus, dicta temporibus distinctio vel. Temporibus at recusandae id, odio nihil pariatur tempora atque? Rerum doloribus fugit id sequi.</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="../../image/isanghae_300x300.png" alt="">
+        <div class="desc">
+            <h1>이상해씨</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iusto labore voluptatibus, dicta temporibus distinctio vel. Temporibus at recusandae id, odio nihil pariatur tempora atque? Rerum doloribus fugit id sequi.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

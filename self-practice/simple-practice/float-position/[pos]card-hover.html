@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>position card hover</title>
+<style>
+    body {margin: 0;}
+    h1 {margin: 0;}
+    p {margin: 0;}
+
+    img {
+        max-width: 100%;
+    }
+    .container {
+        text-align: center;
+        margin: 200px auto;
+        border: 1px solid #000;
+    }
+    .container .item {
+        display: inline-block;
+        position: relative;
+        color: #fff;
+        cursor: pointer;
+    }
+    .container .item img{
+        width: 300px;
+        vertical-align: top;
+    }
+    .container .item h1{
+        position: absolute;
+        line-height: 1;
+        top: -1em;
+        left: 10px;
+        transition: all .5s;
+    }
+    .container .item p{
+        position: absolute;
+        bottom: -1.3em;
+        left: 10px;
+        transition: all .5s;
+    }
+    .container .item:hover:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.1);
+    }
+    .container .item:hover h1 {
+        top: 50%;
+    }
+    .container .item:hover p{
+        bottom: 35%;
+    }
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">
+            <img src="../../image/spring-story.jpg" alt="">
+            <h1>spring story</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="item">
+            <img src="../../image/summer-story.jpg" alt="">
+            <h1>summer story</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="item">
+            <img src="../../image/winter-story.jpg" alt="">
+            <h1>winter story</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+</body>
+</html>

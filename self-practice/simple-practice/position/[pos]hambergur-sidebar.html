@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>hanmburger sidebar</title>
+<style>
+    body {
+        margin: 0;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    li {
+        list-style: none;
+    }
+    input[id="menuBtn"] {
+        display: none;
+    }
+    input[id="menuBtn"] + label {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        transition: all .5s;
+        margin-right: 15px;
+    }
+    input[id="menuBtn"]:checked + label {
+        right: 300px;
+    }
+    input[id="menuBtn"] + label span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        transition: .5s;
+        cursor: pointer;
+    }
+    input[id="menuBtn"] + label span:nth-child(1) {
+        top: 0;
+        left: 0;
+    }
+    input[id="menuBtn"]:checked + label span:nth-child(1) {
+        transform: rotate(45deg) translateY(-50%);
+        top: 50%;
+    }
+    input[id="menuBtn"] + label span:nth-child(2) {
+        top: 50%;
+        left: 0;
+    }
+    input[id="menuBtn"]:checked + label span:nth-child(2) {
+        opacity: 0;
+    }
+    input[id="menuBtn"] + label span:nth-child(3) {
+        bottom: 0;
+        left: 0;
+    }
+    input[id="menuBtn"]:checked + label span:nth-child(3) {
+        transform: rotate(-45deg) translateY(50%);
+        bottom: 50%;
+    }
+    input[id="menuBtn"]:checked ~ .sideBar {
+        right: 0;
+    }
+
+    .sideBar {
+        position: fixed;
+        width: 300px;
+        height: 100%;
+        top: 0;
+        right: -300px;
+        padding-top: 2rem;
+        transition: all .5s;
+        background: #F5D042;
+    }
+    .sideBar li {
+        text-align: center;
+    }
+    .sideBar li a {
+        display: block;
+        line-height: 50px;
+        
+        color: #0A174E;
+    }
+    .sideBar li a:hover {
+        color: #fff;
+        background: #0A174E;
+    }
+
+
+</style>
+</head>
+<body>
+
+<input type="checkbox" id="menuBtn">
+<label for="menuBtn">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+<ul class="sideBar">
+    <li><a href="#">new arrival</a></li>
+    <li><a href="#">trand</a></li>
+    <li><a href="#">season off</a></li>
+</ul>
+
+
+
+</body>
+</html>

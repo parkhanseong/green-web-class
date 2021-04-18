@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>top nav menu</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        display: inline-block;
+        color: inherit;
+        text-decoration: none;
+    }
+    body {
+        background: #222;
+    }
+
+    .menu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .menu-item {
+        display: inline-block;
+        background: #666;
+        position: relative;
+        margin-right: -.3em;
+        color: #999;
+    }
+    
+    .menu-item:hover .menu-sub {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-item:hover > a {
+        color: #fff;
+        text-shadow: 0 0 3px #fff;
+    }
+    .menu-item > a {
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+    }
+    .menu-sub {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: inline-block;
+        opacity: 0;
+        visibility: hidden;
+        border-radius: 30px;
+    }
+    /* .menu-sub li {
+        width: 100px;
+        height: 50px;
+        background: #999;
+        color: #666;
+        text-align: center;
+        line-height: 50px;
+    } */
+    /* .menu-sub li:hover {
+        color: #fff;
+        text-shadow: 0 0 3px #fff;
+    } */
+</style>
+</head>
+<body>
+
+    <ul class="menu">
+        <li class="menu-item">
+            <a href="#">product</a>
+            <ul class="menu-sub">
+                <li><a href="#">iphone</a></li>
+                <li><a href="#">imac</a></li>
+                <li><a href="#">macbook</a></li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="#">service</a>
+            <ul class="menu-sub">
+                <li><a href="#">message</a></li>
+                <li><a href="#">call</a></li>
+                <li><a href="#">email</a></li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="#">etc</a>
+            <ul class="menu-sub">
+                <li><a href="#">message</a></li>
+                <li><a href="#">call</a></li>
+                <li><a href="#">email</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>

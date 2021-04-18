@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 3px solid #999;
+    /* background: gold; */
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+}

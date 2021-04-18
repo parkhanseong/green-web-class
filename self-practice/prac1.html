@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>prac1</title>
+<style>
+    body {
+        margin: 0;
+    }
+    .container {
+        border: 1px solid #000;
+    }
+    .item {
+        display: inline-block;
+        border: 1px solid blue;
+        position: relative;
+        /* background: #000; */
+    }
+    .item img {
+        border-radius: 50%;
+        width: 200px;
+        background: pink;
+    }
+    .item .desc {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: inline-block;
+        opacity: 0;
+    }
+    .item:hover .desc {
+        opacity: 1;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item">
+        <img src="image/pikachu.jpg" alt="pikachu">
+        <div class="desc">
+            <h1>title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ducimus dolorem, i</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
