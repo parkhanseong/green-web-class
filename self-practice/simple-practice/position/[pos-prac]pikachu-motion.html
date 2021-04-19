@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>prac1</title>
+<style>
+    body {
+        margin: 0;
+    }
+    h1, p {
+        margin: 0;
+    }
+    .container {
+        margin-top: 100px;
+        /* border: 1px solid #000; */
+        text-align: center;
+    }
+    .item {
+        box-sizing: border-box;
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        width: 300px;
+        border: 1px solid #000;
+        padding: 1rem;
+        
+    }
+    .item:after {
+        content: '?';
+        position: absolute;
+        text-align: center;
+        line-height: 266px;
+        font-size: 5rem;
+        color: #fff;
+        top: 1rem;
+        left: 1rem;
+        bottom: 1rem;
+        right: 1rem;
+        background: #999;
+        transition: 4s;
+        cursor: pointer;
+    }
+    .item img {
+        max-width: 100%;
+        background: linear-gradient(to right, pink, gold);
+        display: block;
+        transition: 2s;
+    }
+    .item .desc {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        display: inline-block;
+        opacity: 0;
+        transition: 1s;
+    }
+    .item:hover:after {
+        opacity: 0;
+    }
+    .item:hover .desc {
+        opacity: 1;
+    }
+    .item:hover img {
+        transform: rotateY(1080deg);
+        border-radius: 50%;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>***를 잡았습니다.</h1>
+    <div class="item">
+        <img src="../../image/pikachu2_300x300.png" alt="pikachu">
+        <div class="desc">
+            <h1>피카츄</h1>
+            <p>몸무게 6kg 1세대 포켓몬이다</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

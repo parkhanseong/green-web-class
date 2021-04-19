@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<title>modal</title>
+<style>
+    body {
+        margin: 0;
+    }
+    input[id="modalBtn"] {
+        /* display: none; */
+    }
+    input[id="modalBtn"] + label {
+        display: inline-block;
+        border: 1px solid #000;
+        height: 50px;
+        width: 100px;
+        background: gold;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 20px;
+    }
+
+    input[id="modalBtn"] ~ .modalContainer > label {
+        background: rgba(0, 0, 0, 0.209);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    input[id="modalBtn"] ~ .modalContainer > .modalBox > label {
+        border: 1px solid #000;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        background: red;
+        padding-top: 3px;
+        right: 0;
+        top: 0;
+        transform: translate(40%, -40%);
+    }
+
+    input[id="modalBtn"]:checked ~ .modalContainer,
+    input[id="modalBtn"]:checked ~ .modalContainer > label
+    {
+        opacity: 1;
+        visibility:visible;
+    }
+
+    .modalContainer {
+        background: rgba(0, 0, 0, 0.292);
+        border: 1px solid rgba(0, 0, 0, 0.052);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 999;
+    }
+
+    .modalBox {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        background: gold;
+        z-index: 2;
+    }
+</style>
+</head>
+<body>
+<input type="checkbox" id="modalBtn">
+<label for="modalBtn">view</label>
+<div class="modalContainer">
+    <div class="modalBox">
+        <label for="modalBtn">
+            X
+        </label>
+        <div class="content">
+            <h1>title</h1>
+            <img src="image/pikachu2_300x300.png" alt="">
+            <div class="btnBox">
+                <button onclick="prompt('다른 상품을 추천드릴까요?')">no</button>
+                <button onclick="alert('yes')">yes</button>
+            </div>
+        </div>
+    </div>
+    <label for="modalBtn"></label>
+</div>
+
+</body>
+</html>

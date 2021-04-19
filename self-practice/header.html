@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dropdowon nav menu</title>
+<style>
+    body {
+        margin: 0;
+    }
+    ul {
+        /* border: 1px solid blue; */
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        /* background: pink; */
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    header {
+        box-sizing: border-box;
+        background: #333;
+        height: 70px;
+        /* display: flow-root; */
+    }
+    header:before {
+        content:'';
+        display: table;
+    }
+    ul.menu {
+        margin-top: 20px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: scroll;
+    }
+    li.menuItem {
+        display: inline-block;
+        position: relative;
+        /* background: red; */
+        /* border: 1px solid blue; */
+    }
+    li.menuItem:hover .menuSub {
+        opacity: 1;
+        visibility: visible;
+    }
+    li.menuItem > a {
+        display: inline-block;
+        height: 50px;
+        width: 100px;
+        line-height: 50px;
+        background: pink;
+    }
+    ul.menuSub {
+        position: absolute;
+        top: 120%;
+        left: 0%;
+        opacity: 0;
+        transition: 1s;
+        visibility: hidden;
+    }
+    ul.menuSub:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background: #fff;
+        transform: translateY(-10px);
+        z-index: -1;
+    }
+    ul.menuSub:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: #333;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg) ;
+    }
+    ul.menuSub li a {
+        display: inline-block;
+        width: 100px;
+        line-height: 50px;
+        background: #333;
+        color: #999;
+    }
+    ul.menuSub li a:hover {
+        background: gray;
+    }
+
+</style>
+</head>
+<body>
+
+    <header>
+        <ul class="menu">
+            <li class="menuItem">
+                <a href="#">menu1</a>
+                <ul class="menuSub">
+                    <li><a href="#">subMenu1</a></li>
+                    <li><a href="#">subMenu2</a></li>
+                    <li><a href="#">subMenu3</a></li>
+                </ul>
+            </li>
+            <li class="menuItem">
+                <a href="#">menu1</a>
+                <ul class="menuSub">
+                    <li><a href="#">subMenu4</a></li>
+                    <li><a href="#">subMenu5</a></li>
+                    <li><a href="#">subMenu6</a></li>
+                </ul>
+            </li>
+            <li class="menuItem">
+                <a href="#">menu1</a>
+                <ul class="menuSub">
+                    <li><a href="#">subMenu7</a></li>
+                    <li><a href="#">subMenu8</a></li>
+                    <li><a href="#">subMenu9</a></li>
+                </ul>
+            </li>
+            <li class="menuItem">
+                <a href="#">menu1</a>
+                <ul class="menuSub">
+                    <li><a href="#">subMenu4</a></li>
+                    <li><a href="#">subMenu5</a></li>
+                    <li><a href="#">subMenu6</a></li>
+                </ul>
+            </li>
+            <li class="menuItem">
+                <a href="#">menu1</a>
+                <ul class="menuSub">
+                    <li><a href="#">subMenu7</a></li>
+                    <li><a href="#">subMenu8</a></li>
+                    <li><a href="#">subMenu9</a></li>
+                </ul>
+            </li>
+            <li class="menuItem">
+                <a href="#">menu1</a>
+                <ul class="menuSub">
+                    <li><a href="#">subMenu4</a></li>
+                    <li><a href="#">subMenu5</a></li>
+                    <li><a href="#">subMenu6</a></li>
+                </ul>
+            </li>
+            <li class="menuItem">
+                <a href="#">menu1</a>
+                <ul class="menuSub">
+                    <li><a href="#">subMenu7</a></li>
+                    <li><a href="#">subMenu8</a></li>
+                    <li><a href="#">subMenu9</a></li>
+                </ul>
+            </li>
+            <li class="menuItem">
+                <a href="#">menu1</a>
+                <ul class="menuSub">
+                    <li><a href="#">subMenu4</a></li>
+                    <li><a href="#">subMenu5</a></li>
+                    <li><a href="#">subMenu6</a></li>
+                </ul>
+            </li>
+            <li class="menuItem">
+                <a href="#">menu1</a>
+                <ul class="menuSub">
+                    <li><a href="#">subMenu7</a></li>
+                    <li><a href="#">subMenu8</a></li>
+                    <li><a href="#">subMenu9</a></li>
+                </ul>
+            </li>
+            <li class="menuItem">
+                <a href="#">menu1</a>
+                <ul class="menuSub">
+                    <li><a href="#">subMenu4</a></li>
+                    <li><a href="#">subMenu5</a></li>
+                    <li><a href="#">subMenu6</a></li>
+                </ul>
+            </li>
+            <li class="menuItem">
+                <a href="#">menu1</a>
+                <ul class="menuSub">
+                    <li><a href="#">subMenu7</a></li>
+                    <li><a href="#">subMenu8</a></li>
+                    <li><a href="#">subMenu9</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+</body>
+</html>
