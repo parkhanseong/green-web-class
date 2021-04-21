@@ -4,21 +4,21 @@
 :root {
     /* color */
     --color-white: #fff;
-    --color-black: #111;
+    --color-black: #000;
+    --color-medium-black: #111;
     --color-light-black: #333;
     --color-gray: #999;
     --color-coral: coral;
 
     /* font size */
-    --font-large: 49px;
-    --font-medium: 28px;
-    --font-regular: 18px;
+    --font-large: 48px;
+    --font-medium: 38px;
     --font-small: 16px;
 
     /* font weight */
-    --wegith-bold: 700; /* 700 */
+    --wegith-bold: 700; /* 700 bold */
     --weight-semi-bold: 600;
-    --weight-regular: 400; /* 400 */
+    --weight-regular: 400; /* 400 normal */
 }
 
 /* typography */
@@ -31,6 +31,13 @@ h1 {
 h2 {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
+    color: var(--color-black);
+    margin: 8px;
+}
+p {
+    color: var(--color-gray);
+    font-size: var(--font-small);
+    padding: 10px;
 }
 
 /* universal tags */
@@ -55,7 +62,7 @@ img {
     float: right;
 }
 .inner {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 li {
@@ -100,19 +107,21 @@ header h1 {
 }
 
 /* section.intro */
+section.intro {
+    background: url(../../image/city-1920.jpg) no-repeat center/cover;
+}
 section.intro .inner {
     height: 100vh;
-    background: url(../../image/city-1920.jpg) no-repeat center/cover;
     position: relative;
 }
-section.intro .inner:after {
+section.intro:after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, 0.168);
 }
 section.intro .desc {
     color: #ddd;
@@ -125,9 +134,16 @@ section.intro .desc {
 }
 section.intro .desc h1 {
     margin-bottom: 20px;
-    font-size: 3rem;
+    letter-spacing: 5px;
+    text-shadow: 0 0 18px rgba(0, 0, 0, .8);
+}
+section.intro .desc p {
+    color: var(--color-white);
+    font-size: 25px;
+    text-shadow: 0 0 18px rgba(0, 0, 0, .8);
 }
 section.intro .desc a {
+    color: var(--color-white);
     border: 1px solid #fff;
     width: 100px;
     text-align: center;
@@ -156,10 +172,8 @@ section.intro .desc a:hover:before {
 /* section.office */
 section.office {
     padding: 60px 0;
-    /* border: 10px solid red; */
 }
 section.office .inner {
-    /* border: 10px solid blue; */
     text-align: center;
 }
 section.office .inner .title {
@@ -170,8 +184,6 @@ section.office .inner .title h1 {
     font-size: 3rem;
     text-transform: uppercase;
     position: relative;
-    /* background: pink; */
-    /* border: 1px solid red; */
     display: inline-block;
 }
 section.office .inner .title h1:after {
@@ -181,16 +193,17 @@ section.office .inner .title h1:after {
     left: 0;
     right: 0;
     height: 15px;
-    /* margin: 0 -20px; */
     border-radius: 10px;
     background: coral;
     z-index: -1;
 }
+
 section.office .item {
-    width: 500px;
+    width: 30%;
+    min-width: 100px;
+    max-width: 350px;
     display: inline-block;
-    margin-right: -.2em;
-    /* margin-right: 18px; */
+    margin-right: 20px;
 }
 
 section.office .item .photo {
@@ -211,7 +224,6 @@ section.office .item .photo::after {
     transition: .6s;
 }
 section.office .item .photo a {
-    font-size: 1rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -219,11 +231,11 @@ section.office .item .photo a {
     border: 1px solid #fff;
     border-radius: 30px;
     width: 100px;
-    height: 50px;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding: .4em;
     color: #fff;
     text-align: center;
-    line-height: 50px;
+    padding-top: 10px;
     z-index: 1;
     opacity: 0;
     transition: .6s;
@@ -246,20 +258,12 @@ section.office .item .content p {
     line-height: 1.4;
 }
 
-/* section.office .item .content {
-    border: 10px solid red;
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
-
 section.office .item img {
     position: relative;
 }
 
 /* section.about */
 section.about {
-    /* min-height: 100vh; */
     padding-top: 60px;
     padding-bottom: 2rem;
 }
@@ -284,18 +288,31 @@ section.about img:nth-child(2) {
     right: 100px;
     bottom: -100px;
 }
+
+/* footer */
 footer {
-    background: #222;
-    padding: 1rem 0;
     text-align: center;
+    background: var(--color-light-black);
+}
+footer .inner {
+    padding: 1rem 0;
 }
 footer ul {
+    width: 300px;
     display: inline-block;
-    width: 200px;
 }
 footer ul li {
-    max-width: 100px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 10px 0;
+    padding: 1rem 0;
+}
+footer ul li a {
+    color: var(--color-gray);
+    display: inline-block;
+}
+footer ul li a:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+footer .inner p.copy {
+    padding: 1rem 0;
+    color: var(--color-gray);
 }
