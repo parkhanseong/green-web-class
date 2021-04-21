@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>asdie menu bar</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    li {
+        list-style: none;
+    }
+
+    .sideNav {
+        /* border: 1px solid #000; */
+        background: pink;
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        transform: translateX(100%);
+        transition: 1s;
+    }
+    .sideNav a {
+        display: block;
+        height: 50px;
+        background: pink;
+        text-align: center;
+        line-height: 50px;
+    }
+    .sideNav a:hover {
+        background: #999;
+        color: #fff;
+    }
+    .sideNav > label:hover {
+        background: #999;
+        color: #fff;
+    }    
+    .sideNav > label {
+        width: 100px;
+        height: 50px;
+        background: pink;
+        position: absolute;
+        top: 100px;
+        right: 100%;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+    }
+
+    /* click */
+    input[id=sideBtn] {
+        display: none;
+    }
+    input[id=sideBtn]:checked + .sideNav {
+        transform: translateX(0);
+    }
+    /* ul {
+        border: 1px solid #000;
+    } */
+
+</style>
+</head>
+<body>
+<input type="checkbox" id="sideBtn">
+<nav class="sideNav">
+    <label for="sideBtn">menu</label>
+    <ul class="sideNavMenu">
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+        <li><a href="#">menu4</a></li>
+        <li><a href="#">menu4</a></li>
+        <li><a href="#">menu4</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>

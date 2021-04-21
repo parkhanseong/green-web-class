@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 
 * {
     margin: 0;
@@ -12,7 +13,6 @@ a {
     display: block;
     color: inherit;
     text-decoration: none;
-    width: 100%;
 }
 img {
     max-width: 100%;
@@ -21,7 +21,7 @@ img {
     float: right;
 }
 .inner {
-    max-width: 1100px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 li {
@@ -65,6 +65,7 @@ header h1 {
     display: inline-block;
 }
 
+/* section.intro */
 section.intro .inner {
     height: 100vh;
     background: url(../../image/city-1920.jpg) no-repeat center/cover;
@@ -84,9 +85,9 @@ section.intro .desc {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 1;
     line-height: 1.25;
+    transform: translate(-50%, -50%);
 }
 section.intro .desc h1 {
     margin-bottom: 20px;
@@ -118,6 +119,111 @@ section.intro .desc a:hover:before {
     width: 100%;
 }
 
+/* section.office */
+section.office {
+    padding: 60px 0;
+    /* border: 10px solid red; */
+}
+section.office .inner {
+    /* border: 10px solid blue; */
+    text-align: center;
+}
+section.office .inner .title {
+    padding-bottom: 3rem;
+}
+section.office .inner .title h1 {
+    color: #333;
+    font-size: 3rem;
+    text-transform: uppercase;
+    position: relative;
+    /* background: pink; */
+    /* border: 1px solid red; */
+    display: inline-block;
+}
+section.office .inner .title h1:after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    height: 15px;
+    margin: 0 -20px;
+    border-radius: 10px;
+    background: coral;
+    z-index: -1;
+}
+section.office .item {
+    width: 500px;
+    display: inline-block;
+    margin-right: -.2em;
+    margin-right: 18px;
+}
+
+section.office .item .photo {
+    position: relative;
+}
+section.office .item .photo img {
+    display: block;
+}
+section.office .item .photo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.387);
+    opacity: 0;
+    transition: .6s;
+}
+section.office .item .photo a {
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    z-index: 1;
+    opacity: 0;
+    transition: .6s;
+}
+section.office .item .photo:hover::after,
+section.office .item .photo:hover a {
+    opacity: 1;
+}
+section.office .item .photo:hover::after {
+    width: 100%;
+}
+section.office .item .photo:hover a {
+    background: rgba(255, 255, 255, 0.292);
+}
+section.office .item .content h1 {
+    margin: 1rem 0;
+    color: #000;
+}
+section.office .item .content p {
+    line-height: 1.4;
+}
+
+/* section.office .item .content {
+    border: 10px solid red;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+section.office .item img {
+    position: relative;
+}
+
+/* section.about */
 section.about {
     /* min-height: 100vh; */
     padding-top: 60px;
@@ -139,9 +245,9 @@ section.about img:nth-child(1) {
     max-width: 80%;
 }
 section.about img:nth-child(2) {
-    max-width: 300px;
+    max-width: 500px;
     position: absolute;
-    right: 0;
+    right: 100px;
     bottom: -100px;
 }
 footer {

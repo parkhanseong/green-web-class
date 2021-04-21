@@ -16,8 +16,18 @@
         float: none;
         text-align: center;
     }
+
+    section.office .item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    section.about {
+        padding-top: 0;
+    }
+
     section.about h1 {
         width: 100%;
+        text-align: center;
     }
     section.about img:nth-child(1) {
         max-width: 100%;
@@ -29,5 +39,10 @@
 
     section.about p {
         display: block;
+    }
+
+    section.intro .desc {
+        width: 100%;
+        padding: 2rem;
     }
 }
