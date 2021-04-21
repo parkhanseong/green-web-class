@@ -147,7 +147,7 @@ section.office .inner .title h1:after {
     left: 0;
     right: 0;
     height: 15px;
-    margin: 0 -20px;
+    /* margin: 0 -20px; */
     border-radius: 10px;
     background: coral;
     z-index: -1;
@@ -156,7 +156,7 @@ section.office .item {
     width: 500px;
     display: inline-block;
     margin-right: -.2em;
-    margin-right: 18px;
+    /* margin-right: 18px; */
 }
 
 section.office .item .photo {
