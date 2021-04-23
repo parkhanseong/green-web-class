@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<title></title>
+<style>
+    i {
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    .container {
+        position: relative;
+        width: 640px;
+        height: 420px;
+    }
+    input {
+        display: none;
+    }
+    input[id="arrowBtn"]:checked ~ .photo img:nth-of-type(1)  {
+        opacity: 0;
+    }
+    input[id="arrowBtn"]:checked ~ .photo img:nth-of-type(2) {
+        opacity: 0;
+    }
+    .container label:nth-of-type(1) {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        z-index: 2;
+    }
+    .container label:nth-of-type(2) {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        z-index: 2;
+    }
+    .photo {
+        position: relative;
+    }
+    .photo img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 640px;
+        height: 427px;
+        /* opacity: 0; */
+    }
+    .photo img:nth-of-type(1) {
+        z-index: 1;
+        transition: .5s;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" name="" id="arrowBtn">
+        <label for="arrowBtn">
+            <i class="fas fa-chevron-left"></i>
+        </label>
+        <label for="arrowBtn">
+            <i class="fas fa-chevron-right"></i>
+        </label>
+        <div class="photo">
+            <img src="./image/pos_proejct_img/california_640x426.jpg" alt="">
+            <img src="./image/pos_proejct_img/tokyo_640x415.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+</html>
