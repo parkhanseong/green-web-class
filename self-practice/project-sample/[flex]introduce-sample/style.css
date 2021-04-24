@@ -157,6 +157,7 @@ button {
     margin: 0 auto;
 }
 .section__container {
+    /* background: gold; */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -324,18 +325,17 @@ button {
 .work__projects {
     background: var(--color-light-white);
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+    /* align-items: center; */
     flex-wrap: wrap;
     justify-content: center;
 }
-.work__row-container {
+/* .work__row-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex: 1;
-    /* background: skyblue; */
-}
+} */
 .work__projects a {
     /* background: skyblue; */
     /* border: 1px solid #000; */
@@ -343,14 +343,16 @@ button {
 /*  */
 .project {
     position: relative;
-    width: 280px;
+    width: 270px;
+    /* max-width: 270px; */
+    /* min-width: 270px; */
     height: 250px;
     margin: 2px;
     /* background: skyblue; */
 }
 .project__img {
     max-width: 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 .project_description {
     display: flex;
@@ -384,4 +386,43 @@ button {
     width: 25px;
     height: 2px;
     background: var(--color-dark-white);
+}
+
+/* testimonial */
+#testimonials {
+    /* background: gold; */
+    background: var(--color-light-white);
+}
+.testimonial__container {
+    margin: 40px;
+    /* background: coral; */
+}
+.testimonial__item {
+    align-items: center;
+    display: flex;
+    margin: 32px 0;
+    /* background: skyblue; */
+    /* border: 1px solid #000; */
+}
+.testimonial__avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.testimonial__avatar:nth-child(odd) {
+    margin-right: 40px;
+}
+.testimonial__avatar:nth-child(even) {
+    margin-left: 40px;
+}
+.testimonial__speech-bubble {
+    padding: 18px;
+    background: var(--color-white);
+    border-radius: var(--size-border-radius);
+}
+.testimonial__speech-bubble p {
+    color: var(--color-light-grey);
+}
+.testimonial__speech-bubble a {
+    color: var(--color-pink);
 }
