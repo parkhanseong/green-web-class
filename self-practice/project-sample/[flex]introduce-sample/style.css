@@ -79,6 +79,12 @@ ul {
 li {
     list-style: none;
 }
+button {
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
 
 /* navbar */
 #navbar {
@@ -110,4 +116,30 @@ li {
 }
 .navbar__menu__item:hover {
     background: var(--color-dark-pink);
+}
+
+/* home */
+#home {
+    background: url(imgs/bg-1920.jpg) no-repeat center/cover;
+    padding: 40px;
+    text-align: center;
+}
+.home__avartar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+}
+.home__title,
+.home__description {
+    color: var(--color-white);
+}
+.home__contact {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    margin: 24px;
+    padding: 8px 24px;
+    border: 2px solid var(--color-white);
+    border-radius: var(--size-border-radius);
+    color: var(--color-white);
 }
