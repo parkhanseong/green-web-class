@@ -93,20 +93,25 @@ button {
 
 /* navbar */
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
-    background: #111;
-    /* background: gold; */
+    /* background: #111; */
+    background: transparent;
     justify-content: space-between;
     align-items: center;
     color: var(--color-white);
     padding: 16px;
     font-size: var(--font-regular);
     font-weight: var(--weight-semi-bold);
+    transition: all var(--animation-duration) ease-in;
 }
-
+#navbar.navbar--dark {
+    background: #333;
+    padding: 8px;
+}
 .navbar__menu {
     display: flex;
-    /* border: 1px solid blue; */
 }
 .navbar__menu__item {
     padding: 8px 12px;
@@ -116,7 +121,6 @@ button {
 }
 .navbar__menu__item.active {
     border: 1px solid var(--color-white);
-    /* border-radius: 4px; */
 }
 .navbar__menu__item:hover {
     background: var(--color-dark-pink);
@@ -169,6 +173,7 @@ button {
 #home {
     background: url(imgs/bg-1920.jpg) no-repeat center/cover;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
 }
 .home__avartar {
@@ -176,6 +181,7 @@ button {
     height: 250px;
     border-radius: 50%;
     border: 2px solid var(--color-white);
+    background: var(--color-light-white);
 }
 .home__title,
 .home__description {
@@ -197,25 +203,19 @@ button {
     margin: 0 auto;
 }
 .section__container {
-    /* background: gold; */
     max-width: 1200px;
     margin: 0 auto;
 }
 
 /* about */
 .about__majors {
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     margin: 80px 0;
 }
-.major {
-    /* border: 1px solid blue; */
-}
 .major__icon {
     width: 170px;
     height: 170px;
-    /* background: gold; */
     font-size: 70px;
     line-height: 170px;
     margin: 0 auto;
@@ -243,25 +243,18 @@ button {
 /* job */
 .job {
     display: flex;
-    /* border: 1px solid blue; */
     align-items: center;
 }
-/* .job__item {
-    display: flex;
-    border: 1px solid red;
-} */
 .job i {
     font-size: 50px;
 }
 .job i[class*="facebook"] {
-    /* border: 4px solid pink; */
     color: #3b5999;
 }
 .job i[class*="google"] {
     color: #dd4b39;
 }
 .job__description {
-    /* border: 1px solid coral; */
     margin: 0 16px;
     text-align: left;
 }
@@ -322,8 +315,6 @@ button {
 }
 .tools,
 .etc {
-    /* background: gold; */
-    /* border: 1px solid blue; */
     padding: 20px;
 }
 
@@ -365,34 +356,19 @@ button {
 .work__projects {
     background: var(--color-light-white);
     display: flex;
-    /* flex-direction: column; */
-    /* align-items: center; */
     flex-wrap: wrap;
     justify-content: center;
 }
-/* .work__row-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex: 1;
-} */
-.work__projects a {
-    /* background: skyblue; */
-    /* border: 1px solid #000; */
-}
+
 /*  */
 .project {
     position: relative;
     width: 270px;
-    /* max-width: 270px; */
-    /* min-width: 270px; */
     height: 250px;
     margin: 2px;
-    /* background: skyblue; */
 }
 .project__img {
     max-width: 100%;
-    /* max-width: 100%; */
 }
 .project_description {
     display: flex;
@@ -430,19 +406,15 @@ button {
 
 /* testimonial */
 #testimonials {
-    /* background: gold; */
     background: var(--color-light-white);
 }
 .testimonial__container {
     margin: 40px;
-    /* background: coral; */
 }
 .testimonial__item {
     align-items: center;
     display: flex;
     margin: 32px 0;
-    /* background: skyblue; */
-    /* border: 1px solid #000; */
 }
 .testimonial__avatar {
     width: 150px;
