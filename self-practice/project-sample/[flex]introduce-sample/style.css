@@ -94,6 +94,7 @@ button {
 /* navbar */
 #navbar {
     position: fixed;
+    z-index: 2;
     width: 100%;
     display: flex;
     /* background: #111; */
