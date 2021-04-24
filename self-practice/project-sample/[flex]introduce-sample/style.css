@@ -100,12 +100,10 @@ button {
     align-items: center;
     color: var(--color-white);
     padding: 16px;
-    font-size: var(--font-medium);
+    font-size: var(--font-regular);
     font-weight: var(--weight-semi-bold);
 }
-.navbar__logo {
-    /* border: 1px solid #000; */
-}
+
 .navbar__menu {
     display: flex;
     /* border: 1px solid blue; */
@@ -122,6 +120,49 @@ button {
 }
 .navbar__menu__item:hover {
     background: var(--color-dark-pink);
+}
+
+/* toggle */
+.navbar__toggle-btn {
+    position: absolute;
+    top: 17px;
+    right: 32px;
+    font-size: 24px;
+    color: var(--color-white);
+    display: none;
+}
+
+/* for below 768px screen width */
+@media screen and (max-width: 768px) {
+    .navbar__toggle-btn {
+        display: block;
+    }
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar__menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    .about__majors {
+        flex-direction: column;
+    }
+    .major {
+        margin-bottom: 20px;
+    }
+    .skillset {
+        flex-direction: column;
+    }
+    .project {
+        flex-grow: 1;
+    }
+    .testimonial__avatar {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 /* home */
