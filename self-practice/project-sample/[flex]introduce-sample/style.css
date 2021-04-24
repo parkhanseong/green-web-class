@@ -95,7 +95,8 @@ button {
 /* navbar */
 #navbar {
     display: flex;
-    background: gold;
+    background: #111;
+    /* background: gold; */
     justify-content: space-between;
     align-items: center;
     color: var(--color-white);
@@ -268,7 +269,6 @@ button {
 .skill_description {
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid blue; */
 }
 .skill__bar {
     width: 100%;
@@ -277,11 +277,111 @@ button {
 }
 .skill__value {
     height: 3px;
-    /* background: gold; */
+    background: gold;
 }
 .tools,
 .etc {
     /* background: gold; */
     /* border: 1px solid blue; */
     padding: 20px;
+}
+
+/* work */
+.work__categories {
+    margin: 40px;
+}
+
+.category__btn {
+    border: 1px solid var(--color-dark-white);
+    border-radius: var(--size-border-radius);
+    font-size: var(--font-regular);
+    padding: 8px 48px;
+}
+.category__btn:active,
+.category__btn:hover {
+    background: var(--color-pink);
+    color: var(--color-white);
+}
+.category__btn:active .category__count,
+.category__btn:hover .category__count {
+    opacity: 1;
+    top: 0;
+}
+.category__count {
+    background: var(--color-orange);
+    border-radius: 50%;
+    color: var(--color-white);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    line-height: 24px;
+    position: relative;
+    top: -20px;
+    left: 4px;
+    opacity: 0;
+    transition: all var(--animation-duration) ease-in;
+}
+.work__projects {
+    background: var(--color-light-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.work__row-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+    /* background: skyblue; */
+}
+.work__projects a {
+    /* background: skyblue; */
+    /* border: 1px solid #000; */
+}
+/*  */
+.project {
+    position: relative;
+    width: 280px;
+    height: 250px;
+    margin: 2px;
+    /* background: skyblue; */
+}
+.project__img {
+    max-width: 100%;
+    max-width: 100%;
+}
+.project_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all var(--animation-duration);
+}
+.project:hover .project_description {
+    transform: translateY(0px);
+    opacity: .8;
+}
+.project_description h3 {
+    color: var(--color-white);
+}
+
+.project_description h3:after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 8px;
+    width: 25px;
+    height: 2px;
+    background: var(--color-dark-white);
 }
