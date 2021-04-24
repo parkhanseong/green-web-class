@@ -102,7 +102,7 @@ button {
     justify-content: space-between;
     align-items: center;
     color: var(--color-white);
-    padding: 16px;
+    padding: 5px;
     font-size: var(--font-regular);
     font-weight: var(--weight-semi-bold);
     transition: all var(--animation-duration) ease-in;
@@ -137,39 +137,6 @@ button {
     display: none;
 }
 
-/* for below 768px screen width */
-@media screen and (max-width: 768px) {
-    .navbar__toggle-btn {
-        display: block;
-    }
-    #navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar__menu {
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        display: none;
-    }
-    .about__majors {
-        flex-direction: column;
-    }
-    .major {
-        margin-bottom: 20px;
-    }
-    .skillset {
-        flex-direction: column;
-    }
-    .project {
-        flex-grow: 1;
-    }
-    .testimonial__avatar {
-        width: 80px;
-        height: 80px;
-    }
-}
-
 /* home */
 #home {
     background: url(imgs/bg-1920.jpg) no-repeat center/cover;
@@ -177,6 +144,7 @@ button {
     padding-top: 120px;
     text-align: center;
 }
+
 .home__avartar {
     width: 250px;
     height: 250px;
@@ -187,6 +155,8 @@ button {
 .home__title,
 .home__description {
     color: var(--color-white);
+    opacity: attr(data-opacity);
+    transition: all var(--animation-duration) ease-in;
 }
 .home__contact {
     font-size: var(--font-regular);
@@ -463,4 +433,57 @@ button {
 .contact__links i:hover {
     transform: scale(1.2);
     color: var(--color-yellow);
+}
+
+/* top Button */
+.top-btn {
+    position: fixed;
+    padding: 10px 15px;
+    font-size: 20px;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    background: var(--color-white);
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--animation-duration) ease-in;
+}
+.top-btn.visible {
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+}
+
+/* for below 768px screen width */
+@media screen and (max-width: 768px) {
+    .navbar__toggle-btn {
+        display: block;
+    }
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar__menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    .about__majors {
+        flex-direction: column;
+    }
+    .major {
+        margin-bottom: 20px;
+    }
+    .skillset {
+        flex-direction: column;
+    }
+    .project {
+        flex-grow: 1;
+    }
+    .testimonial__avatar {
+        width: 80px;
+        height: 80px;
+    }
 }

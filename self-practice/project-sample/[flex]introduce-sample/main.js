@@ -3,14 +3,24 @@
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
-// navbar가 상단일 때 투명처리
+// element 투명처리
 document.addEventListener('scroll', () => {
+    // navbar
     if(window.scrollY > navbarHeight){
         navbar.classList.add('navbar--dark');
     } else {
         navbar.classList.remove('navbar--dark');
     }
 });
+
+// home section 투명하게 만들기
+const home = document.querySelector('#home');
+const homeHeight = home.getBoundingClientRect().height; /* 724px */
+const homeContainer = document.querySelector('.home__container');
+document.addEventListener('scroll', (event) => {
+    const opcaity = 1 - window.scrollY/724;
+    homeContainer.style.opacity = opcaity;
+})
 
 // navbar 눌렀을때 스크롤 이동시키기
 const navbarMenu = document.querySelector(".navbar__menu");
@@ -22,9 +32,33 @@ navbarMenu.addEventListener('click', (event) => {
     if ( link == null ) {
         return;
     }
-
-    console.log(event.target.dataset.link);
-    const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({behavior: "smooth"});
-
+    scrollIntoView(link);
 })
+
+// contact Me 버튼 누르면 contact로 이동
+const homeConatct = document.querySelector(".home__contact");
+homeConatct.addEventListener('click', () => {
+    scrollIntoView("#contact");
+})
+
+
+const topBtn = document.querySelector('.top-btn');
+document.addEventListener('scroll', () => {
+    if( window.scrollY > homeHeight / 2 ) {
+        topBtn.classList.add('visible');
+    }else {
+        topBtn.classList.remove('visible');
+    }
+})
+
+
+topBtn.addEventListener('click', () => {
+    scrollIntoView('#home');
+})
+
+// intoView function
+function scrollIntoView (selector) {
+    const scrollTo = document.querySelector(selector)
+    scrollTo.scrollIntoView({behavior: "smooth"});
+}   
+
