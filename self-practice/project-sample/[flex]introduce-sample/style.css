@@ -97,7 +97,6 @@ button {
     z-index: 2;
     width: 100%;
     display: flex;
-    /* background: #111; */
     background: transparent;
     justify-content: space-between;
     align-items: center;
@@ -300,16 +299,19 @@ button {
     font-size: var(--font-regular);
     padding: 8px 48px;
 }
-.category__btn:active,
+
+.category__btn.active,
 .category__btn:hover {
     background: var(--color-pink);
     color: var(--color-white);
 }
-.category__btn:active .category__count,
+
+.category__btn.active .category__count,
 .category__btn:hover .category__count {
     opacity: 1;
     top: 0;
 }
+
 .category__count {
     background: var(--color-orange);
     border-radius: 50%;
@@ -331,12 +333,15 @@ button {
     justify-content: center;
 }
 
-/*  */
+/*   */
 .project {
     position: relative;
     width: 270px;
     height: 250px;
     margin: 2px;
+}
+.project.invisible {
+    display: none;
 }
 .project__img {
     max-width: 100%;
@@ -444,13 +449,11 @@ button {
     right: 30px;
     border-radius: 50%;
     background: var(--color-white);
-    /* display: none; */
     opacity: 0;
     visibility: hidden;
     transition: all var(--animation-duration) ease-in;
 }
 .top-btn.visible {
-    /* display: block; */
     opacity: 1;
     visibility: visible;
 }

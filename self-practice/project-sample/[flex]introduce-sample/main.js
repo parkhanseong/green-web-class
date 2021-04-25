@@ -62,3 +62,25 @@ function scrollIntoView (selector) {
     scrollTo.scrollIntoView({behavior: "smooth"});
 }   
 
+// category filter
+const workCateContainer = document.querySelector(".work__categories");
+const projectContainer  = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+
+workCateContainer.addEventListener(('click'), (e) => {
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if(filter == null ){
+        return;
+    }
+    projects.forEach((project) => {
+        if(filter === "all" || filter === project.dataset.type) {
+            project.classList.remove('invisible');
+        }else{
+            project.classList.add('invisible');
+        }
+    });
+})
+
+
+
+
