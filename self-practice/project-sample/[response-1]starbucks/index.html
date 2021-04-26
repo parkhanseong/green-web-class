@@ -2,7 +2,9 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>starbucs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<title>responsive starbucs</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +14,10 @@
         </div>
         <header>
             <a href="#" class="logo"><img src="./images/logo.png" alt=""></a>
-            <ul>
+            <div href="#" class="toggle" onclick="toggleMenu();">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="gnb">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">What's New</a></li>
@@ -47,6 +52,12 @@
         function chageCircleColor(color) {
             const circle = document.querySelector('.circle');
             circle.style.background = color;
+        }
+        function toggleMenu () {
+            var menuToggle = document.querySelector('.toggle');
+            var gnb = document.querySelector('.gnb');
+            menuToggle.classList.toggle('active');
+            gnb.classList.toggle('active');
         }
     </script>
 </body>
