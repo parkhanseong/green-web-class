@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --custom-radius: 8px;
+}
+ul {
+    list-style: none;
+}
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+/* common */
+
+.inner {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* header */
+header {
+    /* border: 1px solid #000; */
+    border-bottom: 1px solid #000;
+    padding: 20px;
+}
+header .inner {
+    overflow: hidden;
+    padding: 0;
+}
+header #logo {
+    float: left;
+}
+header .gnb {
+    float: right;
+    overflow: hidden;
+}
+.gnbList {
+    float: left;
+    width: 100px;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* product */
+section.product {
+}
+.productList:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+.product h1 {
+    margin-bottom: 20px;
+}
+.productItem {
+    background: beige;
+    max-width: 49%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 10px;
+    border-radius: var(--custom-radius);
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.productItem img {
+    width: 200px;
+    float: left;
+    border-radius: var(--custom-radius);
+}
+.productItem h2 {
+    margin-bottom: 20px;
+}
+.productItem a {
+    margin-top: 10px;
+    border-radius: var(--custom-radius);
+    padding: 3px 10px 2px;
+    background: #ddd;
+    color: #666;
+}
+.productItem:nth-child(2n) {
+    margin-right: 0;
+}
+.productDescription {
+    overflow: hidden;
+    padding: 10px;
+}
+
+/* content */
+section.content {
+    /* background: skyblue; */
+}
+.contentList {
+    overflow: hidden;
+}
+.content h1 {
+    margin-bottom: 20px;
+}
+.contentItem {
+    background: #F0EDCC;
+    float: left;
+    color: #02343F;
+    width: 232.5px;
+    margin-right: 10px;
+    border-radius: var(--custom-radius);
+    text-align: center;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+.contentList .contentItem:nth-child(4n) {
+    margin-right: 0;
+}
+.contentItem p {
+    margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+    background: gold;
+    text-align: center;
+}
+footer ul {
+    display: inline-block;
+}
+footer ul li {
+    width: 200px;
+    margin-bottom: 15px;
+}
