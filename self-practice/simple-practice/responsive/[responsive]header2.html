@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<title>responsive header2</title>
+<style>
+    body {
+        margin: 0;
+    }
+    header {
+        background: #83A887;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+    header {
+        overflow: hidden;
+        padding: 0 50px;
+    }
+    img.logo {
+        float: left;
+    }
+    .navbar {
+        float: right;
+    }
+    .navbar__item {
+        float: left;
+        width: 100px;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 1.1rem;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .navbar__item a {
+        height: 50px;
+        line-height: 50px;
+    }
+    .navbar__item a:hover {
+        background: pink;
+    }
+    input[id=toggleBtn] {
+        display: none;
+    }
+    label[for=toggleBtn] {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #fff;
+    }
+    input[id=toggleBtn]:checked ~ .navbar {
+        display: block;
+    }
+    @media screen and (max-width: 768px) {
+        label[for=toggleBtn] {
+            display: block;
+        }
+        img.logo {
+            float: none;
+            display: block;
+        }
+        .navbar {
+            float: none;
+            display: none;
+        }
+        .navbar__item {
+            float: none;
+            margin: 20px auto;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <img src="./image/logo/alpaca_coding2.png" alt="" class="logo">
+    <input type="checkbox" id="toggleBtn">
+    <label for="toggleBtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <ul class="navbar">
+        <li class="navbar__item">
+            <a href="#">menu1</a>
+        </li>
+        <li class="navbar__item">
+            <a href="#">menu2</a>
+        </li>
+        <li class="navbar__item">
+            <a href="#">menu3</a>
+        </li>
+    </ul>
+</header>
+
+</body>
+</html>
