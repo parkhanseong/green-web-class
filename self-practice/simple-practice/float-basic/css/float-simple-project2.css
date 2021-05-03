@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+:root {
+    --color-beige: beige;
+    --color-gold : gold;
+    --color-green: #02343F;
+}
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+/* common */
+.inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.clearfix:after {
+    content:'';
+    display: block;
+    clear:both;
+}
+.sectionTitle {
+    margin-bottom: 20px;
+}
+/* header */
+header {
+    padding: 30px 0;
+    border-bottom: 1px solid #000;
+}
+.logo {
+    float: left;
+}
+.navbar {
+    float: right;
+    /* background: skyblue; */
+}
+.navbarItem {
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+.navbarItem a {
+    font-size: 1.2rem;
+}
+
+/* recommend */
+.recommend {
+    padding-top: 30px;
+}
+.placeItem {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+    margin-bottom: 4%;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 10px;
+}
+.placeItem img {
+    width: 200px;
+    float: left;
+}
+.placeItem .desc {
+    /* background: gold; */
+    padding: 0 10px 10px;
+    overflow: hidden;
+}
+.placeItem .desc a {
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #666;
+    background: pink;
+}
+.placeItem h3 {
+    margin-bottom: 10px;
+}
+.placeItem p {
+    margin-bottom: 10px;
+    line-height: 1;
+    /* background: coral; */
+    overflow: hidden;
+    height: 13em;
+}
+.placeItem:nth-child(2n) {
+    margin-right: 0;
+}
+
+/* category */
+.categoryItem {
+    background: beige;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    float: left;
+    width: 23%;
+    margin-right: 2.6666%;
+    margin-bottom: 2.6666%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+.categoryItem h5 {
+    margin-bottom: 5px;
+}
+.categoryItem:nth-child(4n) {
+    margin-right: 0;
+}
+
+/* product */
+section.product {
+    margin-bottom: 30px;
+}
+.productItem {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+.productItem img {
+    width: 300px;
+    height: 300px;
+}
+.productItem:nth-child(3n) {
+    margin-right: 0;
+}
+.productItem .desc {
+    padding: 10px;
+}
+
+/* footer */
+footer {
+    border-top: 1px solid #000;
+    padding: 50px 0;
+    font-weight: 300;
+    font-size: 14px;
+}
+.infoBox:first-child {
+    margin-bottom: 10px;
+}
+.infoBoxItem {
+    display: inline-block;;
+    width: 150px;
+}
+
+
