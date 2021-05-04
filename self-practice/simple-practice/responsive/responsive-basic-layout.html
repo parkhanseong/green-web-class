@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>responsive basic laytou</title>
+<style>
+    * {
+        margin: 0; 
+        padding: 0;
+    }
+    header {
+        background: gold;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        margin-bottom: 10px;
+    }
+    section {
+        margin-bottom: 10px;
+        background: gold;
+    }
+    section:after {
+        content:'';
+        display: block;
+        clear: both;
+    }
+    .article {
+        float: left;
+        width: 23%;
+        height: 200px;
+        background: dodgerblue;
+        margin-right: 2.6666%;
+        margin-bottom: 2.6666%;
+    }
+    .article:nth-child(4n) {
+        margin-right: 0;
+    }
+    footer {
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        background: skyblue;
+        clear: both;
+    }
+    @media (max-width: 768px) {
+        /* section {
+            width: 100%;
+        } */
+        .article {
+            margin: 0 auto;
+            width: 48%;
+            margin-right: 2%;
+            margin-bottom: 2%;
+            text-align: center;
+            line-height: 100px;
+        }
+        .article:nth-child(2n) {
+            float: right;
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 480px) {
+        .article {
+            float: none;
+            margin: 0 auto;
+            width: 100%;
+            margin-bottom: 2%;
+            text-align: center;
+            line-height: 100px;
+        }
+        .article:nth-child(2n) {
+            float: none;
+            /* margin-right: 0; */
+        }
+        /* .article:last-child {
+            margin-right: auto;
+        } */
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>header</h1>
+</header>
+<section>
+    <article class="article left"><h2>article1</h2></article>
+    <article class="article center"><h2>article2</h2></article>
+    <article class="article right"><h2>article3</h2></article>
+    <article class="article right"><h2>article4</h2></article>
+    <article class="article left"><h2>article1</h2></article>
+    <article class="article center"><h2>article2</h2></article>
+    <article class="article right"><h2>article3</h2></article>
+    <article class="article right"><h2>article4</h2></article>
+</section>
+<footer>
+    <h1>footer</h1>
+</footer>
+
+</body>
+</html>
