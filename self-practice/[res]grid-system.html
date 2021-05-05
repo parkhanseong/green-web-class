@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>grid system</title>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+
+    /* grid system */
+    .grid-1-12 { width: 8.33333333%; }
+    .grid-2-12 { width: 16.66666667%; }
+    .grid-3-12 { width: 25%; }
+    .grid-4-12 { width: 33.33333333%; }
+    .grid-5-12 { width: 41.66666667%; }
+    .grid-6-12 { width: 50%; }
+    .grid-7-12 { width: 58.33333333%; }
+    .grid-8-12 { width: 66.66666667%; }
+    .grid-9-12 { width: 75%; }
+    .grid-10-12 { width: 83.33333333%; }
+    .grid-11-12 { width: 91.66666667%; }
+    .grid-12-12 { width: 100%;}
+
+    .grid-container {
+        max-width: 960px;
+        margin: 0 auto;
+        background: skyblue;
+        overflow: hidden;
+    }
+    .grid-item {
+        float: left;
+        background: orange;
+        position: relative;
+        padding: 1rem;
+    }
+    
+    .grid-item img {
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        /* grid system */
+    .grid-mobile-1-12 { width: 8.33333333%; }
+    .grid-mobile-2-12 { width: 16.66666667%; }
+    .grid-mobile-3-12 { width: 25%; }
+    .grid-mobile-4-12 { width: 33.33333333%; }
+    .grid-mobile-5-12 { width: 41.66666667%; }
+    .grid-mobile-6-12 { width: 50%; }
+    .grid-mobile-7-12 { width: 58.33333333%; }
+    .grid-mobile-8-12 { width: 66.66666667%; }
+    .grid-mobile-9-12 { width: 75%; }
+    .grid-mobile-10-12 { width: 83.33333333%; }
+    .grid-mobile-11-12 { width: 91.66666667%; }
+    .grid-mobile-12-12 { width: 100%;}
+    }
+
+</style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item grid-6-12 grid-mobile-12-12">
+            <img src="./image/float/float-item.png" alt="">
+        </div>
+        <div class="grid-item grid-6-12 grid-mobile-12-12">
+            <img src="./image/float/float-item2.png" alt="">
+        </div>
+        <div class="grid-item grid-4-12 ">
+            <img src="./image/float/float-item.png" alt="">
+        </div>
+        <div class="grid-item grid-4-12 ">
+            <img src="./image/float/float-item2.png" alt="">
+        </div>
+        <div class="grid-item grid-4-12 ">
+            <img src="./image/float/float-item2.png" alt="">
+        </div>
+        <div class="grid-item grid-3-12 ">
+            <img src="./image/float/float-item.png" alt="">
+        </div>
+        <div class="grid-item grid-3-12 ">
+            <img src="./image/float/float-item2.png" alt="">
+        </div>
+        <div class="grid-item grid-3-12 ">
+            <img src="./image/float/float-item2.png" alt="">
+        </div>
+        <div class="grid-item grid-3-12 ">
+            <img src="./image/float/float-item2.png" alt="">
+        </div>
+        <div class="grid-item grid-12-12 ">
+            <img src="./image/float/float-item2.png" alt="">
+        </div>
+    </div>
+
+</body>
+</html>
