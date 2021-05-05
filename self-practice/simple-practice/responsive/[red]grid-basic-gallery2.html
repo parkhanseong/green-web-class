@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>grid basic</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .grid-container {
+        max-width: 960px;
+        margin: 0 auto;
+        border: 1px solid #000;
+    }
+    .grid-item {
+        width: 25%;
+        padding-top: 25%;
+        height: 0;
+        float: left;
+        position: relative;
+    }
+    .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 1rem;
+    }
+    .content img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .content h1 {
+        position: relative;
+        top: 1rem;
+        left: 1rem;
+        color: #fff;
+    }
+    .grid-item-large {
+        width: 50%; padding-top: 50%;
+    }
+    .grid-item-long {
+        padding-top: 50%; float:right;
+    }
+    @media (max-width: 768px) {
+        .grid-item {
+            width: 50%;
+            padding-top: 50%;
+        }
+    }
+    @media (max-width: 480px) {
+        .grid-item {
+            width: 100%;
+            padding-top: 100%;
+        }
+    }
+    
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="grid-item grid-item-large">
+        <div class="content">
+            <img src="../../image/float/float-item.png" alt="">
+            <h1>item1</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="../../image/float/float-item2.png" alt="">
+            <h1>item2</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="../../image/float/float-item3.png" alt="">
+            <h1>item3</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="../../image/float/float-item.png" alt="">
+            <h1>item4</h1>
+        </div>
+    </div>
+    <div class="grid-item grid-item-long">
+        <div class="content">
+            <img src="../../image/float/float-item2.png" alt="">
+            <h1>item5</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="../../image/float/float-item3.png" alt="">
+            <h1>item6</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="../../image/float/float-item.png" alt="">
+            <h1>item7</h1>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="content">
+            <img src="../../image/float/float-item2.png" alt="">
+            <h1>item8</h1>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
