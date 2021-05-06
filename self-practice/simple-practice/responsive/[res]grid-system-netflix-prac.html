@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>grid system2</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #111;
+            color: #999;
+        }
+        .clearfix:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        img {
+            max-width: 100%;
+            vertical-align: top;
+        }
+        .inner {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        /* header */
+        header {
+            height: 0;
+            padding-top: 10%;
+            background: url(../../image/netflix/netflix-bg.jpg);
+            position: relative;
+            margin-bottom: -4rem;
+        }
+        header:before {
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+            background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+        }
+        
+        .logo {
+            position: relative;
+            font-size: 4rem;
+            text-transform: uppercase;
+            color: red;
+            padding: 0 1rem;
+        }
+
+        /* 넓이값 지정한다 */
+        .grid-item {
+            float: left;
+        }
+        /* 넓이값을 높이값으로 치환한다 */
+        .grid-content {
+            padding-top: 100%;
+            margin: 1rem;
+            position: relative;
+            border-radius: 10px;
+            border: 3px solid #666;
+        }
+        .grid-img-cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 50%;
+        }
+        .grid-img-cover img {
+            width: 100%;
+            height: 100%;
+        }
+        .grid-desc {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 1rem;
+            overflow: hidden;
+        }
+        .grid-desc:after {
+            content:'';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100px;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+            background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+        }
+
+        /* grid system */
+        .l-col-1-12 { width: 8.33333333%; }
+        .l-col-2-12 { width: 16.66666667%; }
+        .l-col-3-12 { width: 25%; }
+        .l-col-4-12 { width: 33.33333333%; }
+        .l-col-5-12 { width: 41.66666667%; }
+        .l-col-6-12 { width: 50%; }
+        .l-col-7-12 { width: 58.33333333%; }
+        .l-col-8-12 { width: 66.66666667%; }
+        .l-col-9-12 { width: 75%; }
+        .l-col-10-12 { width: 83.33333333%; }
+        .l-col-11-12 { width: 91.66666667%; }
+        .l-col-12-12 { width: 100%;}
+
+        /* grid tablet system */
+        @media (max-width: 768px) {
+            header {
+                margin-bottom: -2rem;
+            }
+            .logo {
+                font-size: 2rem;
+            }
+            .l-col-tablet-1-12 { width: 8.33333333%; }
+            .l-col-tablet-2-12 { width: 16.66666667%; }
+            .l-col-tablet-3-12 { width: 25%; }
+            .l-col-tablet-4-12 { width: 33.33333333%; }
+            .l-col-tablet-5-12 { width: 41.66666667%; }
+            .l-col-tablet-6-12 { width: 50%; }
+            .l-col-tablet-7-12 { width: 58.33333333%; }
+            .l-col-tablet-8-12 { width: 66.66666667%; }
+            .l-col-tablet-9-12 { width: 75%; }
+            .l-col-tablet-10-12 { width: 83.33333333%; }
+            .l-col-tablet-11-12 { width: 91.66666667%; }
+            .l-col-tablet-12-12 { width: 100%;}
+        }
+        /* grid mobile system */
+        @media (max-width: 480px) {
+            header {
+                margin-bottom: -1rem;
+            }
+            .logo {
+                font-size: 1rem;
+            }
+            .l-col-mobile-1-12 { width: 8.33333333%; }
+            .l-col-mobile-2-12 { width: 16.66666667%; }
+            .l-col-mobile-3-12 { width: 25%; }
+            .l-col-mobile-4-12 { width: 33.33333333%; }
+            .l-col-mobile-5-12 { width: 41.66666667%; }
+            .l-col-mobile-6-12 { width: 50%; }
+            .l-col-mobile-7-12 { width: 58.33333333%; }
+            .l-col-mobile-8-12 { width: 66.66666667%; }
+            .l-col-mobile-9-12 { width: 75%; }
+            .l-col-mobile-10-12 { width: 83.33333333%; }
+            .l-col-mobile-11-12 { width: 91.66666667%; }
+            .l-col-mobile-12-12 { width: 100%;}
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!-- <div class="inner"> -->
+        <!-- </div> -->
+    </header>
+    <div class="header-wrap inner">
+        <h1 class="logo">netflix</h1>
+    </div>
+    <div class="grid clearfix inner">
+        <div class="grid-item l-col-3-12 l-col-tablet-6-12 l-col-mobile-12-12">
+            <div class="grid-content">
+                <div class="grid-img-cover">
+                    <img src="../../image/netflix/movie01.png" alt="">
+                </div>
+                <div class="grid-desc">
+                    <h1>강철부대</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur odit omnis delectus possimus dolorum eaque, fuga sed neque nihil harum quas magnam, quam quos illo ducimus iusto doloremque tenetur?</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item l-col-3-12 l-col-tablet-6-12 l-col-mobile-12-12">
+            <div class="grid-content">
+                <div class="grid-img-cover">
+                    <img src="../../image/netflix/movie02.png" alt="">
+                </div>
+                <div class="grid-desc">
+                    <h1>응답하라1984</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur odit omnis delectus possimus dolorum eaque, fuga sed neque nihil harum quas magnam, quam quos illo ducimus iusto doloremque tenetur?</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item l-col-3-12 l-col-tablet-6-12 l-col-mobile-12-12">
+            <div class="grid-content">
+                <div class="grid-img-cover">
+                    <img src="../../image/netflix/movie03.png" alt="">
+                </div>
+                <div class="grid-desc">
+                    <h1>진격의 거인</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur odit omnis delectus possimus dolorum eaque, fuga sed neque nihil harum quas magnam, quam quos illo ducimus iusto doloremque tenetur?</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item l-col-3-12 l-col-tablet-6-12 l-col-mobile-12-12">
+            <div class="grid-content">
+                <div class="grid-img-cover">
+                    <img src="../../image/netflix/movie04.png" alt="">
+                </div>
+                <div class="grid-desc">
+                    <h1>스파이더맨</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur odit omnis delectus possimus dolorum eaque, fuga sed neque nihil harum quas magnam, quam quos illo ducimus iusto doloremque tenetur?</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item l-col-3-12 l-col-tablet-6-12 l-col-mobile-12-12">
+            <div class="grid-content">
+                <div class="grid-img-cover">
+                    <img src="../../image/netflix/movie05.png" alt="">
+                </div>
+                <div class="grid-desc">
+                    <h1>하이큐</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur odit omnis delectus possimus dolorum eaque, fuga sed neque nihil harum quas magnam, quam quos illo ducimus iusto doloremque tenetur?</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item l-col-3-12 l-col-tablet-6-12 l-col-mobile-12-12">
+            <div class="grid-content">
+                <div class="grid-img-cover">
+                    <img src="../../image/netflix/movie06.png" alt="">
+                </div>
+                <div class="grid-desc">
+                    <h1>삼국지</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur odit omnis delectus possimus dolorum eaque, fuga sed neque nihil harum quas magnam, quam quos illo ducimus iusto doloremque tenetur?</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item l-col-3-12 l-col-tablet-6-12 l-col-mobile-12-12">
+            <div class="grid-content">
+                <div class="grid-img-cover">
+                    <img src="../../image/netflix/movie07.png" alt="">
+                </div>
+                <div class="grid-desc">
+                    <h1>수트</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur odit omnis delectus possimus dolorum eaque, fuga sed neque nihil harum quas magnam, quam quos illo ducimus iusto doloremque tenetur?</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item l-col-3-12 l-col-tablet-6-12 l-col-mobile-12-12">
+            <div class="grid-content">
+                <div class="grid-img-cover">
+                    <img src="../../image/netflix/movie08.png" alt="">
+                </div>
+                <div class="grid-desc">
+                    <h1>퀸스갬빗</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur odit omnis delectus possimus dolorum eaque, fuga sed neque nihil harum quas magnam, quam quos illo ducimus iusto doloremque tenetur?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

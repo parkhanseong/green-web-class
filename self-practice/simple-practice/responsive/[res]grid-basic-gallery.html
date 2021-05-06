@@ -2,12 +2,18 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>grid basic</title>
 <style>
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+    .clearfix:after {
+        content:'';
+        display: block;
+        clear: both;
     }
     .grid-container {
         max-width: 960px;
@@ -51,18 +57,18 @@
             padding-top: 50%;
         }
     }
-    @media (max-width: 480px) {
+    /* @media (max-width: 480px) {
         .grid-item {
             width: 100%;
             padding-top: 100%;
         }
-    }
+    } */
     
 </style>
 </head>
 <body>
 
-<div class="grid-container">
+<div class="grid-container clearfix">
     <div class="grid-item">
         <div class="content">
             <img src="../../image/float/float-item.png" alt="">
