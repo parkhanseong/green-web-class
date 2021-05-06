@@ -29,35 +29,51 @@
     .grid-11-12 { width: 91.66666667%; }
     .grid-12-12 { width: 100%;}
 
+    .grid-container:after {
+        content:'';
+        display: block;
+        clear: both;
+    }
     .grid-container {
         max-width: 1440px;
         margin: 0 auto;
-        overflow: hidden;
+        border: 1px solid #000;
     }
     .grid-item {
         float: left;
-        position: relative;
+        /* position: relative; */
         padding: 1rem;
+        background: coral;
     }
-    
+    .grid-content {
+        padding-top: 100%;
+        background: pink;
+        position: relative;
+    }
+    .grid-content img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
     .grid-item img {
         width: 100%;
     }
 
     @media (max-width: 768px) {
     /* grid system */
-    .grid-mobile-1-12 { width: 8.33333333%; }
-    .grid-mobile-2-12 { width: 16.66666667%; }
-    .grid-mobile-3-12 { width: 25%; }
-    .grid-mobile-4-12 { width: 33.33333333%; }
-    .grid-mobile-5-12 { width: 41.66666667%; }
-    .grid-mobile-6-12 { width: 50%; }
-    .grid-mobile-7-12 { width: 58.33333333%; }
-    .grid-mobile-8-12 { width: 66.66666667%; }
-    .grid-mobile-9-12 { width: 75%; }
-    .grid-mobile-10-12 { width: 83.33333333%; }
-    .grid-mobile-11-12 { width: 91.66666667%; }
-    .grid-mobile-12-12 { width: 100%;}
+        .grid-mobile-1-12 { width: 8.33333333%; }
+        .grid-mobile-2-12 { width: 16.66666667%; }
+        .grid-mobile-3-12 { width: 25%; }
+        .grid-mobile-4-12 { width: 33.33333333%; }
+        .grid-mobile-5-12 { width: 41.66666667%; }
+        .grid-mobile-6-12 { width: 50%; }
+        .grid-mobile-7-12 { width: 58.33333333%; }
+        .grid-mobile-8-12 { width: 66.66666667%; }
+        .grid-mobile-9-12 { width: 75%; }
+        .grid-mobile-10-12 { width: 83.33333333%; }
+        .grid-mobile-11-12 { width: 91.66666667%; }
+        .grid-mobile-12-12 { width: 100%;}
     }
 
 </style>
@@ -65,9 +81,14 @@
 <body>
     <div class="grid-container">
         <div class="grid-item grid-3-12 grid-mobile-6-12">
-            <img src="../../image/float/float-item.png" alt="">
+            <!-- padding-top을 주어야 한다 -->
+            <div class="grid-content">
+                <!-- <img src="../../image/float/career1.png" alt="이미지">     -->
+                <!-- <img src="../../image/card/hollywood.jpg" alt="이미지">     -->
+                <!-- <img src="../../image/filter/filter-img.png" alt="이미지">     -->
+            </div>
         </div>
-        <div class="grid-item grid-3-12 grid-mobile-6-12">
+        <!-- <div class="grid-item grid-3-12 grid-mobile-6-12">
             <img src="../../image/float/float-item2.png" alt="">
         </div>
         <div class="grid-item grid-3-12 grid-mobile-6-12">
@@ -93,7 +114,7 @@
         </div>
         <div class="grid-item grid-12-12 grid-mobile-6-12">
             <img src="../../image/float/float-item2.png" alt="">
-        </div>
+        </div> -->
     </div>
 
 </body>
