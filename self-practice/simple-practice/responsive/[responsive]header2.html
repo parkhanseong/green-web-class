@@ -47,10 +47,10 @@
     .navbar__item a:hover {
         background: pink;
     }
-    input[id=toggleBtn] {
+    .btn-toggle {
         display: none;
     }
-    label[for=toggleBtn] {
+    .btn-toggle {
         display: none;
         position: absolute;
         top: 20px;
@@ -59,13 +59,11 @@
         cursor: pointer;
         color: #fff;
     }
-    input[id=toggleBtn]:checked ~ .navbar {
-        display: block;
-    }
+    
     @media screen and (max-width: 768px) {
-        label[for=toggleBtn] {
+        .btn-toggle {
             display: block;
-        }
+        }   
         img.logo {
             float: none;
             display: block;
@@ -78,17 +76,16 @@
             float: none;
             margin: 20px auto;
         }
+        .navbar.active {
+            display: block;
+        }
     }
 </style>
 </head>
 <body>
 
 <header>
-    <img src="./image/logo/alpaca_coding2.png" alt="" class="logo">
-    <input type="checkbox" id="toggleBtn">
-    <label for="toggleBtn">
-        <i class="fas fa-bars"></i>
-    </label>
+    <img src="../../image/logo/alpaca_coding2.png" alt="" class="logo">
     <ul class="navbar">
         <li class="navbar__item">
             <a href="#">menu1</a>
@@ -100,7 +97,17 @@
             <a href="#">menu3</a>
         </li>
     </ul>
+    <div class="btn-toggle" onclick="handleToggle();">
+        <i class="fas fa-bars"></i>
+    </div>
 </header>
+
+<script>
+    function handleToggle() {
+        var navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+    }
+</script>
 
 </body>
 </html>
