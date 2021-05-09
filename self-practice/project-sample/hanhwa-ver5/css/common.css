@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* typography */
+:root {
+    /* font standard 10px */
+    font-size: 62.5%;
+
+    /* size */
+    --font-large: 2rem;
+    --font-medium: 1.8rem;
+    --font-regular: 1.6rem;
+    --font-small: 1.5rem;
+    --font-micro: 1.4rem;
+    
+    /* color */
+    --primary-color: #f37321;
+}
+body {
+    color: #999;
+    font-size: 3rem;
+    font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;
+}
+*:after, *:before {
+    content:'';
+}
+.clearfix:after {
+    display: block;
+    clear: both;
+}
+
+/* icon, images */
+.icon {
+    background-image: url(../image/common/ico.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.logo {
+    width: 234px;
+    height: 55px;
+    background-position: 0px -577px;
+    border: 1px solid blue;
+}
+.icon-toggle {
+    width: 50px;
+    height: 24px;
+    background-position: -651px 0;
+}
+.ir-logo {
+    width: 159px;
+    height: 57px;
+    background-position: -306px -457px;
+}
+.right-arrow {
+    width: 16px;
+    height: 8px;
+    background-position: -120px -100px;
+}
+.right-arrow-bg-coral {
+    background-position: -400px -100px;
+    width: 32px;
+    height: 32px;
+}

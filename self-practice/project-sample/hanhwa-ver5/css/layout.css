@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.wrap {
+    max-width: 1920px;
+}
+.inner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
