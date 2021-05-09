@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css";
 
 /* typography */
 :root {
@@ -16,18 +17,18 @@
     --primary-color: #f37321;
 }
 body {
-    color: #999;
-    font-size: 3rem;
+    font-size: var(--font-regular);
     font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;
 }
-*:after, *:before {
-    content:'';
-}
 .clearfix:after {
+    content:'';
     display: block;
     clear: both;
 }
-
+.marginfix:before {
+    content:'';
+    display: table;
+}
 /* icon, images */
 .icon {
     background-image: url(../image/common/ico.png);
@@ -36,9 +37,9 @@ body {
 }
 .logo {
     width: 234px;
-    height: 55px;
-    background-position: 0px -577px;
-    border: 1px solid blue;
+    height: 41px;
+    background-position: 0px -594px;
+    /* border: 1px solid blue; */
 }
 .icon-toggle {
     width: 50px;
@@ -59,4 +60,9 @@ body {
     background-position: -400px -100px;
     width: 32px;
     height: 32px;
+}
+.lang {
+    background-position: -273px 0;
+    width: 32px;
+    height: 23px;
 }
