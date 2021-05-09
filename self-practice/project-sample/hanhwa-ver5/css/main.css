@@ -356,13 +356,13 @@ footer .link a:last-child {
         height: auto;
     }
     .innovation .product .desc dd p {
+        height: 6em;
+        line-height: 1.2;
         padding: 2rem 0;
         display: block;
+        margin-bottom: 2rem;
+        overflow: hidden;
     }
-    /* .sns .inner:before {
-        content:'';
-        display: table;
-    } */
     .sns .thumb-item {
         float: none;
         width: auto;
