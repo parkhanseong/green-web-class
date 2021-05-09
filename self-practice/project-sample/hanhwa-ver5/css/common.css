@@ -3,7 +3,6 @@
 
 /* typography */
 :root {
-    /* font standard 10px */
     font-size: 62.5%;
 
     /* size */
@@ -15,6 +14,7 @@
     
     /* color */
     --primary-color: #f37321;
+    --color-green: rgba(46, 179, 0, 0.9);
 }
 body {
     font-size: var(--font-regular);
@@ -39,7 +39,6 @@ body {
     width: 234px;
     height: 41px;
     background-position: 0px -594px;
-    /* border: 1px solid blue; */
 }
 .icon-toggle {
     width: 50px;

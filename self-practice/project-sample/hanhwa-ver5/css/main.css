@@ -7,10 +7,9 @@
 .section-title {
     max-width: 1200px;
     margin: 100px auto 44px;
-    font-size: 34px;
+    font-size: 3.4rem;
     color: #111;
     line-height: 1;
-    /* border: 1px solid blue; */
     text-align: center;
 }
 .section-title img {
@@ -31,7 +30,7 @@ header {
     z-index: 10;
 }
 header .inner {
-    padding-top: 30px;
+    padding-top: 3rem;
 }
 header .logo {
     float: left;
@@ -44,14 +43,21 @@ header .icon-toggle {
 }
 header .gnb {
     margin-top: 5px;
-    /* border: 1px solid blue; */
     color: #fff;
     float: left;
 }
 header .gnb li {
     display: inline-block;
     margin-right: 4rem;
+    height: 50px;
 }   
+header .gnb li a {
+    line-height: 4rem;
+}
+header .gnb li:hover {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
 header .search {
     float: right;
 }
@@ -68,6 +74,11 @@ header .search button {
     position: relative;
     vertical-align: middle;
     margin-right: 4rem;
+    cursor: pointer;
+}
+header .search button:hover {
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 header .search button:after {
     content: '';
@@ -85,8 +96,6 @@ header .tnb {
     display: none;
     font-size: 4rem;
 }
-
-
 
 /* visiion */
 .vision {
@@ -186,8 +195,6 @@ header .tnb {
     position: relative;
 }
 .innovation .product .desc dd {
-    /* padding: 30px 250px; */
-    /* position: relative; */
     padding: 30px 50px;
     display: inline-block;
     height: 170px;
@@ -251,7 +258,7 @@ header .tnb {
     right: 0;
     height: 100%;
     width: 0;
-    background: rgba(46, 179, 0, 0.9);
+    background: var(--color-green);
     transition: all 400ms;
     z-index: 1;
 }
@@ -368,6 +375,9 @@ footer .link a:last-child {
         width: auto;
         padding-left: 0;
     }
+    .sns .thumb-item .desc {
+        text-align: center;
+    }
     footer {
         height: auto;
         padding: 2rem 0;
@@ -375,6 +385,9 @@ footer .link a:last-child {
     footer .inner {
         padding-top: 0;
         text-align: center;
+    }
+    footer .footer-logo {
+        display: block;
     }
     footer address {
         margin: 2rem 0;
