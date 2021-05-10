@@ -205,7 +205,7 @@ header .search button:after {
     padding: 4rem 0;
     border-bottom: 1px solid #ddd;
 }
-.about .thumb-item .thumb {
+.about .thumb-item .thumb-item {
     overflow: hidden;
 }
 .about .thumb-item .desc span:before {
