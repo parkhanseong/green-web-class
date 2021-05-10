@@ -26,44 +26,106 @@ header {
     left: 0;
     width: 100%;
     background: rgba(0,0,0,0.2);
-    height: 110px;
+    height: 100px;
     z-index: 10;
 }
+header:hover {
+    /* background-color: #fff; */
+    /* filter: invert(1); */
+}
 header .inner {
-    padding-top: 3rem;
 }
 header .logo {
     float: left;
     margin-right: 5rem;
+    margin-top: 2.5rem;
 }
 header .icon-toggle {
-    display: inline-block;
-    vertical-align: middle;
+    float: left;
     margin-right: 4rem;
+    margin-top: 3.5rem;
 }
 header .gnb {
-    margin-top: 5px;
     color: #fff;
     float: left;
 }
-header .gnb li {
+header .gnb .gnb-item {
     display: inline-block;
     margin-right: 4rem;
-    height: 50px;
+    line-height: 100px;
 }   
-header .gnb li a {
-    line-height: 4rem;
-}
-header .gnb li:hover {
+header .gnb .gnb-item:hover > a {
     color: var(--primary-color);
     border-bottom: 1px solid var(--primary-color);
 }
+header .gnb .gnb-item:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+header .gnb-item-introduce,
+header .gnb-item-business,
+header .gnb-item-career {
+    position: absolute;
+    top: 101px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: rgba(0,0,0,.5);
+    opacity: 0;
+    visibility: hidden;
+}
+header .gnb-item-introduce {
+    padding-left: 603px;
+}
+header .gnb-item-business {
+    padding-left: 717px;
+}
+header .gnb-item-career {
+    padding-left: 824px;
+}
+header .gnb-item-introduce li,
+header .gnb-item-business li,
+header .gnb-item-career li
+ {
+    display: inline-block;
+    margin-right: 3rem;
+    line-height: 1;
+    text-align: center;
+}
+header .gnb-item-introduce li:hover a,
+header .gnb-item-business li:hover a,
+header .gnb-item-career li:hover a
+{
+    color: var(--primary-color);
+}
 header .search {
     float: right;
+    padding-top: 2rem;
+}
+header .search .lang-wrap {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+}
+header .search .lang-wrap .lang {
+    /* border: 1px solid blue; */
+}
+header .search .lang-wrap .lang:hover {
+    background-position: -273px -24px;
+}
+header .search .lang-wrap .lang-list {
+    position: absolute;
+    top: 62px;
+    left: 0;
+}
+header .search .lang-wrap .lang-list .lang-item {
+    padding: 1rem 4rem;
+    font-size: 1.3rem;
+    background: #fff;
+    color: #000;
 }
 header .search a {
     vertical-align: middle;
-    margin-right: 4rem;
 }
 header .search button {
     padding: 1rem 6rem 1rem 2rem;
@@ -73,7 +135,7 @@ header .search button {
     border-radius: 30px;
     position: relative;
     vertical-align: middle;
-    margin-right: 4rem;
+    margin: 0 4rem;
     cursor: pointer;
 }
 header .search button:hover {
