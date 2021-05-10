@@ -350,6 +350,10 @@ header .search button:after {
 .sns .thumb-item .desc {
     padding: 46px 19px 30px;
 }
+.sns .thumb-item .desc small {
+    display: inline-block;
+    width: 100px;
+}
 .sns .thumb-item h5 {
     color: var(--primary-color);
 }
@@ -389,6 +393,16 @@ footer .link a:hover {
 footer .link a {
     margin-right: 1rem;
 }
+footer .link a + a:before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-right: 1.5rem;
+    background: #999;
+    display: inline-block;
+}
 footer .link a:last-child {
     color: var(--primary-color);
 }
@@ -416,6 +430,9 @@ footer .link a:last-child {
     .about .thumb-item {
         width: 100%;
         text-align: center;
+    }
+    .about .thumb-item .desc {
+        margin-left: 0;
     }
     .innovation .product .desc dd {
         height: auto;
