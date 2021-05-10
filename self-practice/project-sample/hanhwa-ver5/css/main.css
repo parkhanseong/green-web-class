@@ -30,11 +30,7 @@ header {
     left: 0;
     width: 100%;
     background: rgba(0,0,0,0.2);
-    height: 100px;
     z-index: 10;
-}
-header .inner {
-    margin: 0 auto;
 }
 header .logo {
     float: left;
@@ -148,7 +144,7 @@ header .search button:after {
 
 /* visiion */
 .vision {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     background: url(../image/main/vis.jpg) no-repeat center/cover;
     position: relative;
@@ -205,7 +201,7 @@ header .search button:after {
     padding: 4rem 0;
     border-bottom: 1px solid #ddd;
 }
-.about .thumb-item .thumb-item {
+.about .thumb-item .thumbnail  {
     overflow: hidden;
 }
 .about .thumb-item .desc span:before {
@@ -226,6 +222,7 @@ header .search button:after {
     font-size: var(--font-regular);
     line-height: 1.5;
     height: 48px;
+    overflow:hidden;
 }
 
 /* innovation */
@@ -243,6 +240,17 @@ header .search button:after {
     padding: 30px 50px;
     background: #eee;
     position: relative;
+}
+.innovation .product .desc dt span {
+    display: inline-block;
+}
+.innovation .product .desc dt span:after {
+    content:'';
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin: 0 1rem;
+    background: var(--primary-color);
 }
 .innovation .product .desc dd {
     padding: 30px 50px;
@@ -407,64 +415,3 @@ footer .link a:last-child {
     color: var(--primary-color);
 }
 
-@media (max-width: 768px) {
-    header .inner {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-    header .gnb {
-        display: none;
-    }
-    header .search {
-        display: none;
-    }
-    header .icon-toggle {
-        position: absolute;
-        top: 33px;
-        right: 34px;
-        margin: 0;
-    }
-    .about .section-title img {
-        width: 80%;
-    }
-    .about .thumb-item {
-        width: 100%;
-        text-align: center;
-    }
-    .about .thumb-item .desc {
-        margin-left: 0;
-    }
-    .innovation .product .desc dd {
-        height: auto;
-    }
-    .innovation .product .desc dd p {
-        height: 6em;
-        line-height: 1.2;
-        padding: 2rem 0;
-        display: block;
-        margin-bottom: 2rem;
-        overflow: hidden;
-    }
-    .sns .thumb-item {
-        float: none;
-        width: auto;
-        padding-left: 0;
-    }
-    .sns .thumb-item .desc {
-        text-align: center;
-    }
-    footer {
-        height: auto;
-        padding: 2rem 0;
-    }
-    footer .inner {
-        padding-top: 0;
-        text-align: center;
-    }
-    footer .footer-logo {
-        display: block;
-    }
-    footer address {
-        margin: 2rem 0;
-    }
-}
