@@ -29,6 +29,11 @@ body {
     content:'';
     display: table;
 }
+
+.mobile-line-break {
+    display: none;
+}
+
 /* icon, images */
 .icon {
     background-image: url(../image/common/ico.png);
