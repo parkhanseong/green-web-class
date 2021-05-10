@@ -65,3 +65,13 @@ body {
     width: 32px;
     height: 23px;
 }
+.icon-time:before {
+    content:'';
+    display: inline-block;
+    background-image: url(../image/common/ico.png);
+    background-position: -327px -123px;
+    width: 14px;
+    height: 14px;
+    margin: 0 7px 3px 0;
+    vertical-align: middle;
+}
