@@ -279,6 +279,101 @@ header .search button:after {
     border-radius: 30px;
 }
 
+/* challenge */
+.challenge {
+    margin-top: 100px;
+    padding-bottom: 116px;
+    background: url(../image/main/fullbg_main.jpg);
+}
+.outer-list .career {
+    padding: 0 0 50px 50px;
+}
+.outer-list .career h1 {
+    font-size: 2rem;
+    position: relative;
+}
+.outer-list .career h1:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -40px;
+    background-image: url(../image/common/ico.png);
+    background-position: -115px -205px;
+    width: 26px;
+    height: 29px;
+}
+.outer-list .career p {
+    padding: 2rem 0;
+    line-height: 1.75;
+    color: #333;
+}
+
+.outer-list a.btn-more{
+    font-weight: bold;
+}
+.outer-list a.btn-more:after
+{
+    content: '';
+    display: inline-block;
+    background-image: url(../image/common/ico.png);
+    background-position: -231px -120px;
+    width: 6px;
+    height: 8px;
+    margin-left: 1rem;
+}
+.outer-list .talent {
+    padding: 0 0 50px 50px;
+}
+.outer-list .talent h1 {
+    font-size: 2rem;
+    margin-bottom: 26px;
+    position: relative;
+}
+.outer-list .talent h1:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -40px;
+    background-image: url(../image/common/ico.png);
+    background-position: -175px -205px;
+    width: 26px;
+    height: 29px;
+}
+.inner-list {
+    margin-bottom: 20px;
+}
+.challenge .talent {
+    line-height: 1.75;
+}
+.challenge .talent p,
+.challenge .talent span {
+    color: #333;
+}
+.challenge .inner-list .sub {
+    display: inline-block;
+    width: 150px;
+}
+.challenge .inner-list span.desc:before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background: #999;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+.challenge .career-link {
+    background: var(--primary-color);
+    display: block;
+    width: 230px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
 /* sns */
 .sns-tab {
     text-align: center;
