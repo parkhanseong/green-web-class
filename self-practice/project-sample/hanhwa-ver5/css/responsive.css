@@ -14,18 +14,19 @@
     }
 }
 @media (max-width: 768px) {
-
     .mobile-line-break {
         display: block;
     }
 
+    /* header */
     header .inner {
         padding: 0 3rem 2rem 3rem;
     }
     header .gnb {
         display: none;
     }
-    
+
+    /* about */
     .about .section-title img {
         width: 80%;
     }
@@ -50,6 +51,20 @@
         margin-bottom: 2rem;
         overflow: hidden;
     }
+    /* challenge me */
+    .challenge {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .challenge .sub {
+        /* display: block; */
+    }
+    .challenge .inner-list p.desc:before {
+        margin-right: 5px;
+    }
+
+
+    /* sns */
     .sns .thumb-item {
         float: none;
         width: auto;

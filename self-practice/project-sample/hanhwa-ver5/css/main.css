@@ -305,7 +305,7 @@ header .search button:after {
 .outer-list .career p {
     padding: 2rem 0;
     line-height: 1.75;
-    color: #333;
+    color: #666;
 }
 
 .outer-list a.btn-more{
@@ -345,15 +345,20 @@ header .search button:after {
 .challenge .talent {
     line-height: 1.75;
 }
-.challenge .talent p,
-.challenge .talent span {
-    color: #333;
+.challenge .talent p {
+    color: #666;
 }
 .challenge .inner-list .sub {
     display: inline-block;
     width: 150px;
 }
-.challenge .inner-list span.desc:before {
+.challenge .inner-list p {
+    display: inline-block;
+}
+.challenge .inner-list p strong {
+    color: #000;
+}
+.challenge .inner-list p.desc:before {
     content: '';
     display: inline-block;
     width: 3px;
