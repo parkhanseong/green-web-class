@@ -257,9 +257,8 @@ header .search button:after {
     background: var(--primary-color);
 }
 .innovation .product .desc dd {
-    padding: 30px 50px;
+    padding: 50px 50px;
     display: inline-block;
-    height: 170px;
     background: #2C384B;
     color: #eee;
     overflow: hidden;
@@ -291,7 +290,7 @@ header .search button:after {
     background: url(../image/main/fullbg_main.jpg);
 }
 .outer-list .career {
-    padding: 0 0 50px 50px;
+    padding: 0 50px 50px 50px;
 }
 .outer-list .career h1 {
     font-size: 2rem;
@@ -327,7 +326,7 @@ header .search button:after {
     margin-left: 1rem;
 }
 .outer-list .talent {
-    padding: 0 0 50px 50px;
+    padding: 0 50px 50px 50px;
 }
 .outer-list .talent h1 {
     font-size: 2rem;
