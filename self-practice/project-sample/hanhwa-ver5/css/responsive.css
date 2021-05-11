@@ -49,20 +49,17 @@
         padding: 2rem 0;
         display: block;
         margin-bottom: 2rem;
+        width: 100%;
         overflow: hidden;
     }
     /* challenge me */
     .challenge {
-        width: 80%;
-        margin: 0 auto;
-    }
-    .challenge .sub {
-        /* display: block; */
+        width: 90%;
+        margin: 50px auto;
     }
     .challenge .inner-list p.desc:before {
         margin-right: 5px;
     }
-
 
     /* sns */
     .sns .thumb-item {
@@ -72,6 +69,7 @@
     }
     .sns .thumb-item .desc {
         text-align: center;
+        padding-top: 20px;
     }
     footer {
         height: auto;
