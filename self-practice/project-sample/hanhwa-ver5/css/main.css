@@ -50,6 +50,7 @@ header .gnb .gnb-item {
     display: inline-block;
     margin-right: 4rem;
     line-height: 100px;
+    position: relative;
 }   
 header .gnb .gnb-item:hover > a {
     color: var(--primary-color);
@@ -63,27 +64,31 @@ header .gnb .gnb-item ul {
     position: absolute;
     top: 101px;
     left: 0;
-    right: 0;
-    height: 100px;
-    background: rgba(0,0,0,.5);
-    opacity: 0;
+    line-height: 60px;
+    /* width: 700px; */
+    /* width: 500px; */
+    /* right: 0; */
+    /* height: 100px; */
+    background: rgba(0,0,0,.6);
+    /* opacity: 0; */
     visibility: hidden;
 }
 header .gnb-item ul li
 {
     display: inline-block;
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
     line-height: 1;
+    width: 150px;
     text-align: center;
 }
 header .gnb-item-introduce {
-    padding-left: 603px;
+    /* padding-left: 603px; */
 }
 header .gnb-item-business {
-    padding-left: 717px;
+    /* padding-left: 717px; */
 }
 header .gnb-item-career {
-    padding-left: 824px;
+    /* padding-left: 824px; */
 }
 header .gnb-item ul li:hover a
 {
@@ -95,10 +100,10 @@ header .search {
 }
 header .search .lang-wrap {
     display: inline-block;
-    position: relative;
+    /* position: relative; */
     color: #fff;
 }
-header .search .lang-wrap .lang:hover {
+/* header .search .lang-wrap .lang:hover {
     background-position: -273px -24px;
 }
 header .search .lang-wrap .lang-list {
@@ -111,7 +116,7 @@ header .search .lang-wrap .lang-list .lang-item {
     font-size: 1.3rem;
     background: #fff;
     color: #000;
-}
+} */
 header .search a {
     vertical-align: middle;
 }
@@ -332,7 +337,7 @@ header .search button:after {
 .outer-list .talent h1:before {
     content: '';
     position: absolute;
-    top: -5px;
+    top: 0px;
     left: -40px;
     background-image: url(../image/common/ico.png);
     background-position: -175px -205px;
