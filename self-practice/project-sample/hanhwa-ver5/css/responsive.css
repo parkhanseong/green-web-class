@@ -1,5 +1,18 @@
 @charset "utf-8";
 
+
+
+@media (max-width: 1107px) {
+    header .search {
+        display: none;
+    }
+    header .icon-toggle {
+        position: absolute;
+        top: 33px;
+        right: 34px;
+        margin: 0;
+    }
+}
 @media (max-width: 768px) {
 
     .mobile-line-break {
@@ -12,15 +25,7 @@
     header .gnb {
         display: none;
     }
-    header .search {
-        display: none;
-    }
-    header .icon-toggle {
-        position: absolute;
-        top: 33px;
-        right: 34px;
-        margin: 0;
-    }
+    
     .about .section-title img {
         width: 80%;
     }
