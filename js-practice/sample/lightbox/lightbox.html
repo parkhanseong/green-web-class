@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    light box 
+</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a {
+        display: inline-block;
+    }
+    ul {
+        list-style: none;
+    }
+    img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+    .gallery-container ul {
+        display: flex;
+        /* background: pink; */
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    .overlay.visible {
+        display: block;
+    }
+    .overlay img {
+        width: 50%;
+        height: 50%;
+    }
+</style>
+</head>
+<body>
+
+<div class="gallery-container">
+    <ul class="gallery">
+        <li>
+            <a href="#">
+                <img src="./img/california_640x426.jpg" alt="" data-lightbox="./img/hollywood.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./img/california_640x426.jpg" alt="" data-lightbox="./img/hollywood.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./img/california_640x426.jpg" alt="" data-lightbox="./img/hollywood.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./img/california_640x426.jpg" alt="" data-lightbox="./img/hollywood.jpg">
+            </a>
+        </li>
+    </ul>
+    <div class="overlay">
+        <img src="./img/hollywood.jpg" alt="modal img">
+    </div>
+</div>
+    
+<script src="./script.js"></script>
+
+</body>
+</html>

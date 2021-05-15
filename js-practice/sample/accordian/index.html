@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>accordian</title>
+
+<style>
+    .container {
+        background: #111;
+        color: #999;
+        margin: 0 auto;
+        width: 50%;
+    }
+    .panel-question {
+        border: 1px solid #999;
+        margin-bottom: 20px;
+    }    
+    .panel-question .panel-heading {
+        background: #666;
+        cursor: pointer;
+    }
+    .panel-body {
+        display: none;
+    }
+    .active .panel-body {
+        display: block;
+    }
+</style>
+
+</head>
+<body>
+
+    <div class="container">
+        <button id="btn-collapse">collapse all</button>
+        <h1>FAQ</h1>
+        <section id="faq">
+            <div class="panel-question active">
+                <div class="panel-heading">
+                    ++ Lorem, ipsum dolor
+                </div>
+                <div class="panel-body" id="thisone">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti, inventore nemo facere ex quo at laborum eos ullam! Optio error omnis velit magni, ratione obcaecati consequatur. Odio, quam consectetur!
+                </div>
+            </div>
+            <div class="panel-question">
+                <div class="panel-heading">
+                    ++ Lorem, ipsum dolor
+                </div>
+                <div class="panel-body" id="thisone">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti, inventore nemo facere ex quo at laborum eos ullam! Optio error omnis velit magni, ratione obcaecati consequatur. Odio, quam consectetur!
+                </div>
+            </div>
+            <div class="panel-question">
+                <div class="panel-heading">
+                    ++ Lorem, ipsum dolor
+                </div>
+                <div class="panel-body" id="thisone">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deleniti, inventore nemo facere ex quo at laborum eos ullam! Optio error omnis velit magni, ratione obcaecati consequatur. Odio, quam consectetur!
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
