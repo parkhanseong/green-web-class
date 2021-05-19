@@ -32,9 +32,14 @@ backToTop.addEventListener('click', function(e) {
 function scrollToTop() {
     var scrollInterval = setInterval(function(){
         if( scrollPos != 0 ){
+            // y축으로 -55px씩 빼준다
             window.scrollBy(0, -55);
         }else {
             clearInterval(scrollInterval);
         }
     }, 15);
+    // 1000 = 1초
+    // 100 = 0.1초
+    // 10 = 0.01초
+    // 15 = 0.015초
 }
