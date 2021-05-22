@@ -18,43 +18,47 @@
             text-decoration: none;
             display: inline-block;
         }
+        img {
+            max-width: 100%;
+            vertical-align: top;
+        }
         .slider-container {
             display: flex;
             position: relative;
         }
         .slider-view {
             width: 400px;
-            border: 1px solid #000;
+            background: #ddd;
+            box-shadow: 0 0 2px rgba(0,0,0,.8);
             overflow: hidden;
         }
         .slider-items {
             width: 1200px;
             display: flex;
             position: relative;
-            background: coral;
         }
         .slider-content {
             width: 400px;
-            height: 400px;
-            background: gold;
+            /* height: 400px; */
             flex-shrink: 0;
+        }
+        .slider-content img {
+            
         }
         #btn-prev, #btn-next {
             position: absolute;
             top: 50%;
-            background: coral;
+            box-shadow: 0 2px 5px rgba(0,0,0, .5);
             padding: 1rem;
             border-radius: 50%;
-            color: #fff;
+            color: #111;
             z-index: 1;
         }
         #btn-prev {
-            left: 0;
-            transform: translateX(-50%);
+            right: 100%;
         }
         #btn-next {
-            right: 0;
-            transform: translateX(50%);
+            left: 100%;
         }
     </style>
 </head>
@@ -65,16 +69,16 @@
         <div class="slider-view">
             <div class="slider-items">
                 <div class="slider-content">
-                    content1
+                    <img src="../img/beauty-inside.jpg" alt="">
                 </div>
                 <div class="slider-content">
-                    content2
+                    <img src="../img/hard-working.jpg" alt="">
                 </div>
                 <div class="slider-content">
-                    content3
+                    <img src="../img/parasite.jpg" alt="">
                 </div>
                 <div class="slider-content">
-                    content4
+                    <img src="../img/beauty-inside.jpg" alt="">
                 </div>
             </div>
         </div>
