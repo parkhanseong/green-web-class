@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../js/jquery-3.6.0.js"></script>
+<title>toggle button</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    img {
+        width: 500px;
+        vertical-align: top;
+    }
+    section {
+        width: 960px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .content {
+        padding: 1rem;
+    }
+    .btn-box {
+        display: flex;
+    }
+    .btnTab {
+        width: 50%;
+        border: none;
+        color: #444444;
+        background: #fff;
+        padding: 1rem;
+    }
+    .btnTab.active {
+        background: #444444;
+        color: #fff;
+    }
+    .car-info__blue {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<section class="car-info">
+    <div class="btn-box">
+        <button class="btnTab active" data-info="newCar">신차 구매 정보</button>
+        <button class="btnTab" data-info="blue">블룹멤버스 및 차량 정보</button>
+    </div>
+    <!-- <div class="content">
+        <div class="car-info__new">
+            <img src="https://cdn.top-rider.com/news/photo/202005/29065_109896_1132.jpg" alt="">
+        </div>
+        <div class="car-info__blue">
+            <img src="https://pds.joins.com/news/component/htmlphoto_mmdata/202104/05/ca6dae19-131e-49e1-a1e2-f45a04cbb53d.jpg" alt="">
+        </div>
+    </div> -->
+</section>
+
+<script>
+    $('.btnTab').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        // var info = $(this).attr('data-info');
+        // if(info == 'newCar'){
+        //     $('.car-info__new').show();
+        //     $('.car-info__blue').hide();
+        // }else{
+        //     $('.car-info__new').hide();
+        //     $('.car-info__blue').show();
+        // }
+    });
+</script>
+</body>
+</html>

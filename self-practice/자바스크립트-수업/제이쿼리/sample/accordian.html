@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>accordian</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        color: inherit;
+        /* display: inline-block; */
+        text-decoration: none;
+    }
+    ul {
+        list-style: none;
+    }
+    .wrap {
+        width: 960px;
+        margin: 0 auto;
+    }    
+    .item {
+        /* background: pink; */
+        border: 1px solid #000;
+        position: relative;
+    }
+    .item.active p {
+        opacity: 1;
+        display: block;
+    }
+    /* .item a {
+        top: 0;
+        right: 0;
+        position: absolute;
+        color: #eee;
+        border: 1px solid #eee;
+        padding: .4rem;
+    } */
+    .item > a {
+        display: block;
+        background: #111;
+    }
+    /* .item > a:hover,
+    .item > a:active
+    {
+        border: 1px solid blue;
+        background: coral;
+    } */
+    .item h1 {
+        color: #999;
+        cursor: pointer;
+    }
+    .item p {
+        background: #666;
+        color: #999;
+        opacity: 0;
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+    <ul class="acc-wrap">
+        <li class="item active">
+            <!-- <a href="#" id="toggle">toggle</a> -->
+            <a href="#">
+                <h1>title</h1>
+            </a>
+            <p>
+                <img src="./image/float/float-item.png" alt="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas eum natus ad aut, provident culpa vero fugit nobis similique sapiente placeat sint, nulla optio perferendis voluptate, delectus soluta ducimus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas eum natus ad aut, provident culpa vero fugit nobis similique sapiente placeat sint, nulla optio perferendis voluptate, delectus soluta ducimus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas eum natus ad aut, provident culpa vero fugit nobis similique sapiente placeat sint, nulla optio perferendis voluptate, delectus soluta ducimus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas eum natus ad aut, provident culpa vero fugit nobis similique sapiente placeat sint, nulla optio perferendis voluptate, delectus soluta ducimus!
+            </p>
+        </li>
+        <li class="item">
+            <!-- <a href="#" id="toggle">toggle</a> -->
+            <a href="#">
+                <h1>title</h1>
+            </a>
+            <p>
+                <img src="./image/float/float-item2.png" alt="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas eum natus ad aut, provident culpa vero fugit nobis similique sapiente placeat sint, nulla optio perferendis voluptate, delectus soluta ducimus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas eum natus ad aut, provident culpa vero fugit nobis similique sapiente placeat sint, nulla optio perferendis voluptate, delectus soluta ducimus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas eum natus ad aut, provident culpa vero fugit nobis similique sapiente placeat sint, nulla optio perferendis voluptate, delectus soluta ducimus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas eum natus ad aut, provident culpa vero fugit nobis similique sapiente placeat sint, nulla optio perferendis voluptate, delectus soluta ducimus!
+            </p>
+
+        </li>
+        <li class="item">
+            <!-- <a href="#" id="toggle">toggle</a> -->
+            <a href="#">
+                <h1>title</h1>
+            </a>
+            <p>
+                <img src="./image/float/float-item3.png" alt="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas eum natus ad aut, provident culpa vero fugit nobis similique sapiente placeat sint, nulla optio perferendis voluptate, delectus soluta ducimus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas eum natus ad aut, provident culpa vero fugit nobis similique sapiente placeat sint, nulla optio perferendis voluptate, delectus soluta ducimus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas eum natus ad aut, provident culpa vero fugit nobis similique sapiente placeat sint, nulla optio perferendis voluptate, delectus soluta ducimus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas eum natus ad aut, provident culpa vero fugit nobis similique sapiente placeat sint, nulla optio perferendis voluptate, delectus soluta ducimus!
+            </p>
+        </li>
+    </ul>
+</div>
+
+<script>
+    
+    var accItem = document.querySelectorAll('.item');
+    for(var i=0; i < accItem.length; i++) {
+        accItem[i].addEventListener('click', function(){
+            for(var j=0; j<accItem.length; j++){
+                accItem[j].classList.remove('active');
+            }
+            this.classList.toggle('active');
+        });
+    }
+
+</script>
+
+</body>
+</html>
