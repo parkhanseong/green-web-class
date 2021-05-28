@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dom</title>
+<style>
+    body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+    }
+    .container {
+        padding: 1rem;
+        border: 1px solid #ddd;
+        margin: 0 auto;
+        width: 600px;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0 0 5px rgba(0,0,0,.5);
+    }
+    .dark {
+        background: #111;
+        color: #999;
+    }
+    img {
+        margin-top: 1rem;
+    }
+</style>
+<script>
+
+</script>
+</head>
+<body>
+<div class="container">
+    <button onclick="handleBg();">배경 색상 변경</button>
+    <!-- <button onclick="handleFont(event);" data-color="red">RED 컬러 변경</button>
+    <button onclick="handleFont(event);" data-color="blue">BLUE 컬러 변경</button> -->
+    <button onclick="handleFont(this);" data-color="red">RED 컬러 변경</button>
+    <button onclick="handleFont(this);" data-color="blue">BLUE 컬러 변경</button>
+    <button onclick="handleImg(this);" data-size="big">이미지 사이즈 Big</button>
+    <button onclick="handleImg(this);" data-size="small">이미지 사이즈 Small</button>
+
+    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FK5XuY%2FbtqxTL3L37M%2FS12CXSUlFPkgmN3mg1zq6K%2Fimg.png" alt="">
+    <h1 class="title">title</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus est at consequatur ex dignissimos dolorem saepe aspernatur rerum quod deserunt? Reiciendis mollitia provident consequuntur laboriosam eveniet possimus, quasi sunt aut!
+    </p>
+    <script>
+        function handleBg(){
+            var containerEle  = document.getElementsByClassName('container');
+                containerEle[0].classList.toggle("dark");
+        }
+        function handleFont(obj){
+
+            // event 전달시
+            // var btnEleColor = event.target.getAttribute('data-color');
+            var btnColor = obj.getAttribute('data-color');
+            var titleEle = document.getElementsByClassName('title');
+
+            if(btnColor == "red"){
+                titleEle[0].style.color = "red";
+            }else{
+                titleEle[0].style.color = "blue";
+            }
+        }
+
+        function handleImg(obj){
+            var btnSize = obj.getAttribute('data-size');
+            var imgEle = document.getElementsByTagName('img');
+            if(btnSize == "big"){
+                imgEle[0].style.width = "50%";
+            }else{
+                imgEle[0].style.width = "30%";
+            }
+        }
+
+    </script>
+</div>
+
+</body>
+</html>
