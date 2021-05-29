@@ -36,27 +36,12 @@ $(function(){
 
     // 스크롤 헤더 메뉴 이벤트
     $(window).scroll(function(){
-
-        console.log($contents);
-
         $contents.each(function(){
-
-                // var idx = $(this).index();
-                //     console.log(idx);
-            
             if($(this).offset().top <= $(window).scrollTop()){
-
                 var idx = $(this).index();
-                
-                console.log(" >>>> 섹션 : " + $(this).offset().top);
-                console.log(" >>>> 스크롤 : " + $(window).scrollTop());
-            //     console.log($(this));
-                console.log(idx);
-
                 $menu.removeClass('on');
-                $menu.eq(idx).addClass('on');
-
-            };
+                $menu.eq(idx - 1).addClass('on');
+            }
         });
     });
 

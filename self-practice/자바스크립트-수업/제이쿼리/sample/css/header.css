@@ -86,7 +86,8 @@ section {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    height: 700px;
+    /* height: 700px; */
+    height: 100vh;
 }
 section:nth-of-type(1) {
     background: #ddd;
