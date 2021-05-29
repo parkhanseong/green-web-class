@@ -4,7 +4,6 @@
 var backToTop = document.getElementById('backToTop');
 // html 문서 자체를 가지고 온다
 var docElem = document.documentElement;
-console.log(docElem);
 var offset;
 var scrollPos;
 var docHeight;
@@ -38,8 +37,4 @@ function scrollToTop() {
             clearInterval(scrollInterval);
         }
     }, 15);
-    // 1000 = 1초
-    // 100 = 0.1초
-    // 10 = 0.01초
-    // 15 = 0.015초
 }

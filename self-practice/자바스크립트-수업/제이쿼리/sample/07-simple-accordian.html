@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<title>accordian sample</title>
+<style>
+    body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    h3 {
+        margin: 0;
+    }
+    .question-list {
+        background: pink;
+        width: 500px;
+    }
+    .question {
+        background: #8AAAE5;
+        color: #FEFEFE;
+        cursor: pointer;
+        padding: 1rem;
+    }
+    .answer {
+        padding: 1rem;
+        color: #8AAAE5;
+        background: #FEFEFE;
+    }
+</style>
+</head>
+<body>
+
+    <div class="question-list">
+        <h3 class="question">
+            Spring
+        </h3>
+        <div class="answer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo molestiae aliquam ex optio sed incidunt dicta debitis, voluptatem aspernatur quisquam alias tenetur! Magni explicabo et id impedit iure nam.
+        </div>
+        <h3 class="question">
+            Summer
+        </h3>
+        <div class="answer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo molestiae aliquam ex optio sed incidunt dicta debitis, voluptatem aspernatur quisquam alias tenetur! Magni explicabo et id impedit iure nam.
+        </div>
+        <h3 class="question">
+            Autumn
+        </h3>
+        <div class="answer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo molestiae aliquam ex optio sed incidunt dicta debitis, voluptatem aspernatur quisquam alias tenetur! Magni explicabo et id impedit iure nam.
+        </div>
+        <h3 class="question">
+            Winter
+        </h3>
+        <div class="answer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo molestiae aliquam ex optio sed incidunt dicta debitis, voluptatem aspernatur quisquam alias tenetur! Magni explicabo et id impedit iure nam.
+        </div>
+    </div>
+
+    <script>
+        $('.answer').hide();
+        $('.question').click(function(){
+            $(this).next().slideToggle().siblings('.answer').slideUp();;
+            
+        });
+    </script>
+
+</body>
+</html>

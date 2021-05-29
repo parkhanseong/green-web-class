@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    background: #262223;
+    color: #DDC6B6;
+    transition: .3s ease-in;
+    /* width: 100%; */
+    position: fixed;
+    width: 100%;
+}
+header.sticky {
+    padding: 1rem 2rem;
+}
+h1 {
+    flex: 1;
+}
+.gnb {
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+.gnb a {
+    margin-right: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.gnb a.on {
+    color: #262223;
+    background: #DDC6B6;
+}
+
+
+.toggle {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+.toggle span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #DDC6B6;
+    border-radius: 10px;
+    transition: 200ms ease-in-out;
+}
+.toggle span:nth-child(1) {
+    top: 0;
+}
+.toggle span:nth-child(2),
+.toggle span:nth-child(3) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.toggle span:nth-child(4) {
+    bottom: 0;
+}
+.toggle.active span:nth-child(1),
+.toggle.active span:nth-child(4) {
+    opacity: 0;
+}
+.toggle.active span:nth-child(2) {
+    transform: rotate(45deg);
+}
+.toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 700px;
+}
+section:nth-of-type(1) {
+    background: #ddd;
+}
+section:nth-of-type(2) {
+    background: dodgerblue;
+}
+section:nth-of-type(3) {
+    background: teal;
+}
+
+@media (max-width: 480px){
+    .logo {
+        font-size: 1rem;
+    }
+    .gnb {
+        display: none;
+    }
+    .toggle {
+        display: block;
+    }
+}
