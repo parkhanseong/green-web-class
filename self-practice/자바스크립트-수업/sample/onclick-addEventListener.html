@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>test</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .gold {
+        background: gold;
+    }
+    .coral {
+        background: coral;
+    }
+</style>
+</head>
+<body>
+
+
+<!-- <button onclick="handleBgColor();">click</button> -->
+<button data-color="gold" id="gold">gold color</button>
+<button data-color="coral">coral color</button>
+<div class="box" id="box">
+    <span>
+        box
+    </span>
+</div>
+
+<script>
+    
+    var btnAll = document.querySelectorAll('button');
+    var btnGold = document.querySelector('#gold');
+    var boxEle = document.querySelector('#box');
+
+    // 여러 개의 버튼에 이벤트 등록하기
+    for(var i = 0; i<btnAll.length; i++){
+        console.log(i);
+        btnAll[i].addEventListener('click', function(event){
+            var color = event.target.dataset.color;
+            boxEle.classList.toggle(color);
+        })
+    }
+
+    // 한 개에 이벤트 등록하기
+    // btn.addEventListener('click', function(event){
+    //     var boxEle = document.querySelector('#box');
+    //     var color = event.target.dataset.color;
+    //     boxEle.classList.toggle(color);
+    // });
+
+    // 엘리먼트 객체 프로퍼티에 메소드 등록
+    box.onclick = function(event){
+            var color = event.target.dataset.color;
+            boxEle.classList.toggle(color);
+    }
+
+</script>
+
+</body>
+</html>
