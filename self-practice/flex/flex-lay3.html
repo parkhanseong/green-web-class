@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>flex lay3</title>
+<style>
+    body {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    .container {
+        border: 1px solid #000;
+        display: flex;
+    }
+    .flexbox-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav {
+        flex: 1;
+        background: rgba(153, 205, 50, 0.616);
+    }
+    main {
+        flex: 5;
+    }
+    header {
+        background: rgba(0, 128, 128, 0.637);
+        height: 100px;
+    }
+    section {
+        display: flex;
+        height: calc(100vh - 200px);
+    }
+    article {
+        background: rgba(255, 217, 0, 0.651);
+        flex: 5;
+    }
+    aside {
+        background: beige;
+        flex: 2;
+    }
+    footer {
+        background: rgba(30, 143, 255, 0.534);
+        height: 100px;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="flexbox-center">nav</nav>
+        <main>
+            <header class="flexbox-center">header</header>
+            <section>
+                <article class="flexbox-center">article</article>
+                <aside class="flexbox-center">aside</aside>
+            </section>
+            <footer class="flexbox-center">footer</footer>
+        </main>
+    </div>
+
+</body>
+</html>

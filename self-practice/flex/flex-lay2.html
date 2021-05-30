@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>lay</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .wrap {
+        /* max-width: 960px; */
+        margin: 0 auto;
+        /* border: 1px solid #000; */
+        color: #666;
+    }
+    .f-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        background: #8d765d;
+        height: 100px;
+    }
+    section {
+        display: flex;
+        height: calc(100vh - 200px);
+    }
+    section article {
+        flex: 5;
+        background: #a79480;
+    }
+    section aside {
+        flex: 2;
+        background: #b69b7f;
+    }
+    section nav {
+        flex: 2;
+        background: #a08b74;
+    }
+    footer {
+        background: #F6DCBF;
+        height: 100px;
+    }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="f-center">
+        <h1>header</h1>
+    </header>
+    <section>
+        <article class="f-center">
+            <h1>article</h1>
+        </article>
+        <aside class="f-center">
+            <h1>aside</h1>
+        </aside>
+        <nav class="f-center">
+            <h1>nav</h1>
+        </nav>
+    </section>
+    <footer class="f-center">
+        <h1>footer</h1>
+    </footer>
+
+</div>
+
+</body>
+</html>

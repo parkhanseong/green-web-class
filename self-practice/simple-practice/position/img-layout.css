@@ -108,7 +108,7 @@ header h1 {
 
 /* section.intro */
 section.intro {
-    background: url(../../image/city-1920.jpg) no-repeat center/cover;
+    background: url(../../image/bg/bg-1920.jpg) no-repeat center/cover;
 }
 section.intro .inner {
     height: 100vh;

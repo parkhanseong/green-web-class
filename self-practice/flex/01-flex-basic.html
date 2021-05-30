@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>flex basic</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .container {
+        display: flex;
+        border: 5px solid dodgerblue;
+        flex-wrap: wrap;
+    }
+    .item {
+        background: gold;
+        border: 1px solid #000;
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+    .item:nth-child(1) {
+        width: 20%;
+    }
+    .item:nth-child(2) {
+        width: 60%;
+    }
+    .item:nth-child(3) {
+        width: 20%;
+    }
+</style>
+
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ratione repellendus eos omnis maxime qui cumque, modi eligendi illum architecto quasi mollitia asperiores, accusantium veniam. Sapiente quo eum aliquam temporibus libero, laudantium impedit amet culpa tenetur quasi dolor ex dolorum modi fugiat harum. Non reiciendis dicta illo labore ad suscipit.
+        </div>
+        <div class="item">
+            Lorem ipsum, dolor sit amet consectetur
+        </div>
+        <div class="item">
+            Lorem ipsum
+        </div>
+        <div class="item">
+            Lorem ipsum
+        </div>
+    </div>
+
+
+</body>
+</html>

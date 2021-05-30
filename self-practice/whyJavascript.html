@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>innerHTML</title>
+<style>
+    * {
+        padding: 0;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    button {
+        padding: 1rem;
+    }
+    li {
+        list-style: none;
+        padding: 1rem;
+        width: 100px;
+        border-radius: 10px;
+        text-align: center;
+        color: #02343F;
+        background: #F0EDCC;
+    }
+    .btnBox {
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+</style>
+</head>
+<body>
+    <div class="btnBox">
+        <button onclick="addEle();">add</button>
+        <button onclick="deleteEle();">delete</button>
+    </div>
+    <div class="container">
+    </div>
+    
+<script>
+    var conEle = document.querySelector('.container');
+    function addEle(){
+        var ul = document.createElement('ul');
+        ul.innerHTML = '<li>box</li>';
+        conEle.appendChild(ul);
+    };
+    function deleteEle(){
+        conEle.removeChild(conEle.lastElementChild);
+    };
+</script>
+</body>
+</html>

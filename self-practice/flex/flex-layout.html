@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>flex-laytou</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .flexbox-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrap {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    header {
+        background: #9CC0BA;
+        height: 100px;
+    }
+    section {
+        background: #9CC0BA;
+        display: flex;
+        height: 800px;
+    }
+    .left, .right {
+        flex: 1;
+        background: #D07D7B;
+    }
+    .center {
+        flex: 2;
+        background: #E7CBB0;
+        padding: 3rem;
+    }
+    /* .right {
+        flex: 1;
+        background: #D07D7B;
+    } */
+    footer {
+        height: 100px;
+        background: #9CC0BA;
+    }
+    @media (max-width: 768px) {
+        section {
+            flex-direction: column;
+        }
+        .center {
+            order: 1;
+        }
+        .left {
+            order: 2;
+        }
+        .right {
+            order: 3;
+            background: #DFE9E8;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="wrap">
+        <header class="flexbox-center">
+            <h1>header</h1>
+        </header>
+        <section>
+            <article class="left flexbox-center">
+                <h1>left</h1>
+            </article>
+            <article class="center flexbox-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, accusantium dolor tenetur quae dolorem veritatis esse blanditiis quod quo quidem, ex non culpa, repudiandae omnis laborum excepturi eum sit dignissimos!
+            </article>
+            <article class="right flexbox-center">
+                <h1>right</h1>
+            </article>
+        </section>
+        <footer class="flexbox-center">
+            <h1>footer</h1>
+        </footer>
+    </div>
+
+</body>
+</html>
