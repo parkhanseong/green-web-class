@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>accordian</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a {
+        color: inherit;
+        display: block;
+        text-decoration: none;
+    }
+    ul {
+        list-style: none;
+    }
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .accordian {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    .accordian__list > a {
+        background: #02343F;
+        color: #F0EDCC;
+        padding: 1rem;
+    }
+    .accordian__list > a:hover {
+        color: #02343F;
+        background: #F0EDCC;
+    }
+    .accordian__list.active p {
+        display: block;
+    }
+    .accordian__desc {
+        color: #02343F;
+        background: #F0EDCC;
+        padding: 1rem;
+    }
+    .accordian__desc {
+        display: none;
+    }
+    #btnCloseAll {
+        align-self: flex-end;
+        border: 1px solid black;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+    
+</style>
+<body>
+<div class="container">
+    <ul class="accordian">
+        <button id="btnCloseAll">close all</button>
+        <li class="accordian__list">
+            <a href="#">About</a>
+            <p class="accordian__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aspernatur eum dicta, dolorem necessitatibus doloremque blanditiis officiis quas dolores deserunt neque vero. Reiciendis porro repellat quae sed sit soluta cupiditate!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aspernatur eum dicta, dolorem necessitatibus doloremque blanditiis officiis quas dolores deserunt neque vero. Reiciendis porro repellat quae sed sit soluta cupiditate!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aspernatur eum dicta, dolorem necessitatibus doloremque blanditiis officiis quas dolores deserunt neque vero. Reiciendis porro repellat quae sed sit soluta cupiditate!
+            </p>
+        </li>
+        <li class="accordian__list">
+            <a href="#">Contact</a>
+            <p class="accordian__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aspernatur eum dicta, dolorem necessitatibus doloremque blanditiis officiis quas dolores deserunt neque vero. Reiciendis porro repellat quae sed sit soluta cupiditate!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aspernatur eum dicta, dolorem necessitatibus doloremque blanditiis officiis quas dolores deserunt neque vero. Reiciendis porro repellat quae sed sit soluta cupiditate!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aspernatur eum dicta, dolorem necessitatibus doloremque blanditiis officiis quas dolores deserunt neque vero. Reiciendis porro repellat quae sed sit soluta cupiditate!
+            </p>
+        </li>
+        <li class="accordian__list">
+            <a href="#">Information</a>
+            <p class="accordian__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aspernatur eum dicta, dolorem necessitatibus doloremque blanditiis officiis quas dolores deserunt neque vero. Reiciendis porro repellat quae sed sit soluta cupiditate!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aspernatur eum dicta, dolorem necessitatibus doloremque blanditiis officiis quas dolores deserunt neque vero. Reiciendis porro repellat quae sed sit soluta cupiditate!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aspernatur eum dicta, dolorem necessitatibus doloremque blanditiis officiis quas dolores deserunt neque vero. Reiciendis porro repellat quae sed sit soluta cupiditate!
+            </p>
+        </li>
+    </ul>
+    <script>
+        var listEle = document.querySelectorAll('.accordian__list');
+        var descEle = document.querySelector('.accordian__desc');
+        var btnCloseAll = document.querySelector('#btnCloseAll');
+
+        btnCloseAll.addEventListener('click', closeAll);
+        for(var i = 0; i < listEle.length; i++){
+            listEle[i].addEventListener('click', function(){
+                closeAll();
+                this.classList.toggle('active');
+            });
+        }
+        // 전체 버튼 닫기
+        function closeAll(){
+            for(var j =0; j < listEle.length; j++){
+                    listEle[j].classList.remove('active');
+            }
+        }
+
+    </script>
+</div>
+</body>
+</html>
