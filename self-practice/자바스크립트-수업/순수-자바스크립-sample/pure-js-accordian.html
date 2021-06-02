@@ -21,40 +21,45 @@
     }
     body {
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    }
+    .container {
+        margin-top: 500px;
+        padding: 1rem 0;
     }
     .accordian {
         width: 500px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
+        color: #02343F;
+        background: #F0EDCC;
+        border-radius: 10px;
     }
     .accordian__list > a {
         background: #02343F;
         color: #F0EDCC;
         padding: 1rem;
     }
-    .accordian__list > a:hover {
-        color: #02343F;
-        background: #F0EDCC;
-    }
-    .accordian__list.active p {
-        display: block;
+    .accordian__list.active .accordian__desc {
+        height: 250px;
+        transition: 0.3s;
     }
     .accordian__desc {
-        color: #02343F;
-        background: #F0EDCC;
-        padding: 1rem;
-    }
-    .accordian__desc {
-        display: none;
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        top: 1rem;
+        left: 1rem;
+        transition: 0.5s;
     }
     #btnCloseAll {
         align-self: flex-end;
-        border: 1px solid black;
-        padding: 0.5rem;
+        border: none;
+        padding: 1rem;
+        border-radius: 10px 10px 0 0;
         cursor: pointer;
+        color: #02343F;
+        background: #F0EDCC;
     }
     
 </style>
@@ -92,7 +97,7 @@
         var descEle = document.querySelector('.accordian__desc');
         var btnCloseAll = document.querySelector('#btnCloseAll');
 
-        btnCloseAll.addEventListener('click', closeAll);
+        // 리스트 열기
         for(var i = 0; i < listEle.length; i++){
             listEle[i].addEventListener('click', function(){
                 closeAll();
@@ -100,6 +105,7 @@
             });
         }
         // 전체 버튼 닫기
+        btnCloseAll.addEventListener('click', closeAll);
         function closeAll(){
             for(var j =0; j < listEle.length; j++){
                 listEle[j].classList.remove('active');
