@@ -19,19 +19,22 @@
     ul {
         list-style: none;
     }
-
     body {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
     }
-
+    #work {
+        width: 100%;
+        height: 365px;
+    }
     .accordian {
         width: 660px;
         color: #02343F;
         background: #F0EDCC;
         position: relative;
+        margin: 0 auto;
     }
     .accordian__title {
         background: #02343F;
@@ -133,10 +136,13 @@
         }
         // 전체 닫기
         closeAll.addEventListener('click', function(){
+            funcCloseAll();
+        });
+        function funcCloseAll(){
             for(var i = 0; i < btnTitle.length; i++){
                 btnTitle[i].classList.remove('visible');
             }
-        });
+        };
     </script>
 
 </body>
