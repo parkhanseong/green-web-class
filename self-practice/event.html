@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>event</title>
+<script>
+    
+    window.onload = function(){
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click', test2);
+    
+        var test1;
+        test1 = function(){
+            console.log('>>> 1')
+        };
+        function test2(){
+            console.log('>>> 1')
+        }
+    }
+
+
+
+
+</script>
+</head>
+<body>
+
+<button class="btnclass" id="btn">
+    event1
+</button>
+
+<!-- <ul class="container">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+</ul> -->
+
+<!-- <button  onclick="">
+    event2
+</button> -->
+
+
+
+
+</body>
+</html>

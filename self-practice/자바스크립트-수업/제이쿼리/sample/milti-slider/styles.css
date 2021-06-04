@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+.slide-wrapper {
+    border: 1px solid #000;
+    width: 660px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slides {
+    background: pink;
+    position: relative;
+    padding-top: 200px;
+}
+.slides li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: gold;
+}
+.controls {
+    text-align: center;
+}
