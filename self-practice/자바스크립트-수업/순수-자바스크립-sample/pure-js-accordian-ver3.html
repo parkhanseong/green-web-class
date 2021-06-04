@@ -30,14 +30,12 @@
     }
     .accordian {
         width: 660px;
-        color: #02343F;
-        background: #F0EDCC;
         position: relative;
         margin: 0 auto;
-    }
-    .accordian__title {
         background: #02343F;
         color: #F0EDCC;
+    }
+    .accordian__title {
         padding: 1rem;
         display: flex;
         justify-content: space-between;
@@ -59,10 +57,12 @@
         height: 0;
         overflow: hidden;
         transition: 400ms;
+        color: #02343F;
+        background: #F0EDCC;
     }
     .accordian__title.visible + .accordian__desc {
         height: 170px;
-        margin: 1rem;
+        padding: 1rem;
     }
     .accordian__item:after {
         content: '';
@@ -88,7 +88,18 @@
             <button class="accordian__close">close all</button>
             <li class="accordian__item">
                 <div class="accordian__title">
-                    <a href="#" >About</a>
+                    <a href="#">About</a>
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+                <p class="accordian__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi quia ea? Quibusdam, vero cum voluptatibus facilis, porro blanditiis reprehenderit accusamus hic quae expedita consequatur! Repudiandae tenetur qui officia a.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi quia ea? Quibusdam, vero cum voluptatibus facilis, porro blanditiis reprehenderit accusamus hic quae expedita consequatur! Repudiandae tenetur qui officia a.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi quia ea? Quibusdam, vero cum voluptatibus facilis, porro blanditiis reprehenderit accusamus hic quae expedita consequatur! Repudiandae tenetur qui officia a.
+                </p>
+            </li>
+            <li class="accordian__item">
+                <div class="accordian__title">           
+                    <a href="#">Skills</a>
                     <i class="fas fa-arrow-up"></i>
                 </div>
                 <p class="accordian__desc">
@@ -99,18 +110,7 @@
             </li>
             <li class="accordian__item">
                 <div class="accordian__title">
-                    <a href="#" >Skills</a>
-                    <i class="fas fa-arrow-up"></i>
-                </div>
-                <p class="accordian__desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi quia ea? Quibusdam, vero cum voluptatibus facilis, porro blanditiis reprehenderit accusamus hic quae expedita consequatur! Repudiandae tenetur qui officia a.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi quia ea? Quibusdam, vero cum voluptatibus facilis, porro blanditiis reprehenderit accusamus hic quae expedita consequatur! Repudiandae tenetur qui officia a.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi quia ea? Quibusdam, vero cum voluptatibus facilis, porro blanditiis reprehenderit accusamus hic quae expedita consequatur! Repudiandae tenetur qui officia a.
-                </p>
-            </li>
-            <li class="accordian__item">
-                <div class="accordian__title">
-                    <a href="#" >Info</a>
+                    <a href="#">Info</a>
                     <i class="fas fa-arrow-up"></i>
                 </div>
                 <p class="accordian__desc">
@@ -129,6 +129,7 @@
         // 열고 닫기
         for(var i = 0; i < btnTitle.length; i++){
             btnTitle[i].addEventListener('click', function(){
+                // funcCloseAll();
                 this.classList.toggle('visible');
             });
         }
