@@ -213,17 +213,17 @@
         // go top button visible
         var homeElement = document.querySelector("#home");
         var homeHeight = homeElement.offsetHeight;
-        var arrpwTop = document.getElementById('arrow-up');
+        var arrowTop = document.getElementById('arrow-up');
 
         document.addEventListener('scroll', function(){
             if(window.scrollY > homeHeight){
-                arrpwTop.classList.add('visible');
+                arrowTop.classList.add('visible');
             }else{
-                arrpwTop.classList.remove('visible');
+                arrowTop.classList.remove('visible');
             }
         });
         // go Top Event
-        arrpwTop.addEventListener('click', function(){
+        arrowTop.addEventListener('click', function(){
             window.scrollTo({top: 0, behavior: "smooth"});
         });
     </script>
