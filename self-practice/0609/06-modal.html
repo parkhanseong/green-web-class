@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>light box</title>
+    <style>
+        a {
+            display: inline-block;
+        }
+        img {
+            max-width: 100%;
+            vertical-align: top;
+        }
+        section {
+            width: 960px;
+            /* background: skyblue; */
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .portfolio {
+            display: flex;
+        }
+        .portfolio__img {
+            margin-right: 1rem;
+        }
+        .portfolio__img:last-child {
+            margin-right: 0;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0,0,0,.5);
+            display: none;
+        }
+        .portfolio__modal {
+            border: 3px solid #ddd;
+            width: 500px;
+            background: #eee;
+            border-radius: .5rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .overlay__close {
+            position: absolute;
+            right: -.5rem;
+            top: -.5rem;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            background: #fff;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="container">
+            <h1>my portfolio</h1>
+            <div class="portfolio">
+                <a href="#" class="portfolio__img">
+                    <img src="img/portfolio1.jpg" alt="">
+                </a>
+                <a href="#" class="portfolio__img">
+                    <img src="img/portfolio2.jpg" alt="">
+                </a>
+                <a href="#" class="portfolio__img">
+                    <img src="img/portfolio3.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="overlay">
+            <div class="portfolio__modal">
+                <span class="overlay__close">x</span>
+                <img src="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+
+        var $portImg = $('.portfolio__img');
+        var $overlay = $('.overlay');
+        var $btnClose = $('.overlay__close');
+
+        $portImg.on("click", function(){
+            var src = $(this).children().attr("src");
+            var $modalImg = $('.portfolio__modal img');
+                $overlay.show();
+                $modalImg.attr('src', src);
+        });
+        $overlay.click(function(e){
+            if(e.currentTarget === e.target){
+                $overlay.hide();
+            }
+        });
+        $btnClose.click(function(e){
+                $overlay.hide();
+        });
+
+
+    </script>
+
+    
+</body>
+</html>

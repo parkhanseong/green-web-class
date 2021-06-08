@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>basic2</title>       
+<style>
+    body {
+        text-align: center;
+    }
+    p {
+        margin: 0 auto;
+        width: 640px;
+        height: 100px;
+        background: coral;
+    }
+    .theme {
+        background: skyblue;
+        color: #eee;
+    }
+</style>
+</head>
+<body>
+    <div>
+
+        <!-- <button id="btnShow">show</button>
+        <button id="btnHide">hide</button>
+        <button id="btnToggle">hide</button> -->
+
+        <button class="add">add</button>
+        <button class="remove">remove</button>
+        <button class="toggle">toggle</button>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde veritatis quisquam obcaecati voluptatem! Aliquam nobis fugit ullam officiis sint dignissimos est mollitia. Eos non suscipit vel perspiciatis accusantium, quam nemo.</p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        // var $btnShow = $('#btnShow');
+        // var $btnHide = $('#btnHide');
+        // var $btnToggle = $('#btnToggle');
+
+        var $btnAdd = $('.add');
+        var $btnRemove = $('.remove');
+        var $btnToggle = $('.toggle');
+
+        var $desc = $('p');
+
+        // $btnShow.click(function(){
+        $btnAdd.click(function(){
+            // $desc.slideUp();
+            // $desc.fadeIn();
+            $desc.addClass('theme');
+        });
+        // $btnHide.click(function(){
+        $btnRemove.click(function(){
+            // $desc.slideDown();
+            // $desc.fadeOut();
+            $desc.removeClass('theme');
+        });
+        // $btnToggle.click(function(){
+        $btnToggle.click(function(){
+            // $desc.slideToggle();
+            // $desc.fadeToggle();
+            $desc.toggleClass('theme');
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>accordian prac</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        
+        color: inherit;
+        text-decoration: none;
+    }
+    .tab {
+        width: 640px;
+        margin: 0 auto;
+    }
+    .tab__menu {
+        display: flex;
+    }
+    .tab__menu a {
+        background: #76528B;
+        color: #CBCE91;
+        width: 100px;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+    .tab__menu a.active,
+    .tab__menu a:hover {
+        background: rgba(0,0,0,.5);
+    }
+    .tab__desc {
+        color: #76528B;
+        background: #CBCE91;
+        padding: 1rem;
+    }
+</style>
+
+</head>
+<body>
+
+    <section>
+        <div class="tab">
+            <div class="tab__menu">
+                <a href="#" class="active">tab1</a>
+                <a href="#">tab2</a>
+                <a href="#">tab3</a>
+                <a href="#">tab4</a>
+            </div>
+            <div class="tab__content">
+                <div class="tab__desc">
+                    <h1>tab1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsam repellat maxime, laboriosam tempore aspernatur vitae. Ipsam tempora excepturi quidem impedit soluta fugiat consectetur quam enim repudiandae? Dolorum, voluptates porro!</p>
+                </div>
+                <div class="tab__desc">
+                    <h1>tab2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsam repellat maxime, laboriosam tempore aspernatur vitae. Ipsam tempora excepturi quidem impedit soluta fugiat consectetur quam enim repudiandae? Dolorum, voluptates porro!</p>
+                </div>
+                <div class="tab__desc">
+                    <h1>tab3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsam repellat maxime, laboriosam tempore aspernatur vitae. Ipsam tempora excepturi quidem impedit soluta fugiat consectetur quam enim repudiandae? Dolorum, voluptates porro!</p>
+                </div>
+                <div class="tab__desc">
+                    <h1>tab4</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsam repellat maxime, laboriosam tempore aspernatur vitae. Ipsam tempora excepturi quidem impedit soluta fugiat consectetur quam enim repudiandae? Dolorum, voluptates porro!</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        var $tabMenu = $('.tab__menu a');
+        var $tabDesc = $('.tab__desc');
+
+        $tabDesc.hide();
+        $tabDesc.eq(0).show();
+
+        $tabMenu.click(function(){
+            var index = $(this).index();
+            $tabMenu.removeClass('active');
+            $tabMenu.eq(index).addClass('active');
+            $tabDesc.hide();
+            $tabDesc.eq(index).slideToggle();
+        });
+    </script>
+</body>
+</html>

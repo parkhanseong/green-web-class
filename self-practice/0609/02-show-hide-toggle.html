@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>basic2</title>       
+<style>
+    body {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <button id="btnShow">show</button>
+        <button id="btnHide">hide</button>
+        <button id="btnToggle">hide</button>
+    </div>
+    <img src="https://flexible.img.hani.co.kr/flexible/normal/640/360/imgdb/original/2021/0201/20210201503293.jpg" alt="">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        var $btnShow = $('#btnShow');
+        var $btnHide = $('#btnHide');
+        var $btnToggle = $('#btnToggle');
+        var $img = $('img');
+
+        $btnShow.click(function(){
+            $img.show();
+        });
+        $btnHide.click(function(){
+            $img.hide();
+        });
+        $btnToggle.click(function(){
+            $img.toggle();
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery basic</title>
+<style>
+    h1 {
+        
+    }
+</style>
+<script>
+
+</script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>title</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, ex.
+        </p>
+        <h3>third</h3>
+        <h4>fourth</h4>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        
+        var $h1 = $('.container h1');
+        $h1.css('font-size', "3rem");
+        var $children = $('.container').children();
+
+        console.log($children.eq(1));
+        
+        // $children.eq(1).css('color', 'red');
+        // $children.eq(1).css('background-color', 'skyblue');
+        // $children.eq(1).css('font-size', '4rem');
+
+        var $p = $('p');
+
+        $p.next().css("color", 'red');
+        $p.next().css("font-size", '3rem');
+        $p.prev().css("font-size", '5rem');
+
+
+        // $children.css('color', "red");
+        
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dropdown</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+    .navbar {
+        border: 1px solid #000;
+        width: 200px;
+    }
+    .navbar a {
+        height: 70px;
+        background: coral;
+        text-align: center;
+        line-height: 70px;
+    }
+    .navbar__submenu a {
+        background: skyblue;
+    }
+
+</style>
+</head>
+<body>
+
+<nav>
+    <ul class="navbar">
+        <li class="navbar__item">
+            <a href="#" class="navbar__item-title">menu1</a>
+            <div class="navbar__submenu">
+                <a href="#">sub-menu1</a>
+                <a href="#">sub-menu2</a>
+                <a href="#">sub-menu3</a>
+                <a href="#">sub-menu4</a>
+            </div>
+        </li>
+        <li class="navbar__item">
+            <a href="#" class="navbar__item-title">menu2</a>
+            <div class="navbar__submenu">
+                <a href="#">sub-menu1</a>
+                <a href="#">sub-menu2</a>
+                <a href="#">sub-menu3</a>
+                <a href="#">sub-menu4</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+
+    var $navbar = $('.navbar__item-title');
+    var $navbarItem = $('.navbar__item');
+    var $submenu = $('.navbar__submenu');
+    
+    $submenu.hide();
+    $navbarItem.mouseenter(function(){
+        $(this).children('.navbar__submenu').stop().slideDown();
+    })
+    $navbarItem.mouseleave(function(){
+        $(this).children('.navbar__submenu').stop().slideUp();
+    })
+    
+
+    
+
+
+</script>
+</body>
+</html>
