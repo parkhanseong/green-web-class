@@ -8,6 +8,9 @@
     justify-content: center;
     align-items: center;
 }
+.column {
+    flex-direction: column;
+}
 section {
     height: 100vh;
 }
