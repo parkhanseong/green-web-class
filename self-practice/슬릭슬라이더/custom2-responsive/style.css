@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+.multiple {
+    width: 960px;
+    /* width: 720px; */
+    margin: 0 auto;
+    overflow: hidden;
+    /* background: gold; */
+}
+.swiper-wrapper {
+    background: coral;
+}
+.swiper-slide {
+    border: 1px solid #000;
+}
+.content {
+    display: flex;
+    justify-content: center;
+}
+.content img {
+    width: 100%;
+}
+.content h1 {
+    font-size: 1rem;
+}
+/* next, prev 제거 */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    content:""
+}
+
+.swiper-slide > div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    /* background: blue; */
+}
+.swiper-slide > div a {
+    padding: 1rem;
+    background: gold;
+}
+
+
+

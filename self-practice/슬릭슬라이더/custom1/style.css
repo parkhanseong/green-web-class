@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.swiper-container {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    /* border: 1px solid blue; */
+}
+
+.swiper-wrapper {
+    /* border: 1px solid red; */
+}
+.swiper-slide {
+    /* border: 3px solid red; */
+}
+.content {
+    display: flex;
+    justify-content: center;
+}
+/* next, prev 제거 */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    content:""
+}
+
+.swiper-slide > div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.322);
+    background: blue;
+}
+.swiper-slide > div a {
+    padding: 1rem;
+    background: gold;
+}
+
+
+

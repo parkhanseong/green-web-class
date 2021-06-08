@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.swiper-container {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    border: 1px solid blue;
+}
+
+.swiper-wrapper {
+    /* border: 1px solid red; */
+}
+.swiper-slide {
+    /* border: 3px solid red; */
+}
+.content {
+    display: flex;
+    justify-content: center;
+}
+/* next, prev 제거 */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    content:""
+}
+.controls span {
+    border: 1px solid #000;
+}
+
+#next {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    border: 1px solid #000;
+}
+#prev {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border: 1px solid #000;
+}
