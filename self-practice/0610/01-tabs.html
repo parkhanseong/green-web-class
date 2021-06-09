@@ -31,7 +31,7 @@
         line-height: 50px;
     }
     
-    .tab__menu a.active,
+    .tab__menu a.selected,
     .tab__menu a:hover {
         background: rgba(0,0,0,.5);
     }
@@ -48,7 +48,7 @@
     <section>
         <div class="tab">
             <div class="tab__menu">
-                <a href="#" class="active">tab1</a>
+                <a href="#" class="selected">tab1</a>
                 <a href="#">tab2</a>
                 <a href="#">tab3</a>
                 <a href="#">tab4</a>
@@ -85,8 +85,9 @@
 
         $tabMenu.click(function(){
             var index = $(this).index();
-            $tabMenu.removeClass('active');
-            $tabMenu.eq(index).addClass('active');
+            $tabMenu.removeClass('selected');
+            // $tabMenu.eq(index).addClass('selected');
+            $(this).addClass('selected');
             $tabDesc.hide();
             $tabDesc.eq(index).slideToggle();
         });

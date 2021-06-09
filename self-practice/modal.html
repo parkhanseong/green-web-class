@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>modal img</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    ul {
+        list-style: none;
+    }
+    img {
+        vertical-align: top;
+        max-width: 100%;
+    }
+    .title {
+        text-align: center;
+    }
+    .portfolio__container {
+        display: flex;
+        width: 960px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .portfolio__item {
+        width: 300px;
+        padding: 1rem 0.5rem;
+        cursor: pointer;
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.5);
+        z-index: 100;
+        display: none;
+    }
+    .modal {
+        width: 500px;
+        /* height: 500px; */
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #eee;
+        border-radius: .5rem;
+        position: relative;
+    }
+    .modal__close {
+        border: 1px solid #000;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        right: -.5rem;
+        top: -.5rem;
+        background: #fff;
+        cursor: pointer;
+    }
+    .modal__img {
+        border-radius: .5rem;
+    }
+
+</style>
+</head>
+<body>
+
+<section>
+    <h1 class="title">portfolio</h1>
+
+    <ul class="portfolio__container">
+        <li class="portfolio__item">
+            <img src="./image/portfolio/portfolio1.jpg" alt="">
+        </li>
+        <li class="portfolio__item">
+            <img src="./image/portfolio/portfolio2.jpg" alt="">
+        </li>
+        <li class="portfolio__item">
+            <img src="./image/portfolio/portfolio3.jpg" alt="">
+        </li>
+        <li class="portfolio__item">
+            <img src="./image/portfolio/portfolio1.jpg" alt="">
+        </li>
+        <li class="portfolio__item">
+            <img src="./image/portfolio/portfolio2.jpg" alt="">
+        </li>
+        <li class="portfolio__item">
+            <img src="./image/portfolio/portfolio3.jpg" alt="">
+        </li>
+    </ul>
+
+    <div class="overlay">
+        <div class="modal">
+            <span class="modal__close">x</span>
+            <img src="" alt="" class="modal__img">
+        </div>
+    </div>
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<script>
+
+    var $portfolioImg = $('.portfolio__item');
+    var $overlay = $('.overlay');
+    var $modalImg = $('.modal__img');
+    var $modalClose = $('.modal__close');
+
+    $portfolioImg.click(function(){
+        $overlay.show();
+        // attr('속성') = 값을 가져온다
+        // attr('속성', value) = 값을 세팅한다
+        var src = $(this).children('img').attr('src');
+        $modalImg.attr("src", src);
+    });
+
+    $overlay.click(function(e){
+        if(e.target === e.currentTarget){
+            $(this).hide();
+        }
+    });
+    $modalClose.click(function(){
+        $overlay.hide();
+    });
+
+
+</script>
+
+
+</body>
+</html>

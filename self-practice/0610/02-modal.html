@@ -96,17 +96,20 @@
         var $overlay = $('.overlay');
         var $btnClose = $('.overlay__close');
 
+        // 이미지 클릭시
         $portImg.on("click", function(){
             var src = $(this).children().attr("src");
             var $modalImg = $('.portfolio__modal img');
-                $overlay.show();
                 $modalImg.attr('src', src);
+                $overlay.show();
         });
+        // 오버레이 클릭시
         $overlay.click(function(e){
             if(e.currentTarget === e.target){
                 $overlay.hide();
             }
         });
+        // 엑스 클릭시
         $btnClose.click(function(e){
                 $overlay.hide();
         });

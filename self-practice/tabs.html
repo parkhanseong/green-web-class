@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tabs prac</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    section {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .tab {
+        width: 660px;
+    }
+    .tab__menus {
+        display: flex;
+    }
+    .tab__menu {
+        width: 100px;
+        background: #111;
+        color: #999;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+    }
+    .tab__menu.selected {
+        background: pink;
+    }
+    .content {
+        background: #999;
+        color: #111;
+        padding: 1rem;
+    }
+
+</style>
+</head>
+<body>
+
+<section>
+    <div class="tab">
+        <div class="tab__menus">
+            <a href="#" class="tab__menu selected">tab1</a>
+            <a href="#" class="tab__menu">tab2</a>
+            <a href="#" class="tab__menu">tab3</a>
+            <a href="#" class="tab__menu">tab4</a>
+        </div>
+        <div class="tab__contents">
+            <div class="content">
+                <h1>tab1 content</h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officia aliquid illo doloribus! Repellendus iste quo sed qui aperiam sunt voluptate, quidem soluta doloremque magnam obcaecati, dicta aliquam nihil deserunt!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officia aliquid illo doloribus! Repellendus iste quo sed qui aperiam sunt voluptate, quidem soluta doloremque magnam obcaecati, dicta aliquam nihil deserunt!
+            </div>
+            <div class="content">
+                <h1>tab2 content</h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officia aliquid illo doloribus! Repellendus iste quo sed qui aperiam sunt voluptate, quidem soluta doloremque magnam obcaecati, dicta aliquam nihil deserunt!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officia aliquid illo doloribus! Repellendus iste quo sed qui aperiam sunt voluptate, quidem soluta doloremque magnam obcaecati, dicta aliquam nihil deserunt!
+            </div>
+            <div class="content">
+                <h1>tab3 content</h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officia aliquid illo doloribus! Repellendus iste quo sed qui aperiam sunt voluptate, quidem soluta doloremque magnam obcaecati, dicta aliquam nihil deserunt!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officia aliquid illo doloribus! Repellendus iste quo sed qui aperiam sunt voluptate, quidem soluta doloremque magnam obcaecati, dicta aliquam nihil deserunt!
+            </div>
+            <div class="content">
+                <h1>tab4 content</h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officia aliquid illo doloribus! Repellendus iste quo sed qui aperiam sunt voluptate, quidem soluta doloremque magnam obcaecati, dicta aliquam nihil deserunt!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officia aliquid illo doloribus! Repellendus iste quo sed qui aperiam sunt voluptate, quidem soluta doloremque magnam obcaecati, dicta aliquam nihil deserunt!
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+
+    // 초기 상태
+    var $tab__menu = $('.tab__menu');
+    var $tabContent = $('.content');
+
+    $tabContent.hide();
+    $tabContent.eq(0).show();
+
+    $tab__menu.click(function(){
+
+        $(this).siblings().removeClass('selected');
+        $(this).addClass('selected');
+
+        var idx = $(this).index();
+        $tabContent.slideUp();
+        $tabContent.eq(idx).slideDown();
+    });
+
+
+
+
+</script>
+
+</body>
+</html>
