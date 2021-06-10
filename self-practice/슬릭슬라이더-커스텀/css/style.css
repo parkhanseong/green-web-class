@@ -16,7 +16,7 @@ section {
 }
 /* ============= slider__custom ============== */
 .slider__custom {
-    width: 660px;
+    max-width: 660px;
     margin: 0 auto;
 }
 .slider__content {
