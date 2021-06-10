@@ -1,0 +1,93 @@
+img {
+    max-width: 100%;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+
+section {
+    padding: 1rem;
+}
+/* ============= slider__custom ============== */
+.slider__custom {
+    max-width: 660px;
+    margin: 0 auto;
+}
+.slider__content {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+.slider__img {
+    padding: 0.5rem;
+}
+.slider__img img {
+    width: 350px;
+    border-radius: .5rem;
+}
+
+/* ============= arrow ============== */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    background: #111;
+    border-radius: 50%;
+}
+.slick-prev {
+    left: -20px;
+}
+.slick-next {
+    right: -20px;
+}
+.slick-prev:after,
+.slick-next:after
+{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    color: #000;
+    font-size: .5rem;
+}
+.slick-prev:after {
+    content:'\f053';
+    color: #fff;
+}
+.slick-next:after {
+    content:'\f054';
+    color: #fff;
+}
+
+/* ============= dots ============== */
+.slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+.slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: .5rem;
+    border: none;
+}
+.slick-dots .slick-active button {
+    background: skyblue
+}
