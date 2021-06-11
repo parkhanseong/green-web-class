@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+:root {
+    --bg-color: #815854;
+    --font-color: #F9EBDE;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--bg-color);
+    color: var(--font-color);
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+ul {
+    list-style: none;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background: var(--bg-color);
+    transition: 400ms;
+}
+header.scroll {
+    height: 70px;
+    background: #815854;
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+
+/* ------------------------------------ toggle ------------------------------------------------------*/
+.toggle {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 999;
+    
+    cursor: pointer;
+}
+.toggle span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: var(--font-color);
+    height: 6px;
+    border-radius: 10px;
+    transition: 300ms;
+}
+.toggle span:nth-child(1){
+    top: 0;
+}
+.toggle span:nth-child(2),
+.toggle span:nth-child(3){
+    top: 50%;
+    transform: translateY(-50%);
+}
+.toggle span:nth-child(3){
+    top: 50%;
+}
+.toggle span:nth-child(4){
+    bottom: 0;
+}
+.toggle.active span:nth-child(1),
+.toggle.active span:nth-child(4) {
+    opacity: 0;
+}
+.toggle.active span:nth-child(2) {
+    transform:rotate(45deg);
+}
+.toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+/* ------------------------------------ gnb ------------------------------------------------------*/
+.gnb {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translate(100%);
+    background: var(--bg-color);
+    color: var(--font-color);
+    width: 150px;
+    height: 100vh;
+    padding-top: 5rem;
+    box-shadow: -3px 0 5px rgba(0,0,0,.2);
+    transition: 300ms;
+}
+.gnb.active {
+    transform: translate(0);
+}
+.gnb__item {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.gnb__item:hover {
+    color: var(--bg-color);
+    background: var(--font-color);
+}
+
+/* ------------------------------------ section ------------------------------------------------------*/
+section {
+    height: 100vh;
+}
+section:nth-of-type(1){
+    background: #959c8d;
+}   
+section:nth-of-type(2){
+    background: #86867a;
+}
+section:nth-of-type(3){
+    background: #b6acae;
+}
+.desc {
+    width: 50%;
+}
+
+#goToTop {
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    padding: 1.2rem;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    transition: 400ms;
+}
+#goToTop.visible {
+    opacity: 1;
+    visibility:visible;
+}
+
+#about {
+
+}
+
+#skills {
+
+}
+
+#contact {
+
+}

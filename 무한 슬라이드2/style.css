@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+
+.slide_wrapper {
+    position: relative;
+    width: 660px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    padding-top: 200px;
+    /* background: pink; */
+}
+/* ul */
+.slides {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.slides li {
+    width: 200px;
+    height: 200px;
+    background: #ccc;
+    position: absolute;
+}
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+.controls .prev, 
+.controls .next {
+
+}

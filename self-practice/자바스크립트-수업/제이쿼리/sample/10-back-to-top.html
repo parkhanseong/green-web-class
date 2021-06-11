@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>back to top jquery</title>
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<style>
+    #arrowUp {
+        position: fixed;
+        right: 5rem;
+        bottom: 5rem;
+        font-size: 3rem;
+        /* color: hsl(260, 60%, 29%); */
+        color: blue;
+    }
+    section {
+        height: 100vh;
+    }
+    section:nth-of-type(1){
+        background: beige;
+    }
+    section:nth-of-type(2){
+        background: white;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>header</h1>
+    </header>
+    <section>
+        <h1>section1</h1>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione numquam quibusdam in reiciendis dolore tempora, earum sapiente iusto optio, sint repudiandae eius vero quasi nihil at facilis ea! Corrupti, odio!
+    </section>
+    <section>
+        <h1>section2</h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati unde laboriosam quibusdam deserunt, nam incidunt illo, quam atque maxime, tempora ullam. In aliquid non aperiam sequi harum dolores aspernatur quam?
+    </section>
+    <a href="#" id="arrowUp">
+        <i class="uil uil-arrow-circle-up" ></i>
+    </a>
+
+    <script>
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 300){
+                $('#arrowUp').fadeIn();
+            }else{
+                $('#arrowUp').fadeOut();
+            }
+        });
+
+        $('#arrowUp').click(function(){
+            $('html, body').animate({scrollTop:0}, 400);
+            return false;
+        });
+    </script>
+
+</body>
+</html>

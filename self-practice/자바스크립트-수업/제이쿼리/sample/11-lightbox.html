@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>light box tutorial</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    img {
+        max-width: 100%;
+        vertical-align: top;
+    }
+    a {
+        display: inline-block;
+    }
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio__title {
+        text-align: center;
+    }
+    .portfolio__container {
+        display: flex;
+    }
+    .portfolio__item {
+        margin-right: 1rem;
+    }
+
+    .overlay {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0,0,0,0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .overlay.active {
+        /* display: block; */
+        opacity: 1;
+        visibility:visible;
+        
+    }
+    #lightbox-img {
+        position: relative;
+        width: 50%;
+        background: #fff;
+        border: 5px solid #eee;
+        z-index: 10;
+    }
+</style>
+</head>
+<body>
+
+    <div class="portfolio">
+        <h1 class="portfolio__title">my portfolio</h1>
+        <div class="portfolio__container">
+            <div class="portfolio__item">
+                <a href="#" class="portfolio__img">
+                    <img src="../images/portfolio1.jpg" alt="">
+                    <!-- 큰 이미지 가져오고 싶을때 -->
+                    <!-- <img src="../images/portfolio1.jpg" alt="" data-src="여기다"> -->
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="#" class="portfolio__img">
+                    <img src="../images/portfolio2.jpg" alt="">
+                </a>
+            </div>
+            <div class="portfolio__item">
+                <a href="#" class="portfolio__img">
+                    <img src="../images/portfolio3.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay">
+        <img src="" alt="" id="lightbox-img" class="lightbox-img">
+    </div>
+
+    <script>
+        $('.portfolio__img').click(function(e){
+            // 기본 event 막기
+            e.preventDefault();
+            var src = $(this).children().attr('src');
+            $('.overlay').addClass('active');
+            $('#lightbox-img').attr('src', src);
+        });
+        $('.overlay').click(function(e){
+            // 이벤트를 발생시킨 것
+            console.log(e.currentTarget)
+            // 클릭한 것
+            console.log(e.target)
+            if(e.target !== e.currentTarget) return;
+            $(this).removeClass('active');
+            // if(e.target === e.currentTarget){
+            //     $(this).removeClass('active');
+            // }
+        });
+
+    </script>
+</body>
+</html>

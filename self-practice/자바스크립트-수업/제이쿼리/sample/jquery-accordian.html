@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<title>accordian ver3</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+    }
+    ul {
+        list-style: none;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #work {
+        height: 365px;
+    }
+    .accordian {
+        width: 660px;
+        position: relative;
+        margin: 0 auto;
+        background: #02343F;
+        color: #F0EDCC;
+    }
+    .accordian__title {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    /* .accordian__title  */
+    i {
+        border: 1px solid #F0EDCC;
+        border-radius: 50%;
+        font-size: 10px;
+        padding: .3rem;
+        transition: 400ms;
+    }
+    /* .accordian__title.visible  */
+    i.visible {
+        transform: rotate(180deg);
+        color: #02343F;
+        background: #F0EDCC;
+    }
+    .accordian__desc {
+        /* height: 0;
+        overflow: hidden; */
+        /* transition: 400ms; */
+        color: #02343F;
+        background: #F0EDCC;
+    }
+    .accordian__title.visible + .accordian__desc {
+        height: 170px;
+        padding: 1rem;
+    }
+    .accordian__item:after {
+        content: '';
+        display: table;
+    }
+    .accordian__close {
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        padding: .8rem;
+        background: #02343F;
+        color: #F0EDCC;
+        border-radius: 10px 10px 0 0;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+
+
+</head>
+<body>
+
+    <section id="work">
+        <ul class="accordian">
+            <button class="accordian__close">close all</button>
+            <li class="accordian__item">
+                <div class="accordian__title">
+                    <a href="#">About</a>
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+                <p class="accordian__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi quia ea? Quibusdam, vero cum voluptatibus facilis, porro blanditiis reprehenderit accusamus hic quae expedita consequatur! Repudiandae tenetur qui officia a.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi quia ea? Quibusdam, vero cum voluptatibus facilis, porro blanditiis reprehenderit accusamus hic quae expedita consequatur! Repudiandae tenetur qui officia a.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi quia ea? Quibusdam, vero cum voluptatibus facilis, porro blanditiis reprehenderit accusamus hic quae expedita consequatur! Repudiandae tenetur qui officia a.
+                </p>
+            </li>
+            <li class="accordian__item">
+                <div class="accordian__title">           
+                    <a href="#">Skills</a>
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+                <p class="accordian__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi quia ea? Quibusdam, vero cum voluptatibus facilis, porro blanditiis reprehenderit accusamus hic quae expedita consequatur! Repudiandae tenetur qui officia a.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi quia ea? Quibusdam, vero cum voluptatibus facilis, porro blanditiis reprehenderit accusamus hic quae expedita consequatur! Repudiandae tenetur qui officia a.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi quia ea? Quibusdam, vero cum voluptatibus facilis, porro blanditiis reprehenderit accusamus hic quae expedita consequatur! Repudiandae tenetur qui officia a.
+                </p>
+            </li>
+            <li class="accordian__item">
+                <div class="accordian__title">
+                    <a href="#">Info</a>
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+                <p class="accordian__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi quia ea? Quibusdam, vero cum voluptatibus facilis, porro blanditiis reprehenderit accusamus hic quae expedita consequatur! Repudiandae tenetur qui officia a.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi quia ea? Quibusdam, vero cum voluptatibus facilis, porro blanditiis reprehenderit accusamus hic quae expedita consequatur! Repudiandae tenetur qui officia a.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi quia ea? Quibusdam, vero cum voluptatibus facilis, porro blanditiis reprehenderit accusamus hic quae expedita consequatur! Repudiandae tenetur qui officia a.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <script>
+        $('.accordian__desc').hide();
+        $('.accordian__title').click(function(){
+            $(this).siblings().slideToggle();
+            if($(this).children('i').hasClass('visible')){
+                $(this).children('i').removeClass('visible');
+            }else{
+                $(this).children('i').addClass('visible');
+            }
+        });
+    </script>
+
+</body>
+</html>

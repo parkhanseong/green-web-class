@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<title>jquery tabs</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .container {
+        width: 660px;
+        margin: 100px auto;
+    }
+    .tabs {
+        display: flex;
+    }
+    .flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tabs__menu {
+        width: 100px;
+        height: 50px;
+        color: #02343F;
+        background: #F0EDCC;
+    }
+    .tabs__menu.active,
+    .tabs__menu:hover
+    {
+        background: #02343F;
+        color: #F0EDCC;
+    }
+    .tab__contents {
+        color: #02343F;
+        background: #F0EDCC;
+    }
+    .tab__data {
+        padding: 1rem;
+        display: none;
+    }
+    
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="tabs">
+        <a href="#" class="tabs__menu flex-center">tab1</a>
+        <a href="#" class="tabs__menu flex-center">tab2</a>
+        <a href="#" class="tabs__menu flex-center">tab3</a>
+        <a href="#" class="tabs__menu flex-center">tab4</a>
+    </div>
+    <div class="tab__contents">
+        <div class="tab__data">
+            <h1>tab1</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quo maiores distinctio earum consequatur in non labore harum neque quia eaque, animi sunt omnis voluptatum reiciendis sed ullam dolore natus!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quo maiores distinctio earum consequatur in non labore harum neque quia eaque, animi sunt omnis voluptatum reiciendis sed ullam dolore natus!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quo maiores distinctio earum consequatur in non labore harum neque quia eaque, animi sunt omnis voluptatum reiciendis sed ullam dolore natus!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quo maiores distinctio earum consequatur in non labore harum neque quia eaque, animi sunt omnis voluptatum reiciendis sed ullam dolore natus!
+            </p>
+        </div>
+        <div class="tab__data">
+            <h1>tab2</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quo maiores distinctio earum consequatur in non labore harum neque quia eaque, animi sunt omnis voluptatum reiciendis sed ullam dolore natus!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quo maiores distinctio earum consequatur in non labore harum neque quia eaque, animi sunt omnis voluptatum reiciendis sed ullam dolore natus!
+            </p>
+        </div>
+        <div class="tab__data">
+            <h1>tab3</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quo maiores distinctio earum consequatur in non labore harum neque quia eaque, animi sunt omnis voluptatum reiciendis sed ullam dolore natus!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quo maiores distinctio earum consequatur in non labore harum neque quia eaque, animi sunt omnis voluptatum reiciendis sed ullam dolore natus!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quo maiores distinctio earum consequatur in non labore harum neque quia eaque, animi sunt omnis voluptatum reiciendis sed ullam dolore natus!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quo maiores distinctio earum consequatur in non labore harum neque quia eaque, animi sunt omnis voluptatum reiciendis sed ullam dolore natus!
+            </p>
+        </div>
+        <div class="tab__data">
+            <h1>tab4</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quo maiores distinctio earum consequatur in non labore harum neque quia eaque, animi sunt omnis voluptatum reiciendis sed ullam dolore natus!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quo maiores distinctio earum consequatur in non labore harum neque quia eaque, animi sunt omnis voluptatum reiciendis sed ullam dolore natus!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quo maiores distinctio earum consequatur in non labore harum neque quia eaque, animi sunt omnis voluptatum reiciendis sed ullam dolore natus!
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // 초기화
+    $('.tab__data:first-child').show();
+    $('.tabs__menu:first-child').addClass('active');
+
+    // event
+    $('.tabs__menu').click(function(){
+        // tab 나머지 부분 비활성화
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        
+        // 전체 숨김 처리
+        var index = $(this).index();
+        $('.tab__data').hide();
+        $('.tab__data').eq(index).show()
+    });
+
+</script>
+
+</body>
+</html>

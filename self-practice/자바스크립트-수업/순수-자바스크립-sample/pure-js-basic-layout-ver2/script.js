@@ -41,7 +41,6 @@ gnbItem.forEach(function(item){
         var target = e.target.dataset.link;
         var element = document.querySelector(target);
         element.scrollIntoView({behavior: "smooth"});
-            
     })
 })
 

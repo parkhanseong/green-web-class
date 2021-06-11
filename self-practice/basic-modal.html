@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>basic modal</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+    }
+    .overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.5);
+        display: none;
+    }
+    .modal {
+        width: 400px;
+        height: 400px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2rem;
+        border-radius: .5rem;
+        text-align: center;
+        
+    }
+    .modal__close {
+        position: absolute;
+        top: -.5rem;
+        right: -.5rem;
+        border: 1px solid #000;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        cursor: pointer;
+    }
+    .modal img {
+        width: 150px;
+    }
+</style>
+</head>
+<body>
+
+<button>
+    modal show
+</button>
+
+<div class="overlay">
+    <div class="modal">
+        <span class="modal__close">x</span>
+        <div class="modal__content">
+            <h1>introduce</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi quae, perferendis provident officia nulla eveniet voluptate ex. A consequuntur sequi neque, impedit similique voluptatem quasi totam alias maxime fugit.</p>
+            <img src="./image/profile/profile-remove-bg.png" alt="">
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(function(){
+        var $modalBtn = $('button');
+        var $closeBtn = $('.modal__close');
+        var $overlay = $('.overlay');
+
+        $modalBtn.click(function(){
+            $overlay.fadeToggle();
+        })
+        $closeBtn.click(function(){
+            $overlay.fadeOut();
+        })
+        $overlay.click(function(e){
+            
+            if( e.target === e.currentTarget ){
+                $(this).fadeOut();
+            }
+
+        })
+
+    });
+</script>
+
+</body>
+</html>

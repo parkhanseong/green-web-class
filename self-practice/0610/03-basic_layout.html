@@ -108,6 +108,7 @@
         display: block;
     }
 </style>
+<link rel="stylesheet" href="../0610/css/animate.min.css">
 </head>
 <body>
     
@@ -128,17 +129,16 @@
             <li class="navbar__item" data-link="#contact">
                 <a href="#">menu3</a>
             </li>
-            
         </ul>
     </header>
     <section id="about" class="flexbox-center">
-        <h1>about</h1>
+        <h1 class="wow animate__animated animate__bounceInLeft">about</h1>
     </section>
     <section id="skills" class="flexbox-center">
-        <h1>skills</h1>
+        <h1 class="wow animate__animated animate__bounceInLeft">skills</h1>
     </section>
     <section id="contact" class="flexbox-center">
-        <h1>contact</h1>
+        <h1 class="wow animate__animated animate__bounceInLeft">contact</h1>
     </section>
     <button id="arrowUp">
         TOP
@@ -147,6 +147,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="./js/wow.min.js"></script>
     <script>
         // toggle
         var $toggle = $('.toggle');
@@ -207,7 +208,8 @@
 
         });
 
-
+        // wow js
+        new WOW().init();
 
     </script>
 

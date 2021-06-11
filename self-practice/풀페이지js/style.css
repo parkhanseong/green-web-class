@@ -19,7 +19,7 @@ header {
     z-index: 100;
     background: #eee;
 }
-.gnb {
+.myMenu {
     display: flex;
     justify-content: center;
 }
